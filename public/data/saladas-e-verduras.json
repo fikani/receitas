@@ -1,0 +1,48 @@
+[
+  {
+    "id": "brocolis-no-vapor",
+    "nome": "Brócolis no Vapor",
+    "categoria": "saladas-e-verduras",
+    "tempo_preparo_min": 15,
+    "porcoes_base": 4,
+    "ingredientes": [
+      { "nome": "Brócolis", "quantidade": 500, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Água", "quantidade": 500, "unidade": "g", "tipo": "outros" },
+      { "nome": "Sal", "quantidade": 5, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Azeite", "quantidade": 10, "unidade": "g", "tipo": "temperos" }
+    ],
+    "passos": [
+      {
+        "titulo": "Preparar os floretes",
+        "descricao": "Floretes do mesmo tamanho cozinham por igual — se um ficar grande, ele fica cru no meio enquanto os outros ficam moles",
+        "dicas": [
+          { "icone": "🔪", "titulo": "Corte pela base do caule", "texto": "Não arranque os floretes. Corte onde o caule se divide. Pedaços de 3-4cm são o ideal." }
+        ]
+      },
+      {
+        "titulo": "Cozinhar no vapor",
+        "descricao": "Vapor cozinha sem encharcar e mantém os nutrientes que a água levaria embora",
+        "metodo": "🫕",
+        "fogo": "alto",
+        "timer_min": 5,
+        "dicas": [
+          { "icone": "💧", "titulo": "Água SÓ no fundo", "texto": "Coloque 2 dedos de água na panela. O brócolis vai em cima, na peneira/cesto de vapor. Ele NÃO deve tocar a água." },
+          { "icone": "👁️", "titulo": "Verde vivo = pronto", "texto": "Quando o brócolis fica verde intenso e brilhante, está no ponto. Se ficar verde escuro/oliva, passou." }
+        ]
+      },
+      {
+        "titulo": "Choque térmico",
+        "descricao": "Mergulhar em água gelada para o cozimento imediatamente — sem isso, o calor residual continua cozinhando e ele amolece",
+        "dicas": [
+          { "icone": "❄️", "titulo": "Água com gelo", "texto": "Prepare uma tigela com água e gelo ANTES de começar. Assim que tirar do vapor, jogue direto na água gelada." },
+          { "icone": "⏱️", "titulo": "30 segundos na água gelada", "texto": "Só o suficiente pra parar o cozimento. Tire e escorra bem." }
+        ]
+      }
+    ],
+    "armazenamento": {
+      "tipo": "geladeira",
+      "validade_dias": 5,
+      "instrucoes": "Escorra muito bem antes de guardar. Umidade é o inimigo — brócolis molhado estraga rápido."
+    }
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "frango-grelhado",
+    "nome": "Frango Grelhado",
+    "categoria": "proteinas",
+    "tempo_preparo_min": 30,
+    "porcoes_base": 4,
+    "ingredientes": [
+      { "nome": "Peito de frango", "quantidade": 800, "unidade": "g", "tipo": "carnes" },
+      { "nome": "Azeite", "quantidade": 20, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Sal", "quantidade": 10, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Pimenta do reino", "quantidade": 5, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Alho", "quantidade": 15, "unidade": "g", "tipo": "temperos" }
+    ],
+    "passos": [
+      {
+        "titulo": "Temperar o frango",
+        "descricao": "Os temperos precisam de tempo pra penetrar na carne e dar sabor por dentro, não só por fora",
+        "dicas": [
+          { "icone": "🔪", "titulo": "Corte em filés uniformes", "texto": "Filés com a mesma espessura cozinham no mesmo tempo. Se um pedaço for muito grosso, abra com a faca na horizontal." },
+          { "icone": "🧂", "titulo": "Tempere dos dois lados", "texto": "Sal, pimenta e alho picado. Esfregue bem pra aderir na carne." }
+        ]
+      },
+      {
+        "titulo": "Aquecer a frigideira",
+        "descricao": "Uma frigideira bem quente é o segredo pra selar a carne sem ressecar",
+        "metodo": "🍳",
+        "fogo": "alto",
+        "dicas": [
+          { "icone": "🔥", "titulo": "Fogo alto", "texto": "Coloque o azeite e espere até começar a fazer ondas na superfície. Isso indica que está quente o suficiente." },
+          { "icone": "⚠️", "titulo": "Não coloque o frango com a frigideira fria", "texto": "Se a frigideira não estiver bem quente, o frango vai cozinhar ao invés de selar. Ele vai soltar líquido e ficar borrachudo." }
+        ]
+      },
+      {
+        "titulo": "Selar o frango",
+        "descricao": "Criar uma casca dourada que prende o suco dentro da carne",
+        "metodo": "🍳",
+        "fogo": "alto",
+        "timer_min": 4,
+        "dicas": [
+          { "icone": "👁️", "titulo": "Como saber que está pronto pra virar", "texto": "A borda lateral do frango fica branca até a metade da altura. Levanta a ponta: tem que estar dourado, não marrom." },
+          { "icone": "⚠️", "titulo": "Não mexa no frango", "texto": "Colocou na frigideira? Deixa quieto. Ficar mexendo impede a casca de formar." }
+        ]
+      },
+      {
+        "titulo": "Virar e finalizar",
+        "descricao": "O segundo lado precisa de menos tempo porque a carne já está parcialmente cozida por dentro",
+        "metodo": "🍳",
+        "fogo": "medio",
+        "timer_min": 3,
+        "dicas": [
+          { "icone": "🔥", "titulo": "Abaixe o fogo pra médio", "texto": "O primeiro lado selou em fogo alto. Agora queremos cozinhar por dentro sem queimar por fora." },
+          { "icone": "👁️", "titulo": "Teste do toque", "texto": "Aperte o frango com o dedo. Se estiver firme mas com um leve ceder, está no ponto. Se estiver mole, precisa de mais tempo." }
+        ]
+      },
+      {
+        "titulo": "Descansar a carne",
+        "descricao": "Quando a carne sai do fogo, os sucos estão concentrados no centro. Descansar redistribui esses sucos pela carne toda",
+        "timer_min": 5,
+        "dicas": [
+          { "icone": "❄️", "titulo": "Tire do fogo e espere", "texto": "Coloque numa tábua e cubra frouxamente com papel alumínio. NÃO corte agora — o suco vai escapar todo." },
+          { "icone": "⏱️", "titulo": "5 minutos mínimo", "texto": "Parece muito mas faz toda a diferença. A carne fica mais suculenta e macia." }
+        ]
+      }
+    ],
+    "armazenamento": {
+      "tipo": "freezer",
+      "validade_dias": 30,
+      "instrucoes": "Espere esfriar completamente antes de fechar o pote. Pode fatiar ou deixar o filé inteiro."
+    }
+  }
+]

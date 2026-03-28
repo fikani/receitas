@@ -1,0 +1,56 @@
+[
+  {
+    "id": "arroz-branco",
+    "nome": "Arroz Branco",
+    "categoria": "carboidratos",
+    "tempo_preparo_min": 25,
+    "porcoes_base": 4,
+    "ingredientes": [
+      { "nome": "Arroz", "quantidade": 400, "unidade": "g", "tipo": "graos" },
+      { "nome": "Água", "quantidade": 800, "unidade": "g", "tipo": "outros" },
+      { "nome": "Alho", "quantidade": 10, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Azeite", "quantidade": 15, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Sal", "quantidade": 8, "unidade": "g", "tipo": "temperos" }
+    ],
+    "passos": [
+      {
+        "titulo": "Refogar o alho",
+        "descricao": "O alho refogado no azeite libera um óleo aromático que dá sabor ao arroz todo",
+        "metodo": "🥘",
+        "fogo": "medio",
+        "dicas": [
+          { "icone": "🔪", "titulo": "Pique o alho fino", "texto": "Quanto menor os pedaços, mais sabor ele libera. Pode usar um espremedor se preferir." },
+          { "icone": "👁️", "titulo": "Alho dourado, não queimado", "texto": "Assim que ficar levemente dourado (30 segundos), coloque o arroz. Alho queimado fica amargo." }
+        ]
+      },
+      {
+        "titulo": "Tostar o arroz",
+        "descricao": "Tostar os grãos no azeite com alho cria uma camada que impede o arroz de ficar empapado",
+        "metodo": "🥘",
+        "fogo": "medio",
+        "timer_min": 2,
+        "dicas": [
+          { "icone": "🥣", "titulo": "Mexa sem parar", "texto": "Cada grão precisa ser envolvido no azeite. Mexa por 2 minutos até ouvir os grãos estalando." },
+          { "icone": "👁️", "titulo": "Grãos ficam translúcidos", "texto": "Quando o arroz começa a ficar meio transparente nas bordas, está pronto pra receber a água." }
+        ]
+      },
+      {
+        "titulo": "Adicionar água e cozinhar",
+        "descricao": "A proporção 1:2 (arroz:água) em peso é o padrão pra arroz branco soltinho",
+        "metodo": "🥘",
+        "fogo": "baixo",
+        "timer_min": 18,
+        "dicas": [
+          { "icone": "💧", "titulo": "Água fervente", "texto": "Use água já fervendo. Água fria faz o arroz soltar amido e ficar grudento." },
+          { "icone": "⚠️", "titulo": "NÃO mexa depois de colocar a água", "texto": "Mexer arroz depois de adicionar água libera amido e transforma tudo numa pasta. Tampe e esqueça." },
+          { "icone": "🔥", "titulo": "Fogo baixo com tampa", "texto": "Assim que a água ferver, abaixe o fogo pro mínimo e tampe. O vapor é quem cozinha o arroz." }
+        ]
+      }
+    ],
+    "armazenamento": {
+      "tipo": "freezer",
+      "validade_dias": 90,
+      "instrucoes": "Espalhe o arroz numa superfície pra esfriar rápido antes de embalar. Arroz quente em pote fechado cria umidade e estraga mais rápido."
+    }
+  }
+]
