@@ -324,3 +324,46 @@ button {
   bottom: 16px;
   margin-top: 24px;
 }
+
+/* ShoppingItem */
+.shopping-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  margin-bottom: 8px;
+  cursor: pointer;
+  min-height: var(--min-touch);
+}
+
+.shopping-item.checked {
+  opacity: 0.5;
+}
+
+.shopping-item.checked .shopping-nome {
+  text-decoration: line-through;
+}
+
+.shopping-check {
+  font-size: 1.2em;
+}
+
+.shopping-nome {
+  flex: 1;
+}
+
+.shopping-qty {
+  color: var(--accent);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.shopping-group-title {
+  font-size: 0.85em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 16px 0 8px;
+}
