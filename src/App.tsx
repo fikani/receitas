@@ -9,7 +9,7 @@ import PlanComplete from "./pages/PlanComplete";
 
 export default function App() {
   return (
-    <Router>
+    <Router base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
       <Route path="/" component={Home} />
       <Route path="/plan" component={Plan} />
       <Route path="/shopping" component={Shopping} />
