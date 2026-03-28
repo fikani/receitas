@@ -210,3 +210,117 @@ button {
 .timer-icon {
   font-size: 1.2em;
 }
+
+/* RecipeCard */
+.recipe-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 16px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.recipe-card.selected {
+  border-color: var(--accent);
+}
+
+.recipe-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.recipe-categoria {
+  font-size: 0.8em;
+  color: var(--text-muted);
+}
+
+.recipe-tempo {
+  font-size: 0.8em;
+  color: var(--text-muted);
+}
+
+.recipe-nome {
+  font-size: 1.1em;
+  margin-bottom: 4px;
+}
+
+.recipe-porcoes {
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+/* ResumeBanner */
+.resume-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--accent);
+  color: white;
+  padding: 14px 16px;
+  border-radius: var(--radius);
+  margin-bottom: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resume-arrow {
+  font-size: 1.3em;
+}
+
+/* FAB */
+.fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.empty {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 40px 0;
+}
+
+/* Plan */
+.plan-summary {
+  background: var(--bg-card);
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  text-align: center;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+  font-weight: bold;
+  padding: 16px;
+}
+
+.btn-full {
+  width: 100%;
+  position: sticky;
+  bottom: 16px;
+  margin-top: 24px;
+}

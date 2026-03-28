@@ -1,13 +1,12 @@
 import { Router, Route } from "@solidjs/router";
-
-function Home() {
-  return <div class="page"><h1>Meal Prep Planner</h1></div>;
-}
+import Home from "./pages/Home";
+import Plan from "./pages/Plan";
 
 export default function App() {
   return (
     <Router>
       <Route path="/" component={Home} />
+      <Route path="/plan" component={Plan} />
     </Router>
   );
 }
