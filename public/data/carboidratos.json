@@ -1,56 +1,250 @@
 [
   {
-    "id": "arroz-branco",
-    "nome": "Arroz Branco",
+    "id": "pure-mandioquinha",
+    "nome": "Purê de Mandioquinha de Seda",
     "categoria": "carboidratos",
-    "tempo_preparo_min": 25,
+    "tempo_preparo_min": 35,
     "porcoes_base": 4,
     "ingredientes": [
-      { "nome": "Arroz", "quantidade": 400, "unidade": "g", "tipo": "graos" },
-      { "nome": "Água", "quantidade": 800, "unidade": "g", "tipo": "outros" },
-      { "nome": "Alho", "quantidade": 10, "unidade": "g", "tipo": "temperos" },
-      { "nome": "Azeite", "quantidade": 15, "unidade": "g", "tipo": "temperos" },
-      { "nome": "Sal", "quantidade": 8, "unidade": "g", "tipo": "temperos" }
+      { "nome": "Mandioquinha", "quantidade": 900, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Água (cozimento)", "quantidade": 1500, "unidade": "g", "tipo": "outros" },
+      { "nome": "Sal grosso", "quantidade": 15, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Manteiga (bem gelada)", "quantidade": 40, "unidade": "g", "tipo": "laticinios" },
+      { "nome": "Sal fino", "quantidade": 5, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Noz-moscada", "quantidade": 2, "unidade": "g", "tipo": "temperos" }
     ],
     "passos": [
       {
-        "titulo": "Refogar o alho",
-        "descricao": "O alho refogado no azeite libera um óleo aromático que dá sabor ao arroz todo",
-        "metodo": "🥘",
-        "fogo": "medio",
+        "titulo": "Preparar e cozinhar a mandioquinha",
+        "descricao": "Rodelas iguais cozinham ao mesmo tempo. A água generosamente salgada tempera de dentro pra fora, como fazem na cozinha profissional",
+        "metodo": "🫕",
+        "fogo": "alto",
+        "timer_min": 20,
         "dicas": [
-          { "icone": "🔪", "titulo": "Pique o alho fino", "texto": "Quanto menor os pedaços, mais sabor ele libera. Pode usar um espremedor se preferir." },
-          { "icone": "👁️", "titulo": "Alho dourado, não queimado", "texto": "Assim que ficar levemente dourado (30 segundos), coloque o arroz. Alho queimado fica amargo." }
+          {
+            "icone": "🔪",
+            "titulo": "Descasque e corte em rodelas iguais",
+            "texto": "Descasque os 900g de mandioquinha e corte em rodelas de 1-2cm. Uniformidade é a chave."
+          },
+          {
+            "icone": "💧",
+            "titulo": "Pese a água e o sal",
+            "texto": "Coloque a panela na balança: 1500g de água e 15g de sal grosso. A água deve cobrir totalmente as rodelas."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Teste do garfo: amassa fácil = pronto",
+            "texto": "Espete um garfo numa rodela. Se entra sem resistência e amassa facilmente, está no ponto."
+          }
         ]
       },
       {
-        "titulo": "Tostar o arroz",
-        "descricao": "Tostar os grãos no azeite com alho cria uma camada que impede o arroz de ficar empapado",
-        "metodo": "🥘",
-        "fogo": "medio",
-        "timer_min": 2,
+        "titulo": "Fricção quente — Espremer imediatamente",
+        "descricao": "A mandioquinha DEVE ser espremida enquanto está fumegando. Fria, o amido endurece e o purê fica granuloso e pesado em vez de sedoso",
         "dicas": [
-          { "icone": "🥣", "titulo": "Mexa sem parar", "texto": "Cada grão precisa ser envolvido no azeite. Mexa por 2 minutos até ouvir os grãos estalando." },
-          { "icone": "👁️", "titulo": "Grãos ficam translúcidos", "texto": "Quando o arroz começa a ficar meio transparente nas bordas, está pronto pra receber a água." }
+          {
+            "icone": "⚠️",
+            "titulo": "Escorra TODA a água primeiro",
+            "texto": "Despeje num escorredor. Cada gota de água que sobrar dilui o purê e o deixa aguado."
+          },
+          {
+            "icone": "🥣",
+            "titulo": "Passe pelo espremedor IMEDIATAMENTE",
+            "texto": "Enquanto fumega, passe pelo espremedor de batatas. NUNCA use liquidificador — ele ativa o amido e o purê vira cola."
+          }
         ]
       },
       {
-        "titulo": "Adicionar água e cozinhar",
-        "descricao": "A proporção 1:2 (arroz:água) em peso é o padrão pra arroz branco soltinho",
+        "titulo": "Emulsão Francesa — O segredo da textura de seda",
+        "descricao": "A técnica de emulsão francesa incorpora manteiga gelada ao purê quente. O contraste de temperatura cria uma emulsão estável: a gordura se distribui em microgotículas que dão a textura aveludada e brilhante",
+        "dicas": [
+          {
+            "icone": "❄️",
+            "titulo": "Manteiga BEM gelada, em cubos",
+            "texto": "40g de manteiga direto da geladeira, cortada em cubinhos. A manteiga gelada emulsiona melhor — derretida demais vira gordura solta."
+          },
+          {
+            "icone": "🥣",
+            "titulo": "Mexa vigorosamente FORA do fogo",
+            "texto": "Com o purê ainda quente na panela (fora do fogo), adicione a manteiga, 5g de sal fino e 2g de noz-moscada. Mexa vigorosamente."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Brilhante e escorregadio = perfeito",
+            "texto": "O purê deve ficar liso, brilhante e escorregar da colher como seda. Se ficou opaco e seco, faltou vigor na mistura."
+          }
+        ]
+      }
+    ],
+    "armazenamento": {
+      "tipo": "freezer",
+      "validade_dias": 60,
+      "instrucoes": "Espere esfriar, distribua em porções. Para reaquecer, adicione um fio de manteiga para recuperar a textura sedosa."
+    }
+  },
+  {
+    "id": "arroz-lentilha",
+    "nome": "Arroz Integral e Lentilha",
+    "categoria": "carboidratos",
+    "tempo_preparo_min": 35,
+    "porcoes_base": 4,
+    "ingredientes": [
+      { "nome": "Arroz integral", "quantidade": 250, "unidade": "g", "tipo": "graos" },
+      { "nome": "Lentilha", "quantidade": 150, "unidade": "g", "tipo": "graos" },
+      { "nome": "Azeite", "quantidade": 15, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Cebola", "quantidade": 75, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Alho", "quantidade": 10, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Água (fervente)", "quantidade": 1000, "unidade": "g", "tipo": "outros" },
+      { "nome": "Sal", "quantidade": 6, "unidade": "g", "tipo": "temperos" }
+    ],
+    "passos": [
+      {
+        "titulo": "Lavar os grãos",
+        "descricao": "Lavar remove o excesso de amido solto que faz os grãos grudarem. Grãos integrais têm mais amido superficial que os polidos",
+        "dicas": [
+          {
+            "icone": "💧",
+            "titulo": "Lave numa peneira sob água corrente",
+            "texto": "Coloque os 250g de arroz e 150g de lentilha numa peneira. Lave até a água sair clara. Escorra bem — peso total de grãos crus = 400g."
+          }
+        ]
+      },
+      {
+        "titulo": "Refogar os aromáticos e os grãos",
+        "descricao": "Refogar os grãos antes de adicionar água cria uma camada de gordura em cada grão que impede que absorvam água demais e fiquem empapados",
         "metodo": "🥘",
         "fogo": "baixo",
-        "timer_min": 18,
+        "timer_min": 2,
         "dicas": [
-          { "icone": "💧", "titulo": "Água fervente", "texto": "Use água já fervendo. Água fria faz o arroz soltar amido e ficar grudento." },
-          { "icone": "⚠️", "titulo": "NÃO mexa depois de colocar a água", "texto": "Mexer arroz depois de adicionar água libera amido e transforma tudo numa pasta. Tampe e esqueça." },
-          { "icone": "🔥", "titulo": "Fogo baixo com tampa", "texto": "Assim que a água ferver, abaixe o fogo pro mínimo e tampe. O vapor é quem cozinha o arroz." }
+          {
+            "icone": "🔪",
+            "titulo": "Cebola e alho bem finos",
+            "texto": "75g de cebola e 10g de alho picados muito finos. Fogo baixo com 15g de azeite. Refogue sem deixar dourar."
+          },
+          {
+            "icone": "🥣",
+            "titulo": "Adicione os grãos e refogue 2 minutos",
+            "texto": "Junte os grãos lavados e escorridos. Mexa por 2 minutos para envolver cada grão no azeite."
+          }
+        ]
+      },
+      {
+        "titulo": "Técnica de Absorção — A proporção exata",
+        "descricao": "Para grãos integrais mistos, a proporção é 2,5g de água para cada 1g de grão cru. Com 400g de grãos, são exatamente 1000g de água. Essa matemática garante absorção perfeita sem sobra",
+        "metodo": "🥘",
+        "fogo": "baixo",
+        "timer_min": 5,
+        "dicas": [
+          {
+            "icone": "💧",
+            "titulo": "Pese a água: exatos 1000g, FERVENTE",
+            "texto": "Coloque a panela na balança, zere (tare). Adicione exatos 1000g de água já fervendo e 6g de sal. Água fria faz os grãos soltarem amido."
+          },
+          {
+            "icone": "🔥",
+            "titulo": "Tampa SEMI-ABERTA por 5 minutos",
+            "texto": "Fogo no mínimo, tampa semi-aberta. Isso permite que parte do vapor escape e o excesso de água evapore de forma controlada."
+          }
+        ]
+      },
+      {
+        "titulo": "Abafamento — O vapor faz a mágica",
+        "descricao": "Quando a água visível desaparece, o cozimento termina pelo vapor preso. Os grãos absorvem a última umidade e ficam soltos e macios",
+        "fogo": "baixo",
+        "timer_min": 10,
+        "dicas": [
+          {
+            "icone": "👁️",
+            "titulo": "Quando a água sumir da superfície, DESLIGUE",
+            "texto": "Olhe sem mexer: quando não houver mais água líquida visível, desligue o fogo imediatamente."
+          },
+          {
+            "icone": "⏱️",
+            "titulo": "Tampe completamente por 10 minutos",
+            "texto": "Desligue, tampe e NÃO abra por 10 minutos. O vapor preso termina o cozimento. Cada vez que abre, perde vapor e os grãos ficam duros."
+          }
         ]
       }
     ],
     "armazenamento": {
       "tipo": "freezer",
       "validade_dias": 90,
-      "instrucoes": "Espalhe o arroz numa superfície pra esfriar rápido antes de embalar. Arroz quente em pote fechado cria umidade e estraga mais rápido."
+      "instrucoes": "Espalhe numa superfície para esfriar rápido. Grãos quentes em pote fechado criam condensação que os deixa empapados."
+    }
+  },
+  {
+    "id": "batata-doce-crocante",
+    "nome": "Batata-Doce Crocante",
+    "categoria": "carboidratos",
+    "tempo_preparo_min": 40,
+    "porcoes_base": 4,
+    "ingredientes": [
+      { "nome": "Batata-doce", "quantidade": 750, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Azeite", "quantidade": 15, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Sal", "quantidade": 4, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Pimenta do reino", "quantidade": 1, "unidade": "g", "tipo": "temperos" }
+    ],
+    "passos": [
+      {
+        "titulo": "O corte uniforme — Cubos perfeitos",
+        "descricao": "Cubos do mesmo tamanho assam ao mesmo tempo. 2cm é o tamanho ideal: crocante por fora, macio por dentro",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Lave e corte em cubos de 2cm",
+            "texto": "Lave e corte os 750g de batata-doce em cubos os mais perfeitos possíveis de 2cm."
+          }
+        ]
+      },
+      {
+        "titulo": "O envolvimento — Cada cubo precisa de gordura",
+        "descricao": "O azeite conduz o calor do forno até a superfície do cubo, criando a crosta crocante. Sem azeite suficiente em cada cubo, ele assa em vez de torrar",
+        "dicas": [
+          {
+            "icone": "🧂",
+            "titulo": "Pese na balança",
+            "texto": "Coloque uma tigela na balança, zere (tare). Adicione os cubos, 15g de azeite, 4g de sal e 1g de pimenta."
+          },
+          {
+            "icone": "🥣",
+            "titulo": "Misture COM AS MÃOS",
+            "texto": "As mãos são a melhor ferramenta para garantir que cada cubo esteja envolvido uniformemente em gordura e tempero."
+          }
+        ]
+      },
+      {
+        "titulo": "Torréfaction — O choque de calor",
+        "descricao": "Torréfaction é assar em alta temperatura para criar uma superfície crocante por reação de Maillard, enquanto o interior cozinha suavemente pelo calor indireto",
+        "temperatura_c": 220,
+        "timer_min": 28,
+        "dicas": [
+          {
+            "icone": "🌡️",
+            "titulo": "Forno a 220°C, PRÉ-AQUECIDO",
+            "texto": "O forno DEVE estar já na temperatura antes da batata entrar. Colocar em forno frio = batata cozida e mole, não crocante."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "NÃO sobreponha os cubos",
+            "texto": "Espalhe num tabuleiro em camada única. Cubos amontoados cozinham no vapor uns dos outros em vez de torrar."
+          },
+          {
+            "icone": "⏱️",
+            "titulo": "Vire na metade do tempo",
+            "texto": "Após 15 minutos, vire cada cubo. Total: 25-30 minutos até ficarem dourados e crocantes por fora."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Bordas caramelizadas = pronto",
+            "texto": "Os cantos e bordas devem estar marrom-dourados e levemente caramelizados. Se estiverem claros, precisa de mais tempo."
+          }
+        ]
+      }
+    ],
+    "armazenamento": {
+      "tipo": "freezer",
+      "validade_dias": 60,
+      "instrucoes": "Espere esfriar completamente. Para reaquecer, use forno a 200°C por 10 minutos para recuperar a crocância — micro-ondas a deixa mole."
     }
   }
 ]

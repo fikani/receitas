@@ -1,48 +1,239 @@
 [
   {
-    "id": "brocolis-no-vapor",
-    "nome": "Brócolis no Vapor",
+    "id": "brocolis-blanchi",
+    "nome": "Brócolis Blanchi — O Banho de Super-Herói",
     "categoria": "saladas-e-verduras",
     "tempo_preparo_min": 15,
     "porcoes_base": 4,
     "ingredientes": [
-      { "nome": "Brócolis", "quantidade": 500, "unidade": "g", "tipo": "vegetais" },
-      { "nome": "Água", "quantidade": 500, "unidade": "g", "tipo": "outros" },
-      { "nome": "Sal", "quantidade": 5, "unidade": "g", "tipo": "temperos" },
-      { "nome": "Azeite", "quantidade": 10, "unidade": "g", "tipo": "temperos" }
+      { "nome": "Brócolis", "quantidade": 700, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Água (fervura)", "quantidade": 2000, "unidade": "g", "tipo": "outros" },
+      { "nome": "Sal grosso", "quantidade": 30, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Água (choque térmico)", "quantidade": 1000, "unidade": "g", "tipo": "outros" },
+      { "nome": "Gelo", "quantidade": 500, "unidade": "g", "tipo": "outros" }
     ],
     "passos": [
       {
-        "titulo": "Preparar os floretes",
-        "descricao": "Floretes do mesmo tamanho cozinham por igual — se um ficar grande, ele fica cru no meio enquanto os outros ficam moles",
+        "titulo": "Preparar os floretes e o banho de gelo",
+        "descricao": "O banho de gelo precisa estar pronto ANTES de começar a cozinhar. Cada segundo de atraso entre sair da água fervente e entrar no gelo significa brócolis passado e mole",
         "dicas": [
-          { "icone": "🔪", "titulo": "Corte pela base do caule", "texto": "Não arranque os floretes. Corte onde o caule se divide. Pedaços de 3-4cm são o ideal." }
+          {
+            "icone": "🔪",
+            "titulo": "Separe em floretes iguais",
+            "texto": "Separe os 700g de brócolis em floretes de tamanho similar. Corte pela base do caule onde ele se divide."
+          },
+          {
+            "icone": "❄️",
+            "titulo": "Monte o banho de gelo AGORA",
+            "texto": "Numa tigela grande: 1000g de água fria + 500g de gelo. Coloque ao lado do fogão, pronta para uso imediato."
+          }
         ]
       },
       {
-        "titulo": "Cozinhar no vapor",
-        "descricao": "Vapor cozinha sem encharcar e mantém os nutrientes que a água levaria embora",
+        "titulo": "A Água do Mar — Blanchir",
+        "descricao": "Blanchir é uma técnica francesa de cozinhar brevemente em água muito salgada e fervente. A proporção de sal (30g para 2000g de água) reproduz a salinidade do mar — isso tempera o vegetal de dentro pra fora e mantém a cor verde viva",
         "metodo": "🫕",
         "fogo": "alto",
-        "timer_min": 5,
+        "timer_min": 2,
         "dicas": [
-          { "icone": "💧", "titulo": "Água SÓ no fundo", "texto": "Coloque 2 dedos de água na panela. O brócolis vai em cima, na peneira/cesto de vapor. Ele NÃO deve tocar a água." },
-          { "icone": "👁️", "titulo": "Verde vivo = pronto", "texto": "Quando o brócolis fica verde intenso e brilhante, está no ponto. Se ficar verde escuro/oliva, passou." }
+          {
+            "icone": "💧",
+            "titulo": "2000g de água + 30g de sal grosso",
+            "texto": "Ferva a água com o sal. A água deve estar em fervura forte e rápida — bolhas grandes quebrando na superfície."
+          },
+          {
+            "icone": "⏱️",
+            "titulo": "EXATOS 2 minutos e 30 segundos",
+            "texto": "Jogue os floretes e comece o cronómetro imediatamente. Nem mais, nem menos. Este tempo cozinha até ficar al dente."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "NÃO tampe a panela",
+            "texto": "A tampa prende ácidos que fazem o brócolis perder a cor verde vibrante. Panela aberta = verde vivo."
+          }
         ]
       },
       {
-        "titulo": "Choque térmico",
-        "descricao": "Mergulhar em água gelada para o cozimento imediatamente — sem isso, o calor residual continua cozinhando e ele amolece",
+        "titulo": "Choque Térmico — Congelar o tempo",
+        "descricao": "O choque térmico para o cozimento instantaneamente. Sem ele, o calor residual dentro do florete continua cozinhando e ele amolece. É a diferença entre brócolis crocante e brócolis de hospital",
         "dicas": [
-          { "icone": "❄️", "titulo": "Água com gelo", "texto": "Prepare uma tigela com água e gelo ANTES de começar. Assim que tirar do vapor, jogue direto na água gelada." },
-          { "icone": "⏱️", "titulo": "30 segundos na água gelada", "texto": "Só o suficiente pra parar o cozimento. Tire e escorra bem." }
+          {
+            "icone": "❄️",
+            "titulo": "Direto para o banho de gelo",
+            "texto": "Retire com escumadeira e mergulhe IMEDIATAMENTE na tigela de água com gelo. Cada segundo conta."
+          },
+          {
+            "icone": "⏱️",
+            "titulo": "30 segundos no gelo, não mais",
+            "texto": "Só o suficiente para parar o cozimento. Tempo demais no gelo encharca o brócolis."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Verde VIVO e brilhante = perfeito",
+            "texto": "O brócolis deve estar verde intenso, brilhante e crocante ao morder. Se ficou verde escuro/oliva, passou do ponto."
+          }
         ]
       }
     ],
     "armazenamento": {
       "tipo": "geladeira",
       "validade_dias": 5,
-      "instrucoes": "Escorra muito bem antes de guardar. Umidade é o inimigo — brócolis molhado estraga rápido."
+      "instrucoes": "Escorra MUITO bem antes de guardar — seque com papel toalha. Umidade é o inimigo: brócolis molhado estraga em 2 dias."
+    }
+  },
+  {
+    "id": "abobora-vagem-assadas",
+    "nome": "Abóbora e Vagem Assadas",
+    "categoria": "saladas-e-verduras",
+    "tempo_preparo_min": 35,
+    "porcoes_base": 4,
+    "ingredientes": [
+      { "nome": "Abóbora", "quantidade": 400, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Vagem", "quantidade": 300, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Azeite", "quantidade": 15, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Sal", "quantidade": 4, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Orégãos", "quantidade": 3, "unidade": "g", "tipo": "temperos" }
+    ],
+    "passos": [
+      {
+        "titulo": "O corte modular",
+        "descricao": "Abóbora e vagem têm tempos de cozimento diferentes, mas ao cortar em tamanhos estratégicos, eles ficam prontos juntos: abóbora em cubos menores (cozinha mais devagar) e vagem em pedaços maiores (cozinha mais rápido)",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Abóbora: cubos de 2cm / Vagem: pedaços de 3cm",
+            "texto": "Descasque e corte os 400g de abóbora em cubos de 2cm. Corte os 300g de vagem em pedaços de 3cm. Estes tamanhos equilibram o tempo de cozimento."
+          }
+        ]
+      },
+      {
+        "titulo": "O envolvimento — Gordura + tempero em cada pedaço",
+        "descricao": "Cada pedaço de vegetal precisa de uma fina camada de azeite para criar a superfície crocante. Sem gordura, o vegetal ressecar e murcha em vez de torrar",
+        "dicas": [
+          {
+            "icone": "🧂",
+            "titulo": "Pese tudo na balança",
+            "texto": "Tigela na balança, zere (tare). Adicione abóbora, vagem, 15g de azeite, 4g de sal e 3g de orégãos."
+          },
+          {
+            "icone": "🥣",
+            "titulo": "Misture bem para envolver na gordura",
+            "texto": "Use as mãos ou uma colher grande. Cada pedaço precisa estar brilhante de azeite."
+          }
+        ]
+      },
+      {
+        "titulo": "Torréfaction — Assar no calor intenso",
+        "descricao": "Mesma técnica da batata-doce. O forno alto cria caramelização na superfície enquanto o interior fica macio. Pode assar ao mesmo tempo que a batata-doce, mas em tabuleiro SEPARADO",
+        "temperatura_c": 220,
+        "timer_min": 23,
+        "dicas": [
+          {
+            "icone": "🌡️",
+            "titulo": "Forno a 220°C (já pré-aquecido)",
+            "texto": "Se estiver fazendo junto com a batata-doce, use a mesma temperatura. Apenas coloque em tabuleiros separados em prateleiras diferentes."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Camada única, sem sobrepor",
+            "texto": "Espalhe num tabuleiro sem empilhar. Cada pedaço precisa de contato com o ar quente."
+          },
+          {
+            "icone": "⏱️",
+            "titulo": "20-25 minutos até dourar",
+            "texto": "A abóbora deve estar macia e com bordas caramelizadas. A vagem deve estar levemente enrugada e com pontas tostadas."
+          }
+        ]
+      }
+    ],
+    "armazenamento": {
+      "tipo": "geladeira",
+      "validade_dias": 5,
+      "instrucoes": "Espere esfriar. Pode reaquecer no forno a 180°C por 8 minutos ou comer em temperatura ambiente."
+    }
+  },
+  {
+    "id": "creme-espinafre-ricota",
+    "nome": "Creme de Espinafre e Ricota",
+    "categoria": "saladas-e-verduras",
+    "tempo_preparo_min": 15,
+    "porcoes_base": 4,
+    "ingredientes": [
+      { "nome": "Espinafre cru", "quantidade": 1200, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Ricota", "quantidade": 250, "unidade": "g", "tipo": "laticinios" },
+      { "nome": "Azeite", "quantidade": 15, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Alho", "quantidade": 5, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Sal", "quantidade": 5, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Pimenta do reino", "quantidade": 1, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Noz-moscada", "quantidade": 2, "unidade": "g", "tipo": "temperos" }
+    ],
+    "passos": [
+      {
+        "titulo": "Réduction — Murchar o espinafre",
+        "descricao": "1200g de espinafre cru parece uma montanha, mas é 90% água. A técnica de réduction evapora essa água rapidamente, concentrando sabor e volume. Vai reduzir para cerca de 200g",
+        "metodo": "🍳",
+        "fogo": "medio",
+        "timer_min": 2,
+        "dicas": [
+          {
+            "icone": "🔥",
+            "titulo": "Azeite + alho esmagado primeiro",
+            "texto": "Numa frigideira larga, coloque 15g de azeite e 5g de alho esmagado (não picado — esmagado libera mais aroma). Fogo médio."
+          },
+          {
+            "icone": "🥣",
+            "titulo": "Adicione o espinafre em porções",
+            "texto": "Coloque punhados de espinafre e vá adicionando à medida que murcha. 1-2 minutos é suficiente para murchar tudo."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "NÃO cozinhe demais",
+            "texto": "Assim que murchar, retire imediatamente. Espinafre cozido demais perde cor, sabor e nutrientes."
+          }
+        ]
+      },
+      {
+        "titulo": "Extração de água — Espremer é obrigatório",
+        "descricao": "Espinafre murcho ainda tem muita água presa. Sem espremer, o creme fica aguado e sem corpo. É a diferença entre um creme profissional e um espinafre molhado",
+        "dicas": [
+          {
+            "icone": "💧",
+            "titulo": "Coloque numa peneira e ESPREMA com força",
+            "texto": "Retire todo o espinafre para uma peneira. Aperte com as costas de uma colher ou com as mãos (cuidado, está quente). A água verde que sai é sabor perdido — mas sem espremer, o creme fica líquido."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Pique grosseiramente",
+            "texto": "Depois de espremido, pique com a faca em pedaços grandes. Não precisa ser fino — textura rústica é melhor."
+          }
+        ]
+      },
+      {
+        "titulo": "Amalgamação — Unir espinafre e ricota",
+        "descricao": "A ricota amassada funciona como um creme que une tudo. A noz-moscada é o par clássico francês do espinafre — realça o sabor sem chamar atenção para si mesma",
+        "dicas": [
+          {
+            "icone": "🥣",
+            "titulo": "Amasse a ricota primeiro",
+            "texto": "Amasse os 250g de ricota com um garfo até ficar cremosa e sem pedaços grandes."
+          },
+          {
+            "icone": "🧂",
+            "titulo": "Tempere a ricota",
+            "texto": "Adicione 5g de sal, 1g de pimenta e 2g de noz-moscada à ricota. Misture bem."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Junte o espinafre e misture",
+            "texto": "Adicione o espinafre espremido e picado à ricota temperada. Misture bem. A textura deve ser cremosa mas com pedaços visíveis de espinafre."
+          }
+        ]
+      }
+    ],
+    "armazenamento": {
+      "tipo": "geladeira",
+      "validade_dias": 4,
+      "instrucoes": "Guarde em pote fechado. A ricota é perecível — consuma em até 4 dias. Pode comer frio ou aquecer levemente."
     }
   }
 ]

@@ -1,72 +1,332 @@
 [
   {
-    "id": "frango-grelhado",
-    "nome": "Frango Grelhado",
+    "id": "frango-braise",
+    "nome": "Frango Braisé ao Molho de Tomate",
     "categoria": "proteinas",
-    "tempo_preparo_min": 30,
+    "tempo_preparo_min": 50,
     "porcoes_base": 4,
     "ingredientes": [
-      { "nome": "Peito de frango", "quantidade": 800, "unidade": "g", "tipo": "carnes" },
-      { "nome": "Azeite", "quantidade": 20, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Frango (coxas e sobrecoxas)", "quantidade": 1100, "unidade": "g", "tipo": "carnes" },
+      { "nome": "Azeite", "quantidade": 30, "unidade": "g", "tipo": "temperos" },
       { "nome": "Sal", "quantidade": 10, "unidade": "g", "tipo": "temperos" },
-      { "nome": "Pimenta do reino", "quantidade": 5, "unidade": "g", "tipo": "temperos" },
-      { "nome": "Alho", "quantidade": 15, "unidade": "g", "tipo": "temperos" }
+      { "nome": "Pimenta do reino", "quantidade": 2, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Orégãos", "quantidade": 3, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Cebola", "quantidade": 150, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Alho", "quantidade": 20, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Molho de tomate", "quantidade": 400, "unidade": "g", "tipo": "outros" },
+      { "nome": "Água", "quantidade": 120, "unidade": "g", "tipo": "outros" }
     ],
     "passos": [
       {
-        "titulo": "Temperar o frango",
-        "descricao": "Os temperos precisam de tempo pra penetrar na carne e dar sabor por dentro, não só por fora",
+        "titulo": "Mise en Place — Preparar o frango",
+        "descricao": "Carne molhada cozinha no próprio vapor e fica cinzenta em vez de dourar. Tirar do frio e secar são passos obrigatórios para a Reação de Maillard funcionar",
         "dicas": [
-          { "icone": "🔪", "titulo": "Corte em filés uniformes", "texto": "Filés com a mesma espessura cozinham no mesmo tempo. Se um pedaço for muito grosso, abra com a faca na horizontal." },
-          { "icone": "🧂", "titulo": "Tempere dos dois lados", "texto": "Sal, pimenta e alho picado. Esfregue bem pra aderir na carne." }
+          {
+            "icone": "❄️",
+            "titulo": "Tire do frigorífico 20 minutos antes",
+            "texto": "Carne gelada baixa a temperatura da panela. Ela precisa estar próxima da temperatura ambiente para selar corretamente."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Seque COMPLETAMENTE com papel toalha",
+            "texto": "Passe papel toalha em cada pedaço, todos os lados. Água na superfície = vapor = carne cinzenta em vez de dourada."
+          },
+          {
+            "icone": "🧂",
+            "titulo": "Tempere dos dois lados",
+            "texto": "10g de sal, 2g de pimenta-do-reino e 3g de orégãos. Esfregue com as mãos para aderir."
+          }
         ]
       },
       {
-        "titulo": "Aquecer a frigideira",
-        "descricao": "Uma frigideira bem quente é o segredo pra selar a carne sem ressecar",
-        "metodo": "🍳",
-        "fogo": "alto",
-        "dicas": [
-          { "icone": "🔥", "titulo": "Fogo alto", "texto": "Coloque o azeite e espere até começar a fazer ondas na superfície. Isso indica que está quente o suficiente." },
-          { "icone": "⚠️", "titulo": "Não coloque o frango com a frigideira fria", "texto": "Se a frigideira não estiver bem quente, o frango vai cozinhar ao invés de selar. Ele vai soltar líquido e ficar borrachudo." }
-        ]
-      },
-      {
-        "titulo": "Selar o frango",
-        "descricao": "Criar uma casca dourada que prende o suco dentro da carne",
-        "metodo": "🍳",
-        "fogo": "alto",
-        "timer_min": 4,
-        "dicas": [
-          { "icone": "👁️", "titulo": "Como saber que está pronto pra virar", "texto": "A borda lateral do frango fica branca até a metade da altura. Levanta a ponta: tem que estar dourado, não marrom." },
-          { "icone": "⚠️", "titulo": "Não mexa no frango", "texto": "Colocou na frigideira? Deixa quieto. Ficar mexendo impede a casca de formar." }
-        ]
-      },
-      {
-        "titulo": "Virar e finalizar",
-        "descricao": "O segundo lado precisa de menos tempo porque a carne já está parcialmente cozida por dentro",
+        "titulo": "Reação de Maillard — Criar a crosta dourada",
+        "descricao": "A Reação de Maillard acontece acima de 140°C: aminoácidos e açúcares da carne reagem formando centenas de moléculas de sabor e uma crosta marrom-dourada. Sem ela, o frango fica cozido mas sem graça",
         "metodo": "🍳",
         "fogo": "medio",
-        "timer_min": 3,
+        "timer_min": 7,
         "dicas": [
-          { "icone": "🔥", "titulo": "Abaixe o fogo pra médio", "texto": "O primeiro lado selou em fogo alto. Agora queremos cozinhar por dentro sem queimar por fora." },
-          { "icone": "👁️", "titulo": "Teste do toque", "texto": "Aperte o frango com o dedo. Se estiver firme mas com um leve ceder, está no ponto. Se estiver mole, precisa de mais tempo." }
+          {
+            "icone": "🔥",
+            "titulo": "Fogo médio-alto + 30g de azeite",
+            "texto": "O azeite precisa estar quase a fumegar antes de colocar o frango. Ondas na superfície do óleo = temperatura certa."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "NÃO toque, NÃO mexa, NÃO empurre!",
+            "texto": "Cada vez que mexe, a temperatura cai e recomeça do zero. Deixe fritar 6 a 8 minutos sem tocar. A crosta se forma sozinha."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Como saber que está pronto pra virar",
+            "texto": "Quando soltar facilmente da panela e apresentar uma crosta marrom-dourada profunda (não clara, não queimada). Se grudou, ainda não está pronto — espere mais."
+          }
         ]
       },
       {
-        "titulo": "Descansar a carne",
-        "descricao": "Quando a carne sai do fogo, os sucos estão concentrados no centro. Descansar redistribui esses sucos pela carne toda",
+        "titulo": "Dourar o outro lado",
+        "descricao": "O segundo lado precisa de menos tempo porque a carne já absorveu calor do primeiro lado",
+        "metodo": "🍳",
+        "fogo": "medio",
         "timer_min": 5,
         "dicas": [
-          { "icone": "❄️", "titulo": "Tire do fogo e espere", "texto": "Coloque numa tábua e cubra frouxamente com papel alumínio. NÃO corte agora — o suco vai escapar todo." },
-          { "icone": "⏱️", "titulo": "5 minutos mínimo", "texto": "Parece muito mas faz toda a diferença. A carne fica mais suculenta e macia." }
+          {
+            "icone": "👁️",
+            "titulo": "Mesma crosta dourada",
+            "texto": "Procure a mesma cor marrom-dourada do primeiro lado. Depois retire o frango para um prato — ele vai voltar para a panela depois."
+          }
+        ]
+      },
+      {
+        "titulo": "Mirepoix — A base secreta de sabor",
+        "descricao": "Na culinária francesa, o mirepoix é a base aromática que constrói camadas de sabor. Usar a mesma panela aproveita toda a gordura e os pedacinhos de frango grudados (fond)",
+        "metodo": "🥘",
+        "fogo": "baixo",
+        "timer_min": 5,
+        "dicas": [
+          {
+            "icone": "🔥",
+            "titulo": "Abaixe o fogo ANTES de colocar a cebola",
+            "texto": "O fundo da panela está muito quente do frango. Se jogar a cebola com o fogo alto, ela queima em segundos."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Cubos minúsculos de cebola e alho",
+            "texto": "150g de cebola e 20g de alho picados em cubos de 3-4mm. Quanto menor, mais rápido libera sabor e mais uniforme fica o molho."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Cebola translúcida = pronto",
+            "texto": "4-5 minutos até a cebola ficar transparente. Se dourar demais, o molho fica amargo."
+          }
+        ]
+      },
+      {
+        "titulo": "Deglaçagem e Braisage — Cozimento lento",
+        "descricao": "Deglaçar é o ato de adicionar líquido à panela quente para soltar todo o 'ouro' (fond) grudado no fundo — resíduos da Maillard cheios de sabor. O braisage (cozimento lento em líquido) transforma cortes duros em carne que desfia com um garfo",
+        "metodo": "🥘",
+        "fogo": "baixo",
+        "timer_min": 20,
+        "dicas": [
+          {
+            "icone": "💧",
+            "titulo": "Molho de tomate + água",
+            "texto": "Despeje 400g de molho de tomate e 120g de água (pese a água!). O líquido vai ferver e soltar todo o fond do fundo da panela."
+          },
+          {
+            "icone": "🥣",
+            "titulo": "Raspe o fundo com uma colher de pau",
+            "texto": "Enquanto o molho ferve, raspe o fundo para soltar todos os pedacinhos grudados. Esse 'ouro' é puro sabor concentrado."
+          },
+          {
+            "icone": "🔥",
+            "titulo": "Fogo no MÍNIMO, panela tampada",
+            "texto": "Volte o frango, baixe o fogo para o mínimo e tampe. O vapor preso cozinha o frango lentamente por 20 minutos. Não destampe!"
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Teste final",
+            "texto": "Espete um garfo: a carne deve se soltar facilmente. O molho deve estar encorpado e brilhante, não aguado."
+          }
         ]
       }
     ],
     "armazenamento": {
       "tipo": "freezer",
       "validade_dias": 30,
-      "instrucoes": "Espere esfriar completamente antes de fechar o pote. Pode fatiar ou deixar o filé inteiro."
+      "instrucoes": "Espere esfriar completamente. Guarde o frango com o molho — ele mantém a carne húmida durante o reaquecimento."
+    }
+  },
+  {
+    "id": "iscas-ao-shoyu",
+    "nome": "Iscas ao Shoyu Caramelizadas",
+    "categoria": "proteinas",
+    "tempo_preparo_min": 25,
+    "porcoes_base": 4,
+    "ingredientes": [
+      { "nome": "Iscas de carne (acém)", "quantidade": 1100, "unidade": "g", "tipo": "carnes" },
+      { "nome": "Azeite", "quantidade": 15, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Pimenta do reino", "quantidade": 3, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Cebola", "quantidade": 150, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Shoyu", "quantidade": 45, "unidade": "g", "tipo": "temperos" }
+    ],
+    "passos": [
+      {
+        "titulo": "Cortar e temperar as iscas",
+        "descricao": "O corte fino garante que a carne sele rápido por fora e fique macia por dentro. Sal NÃO vai agora — ele extrai os sucos da carne e impede a selagem",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Tiras finas, contra a fibra",
+            "texto": "Corte as iscas (1100g) em tiras finas. Cortar contra a fibra da carne a torna mais macia de mastigar."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "SÓ pimenta, NÃO coloque sal agora",
+            "texto": "Tempere apenas com 3g de pimenta. O sal extrai líquido da carne — ela vai cozinhar em vez de selar. O shoyu no final faz o papel do sal."
+          }
+        ]
+      },
+      {
+        "titulo": "A Frigideira Cantora — Sauté à la Minute",
+        "descricao": "Sauté à la Minute é a técnica francesa de selar carne rapidamente em fogo altíssimo. A frigideira precisa estar tão quente que faz barulho intenso quando a carne toca. Se não 'cantar', não está quente o suficiente",
+        "metodo": "🍳",
+        "fogo": "alto",
+        "dicas": [
+          {
+            "icone": "🔥",
+            "titulo": "Fogo ALTO até estar extremamente quente",
+            "texto": "Leve a frigideira ao fogo alto sem nada dentro. Espere até que esteja realmente muito quente — isso leva 2-3 minutos. Depois adicione 15g de azeite."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Teste: o azeite ondula imediatamente",
+            "texto": "Se o azeite começar a ondular e quase fumegar em segundos, a frigideira está pronta."
+          }
+        ]
+      },
+      {
+        "titulo": "Selagem em lotes — NÃO encha a panela",
+        "descricao": "Se colocar carne demais de uma vez, a temperatura cai e a carne cozinha no próprio suco em vez de selar. Em porções de 200-300g, cada tira toca o metal quente diretamente",
+        "metodo": "🍳",
+        "fogo": "alto",
+        "timer_min": 3,
+        "dicas": [
+          {
+            "icone": "⚠️",
+            "titulo": "Máximo 200-300g por vez",
+            "texto": "Coloque uma porção fina. As tiras não devem se sobrepor. Se a frigideira parar de 'cantar', tem carne demais."
+          },
+          {
+            "icone": "⏱️",
+            "titulo": "2 min sem mexer + 1-2 min salteando",
+            "texto": "Deixe 2 minutos sem tocar (criando crosta), depois salteie rapidamente por 1-2 minutos. Retire e repita com o próximo lote."
+          }
+        ]
+      },
+      {
+        "titulo": "Caramelização com Shoyu — O glacê brilhante",
+        "descricao": "O shoyu contém açúcares e aminoácidos que, em contato com o calor residual, criam uma reação de Maillard líquida — um glacê escuro, brilhante e umami que substitui 100% do sal",
+        "metodo": "🍳",
+        "timer_min": 2,
+        "dicas": [
+          {
+            "icone": "🥣",
+            "titulo": "Toda a carne de volta + cebola",
+            "texto": "Volte toda a carne selada para a frigideira. Adicione 150g de cebola fatiada em meias-luas e refogue por 2 minutos."
+          },
+          {
+            "icone": "🔥",
+            "titulo": "DESLIGUE o fogo antes do shoyu",
+            "texto": "Desligue o fogo, adicione 45g de shoyu e misture. O calor residual evapora a água do shoyu e cria o glacê. Se o fogo estiver ligado, o shoyu queima e fica amargo."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Brilhante e grudento = perfeito",
+            "texto": "As iscas devem ficar com um revestimento escuro e brilhante, levemente grudento. Se ficou seco, faltou shoyu."
+          }
+        ]
+      }
+    ],
+    "armazenamento": {
+      "tipo": "freezer",
+      "validade_dias": 30,
+      "instrucoes": "Espere esfriar. O glacê de shoyu preserva bem a umidade durante o congelamento. Reaquecça em frigideira para recuperar a textura."
+    }
+  },
+  {
+    "id": "carne-moida",
+    "nome": "Carne Moída em Pequenos Rubis",
+    "categoria": "proteinas",
+    "tempo_preparo_min": 25,
+    "porcoes_base": 4,
+    "ingredientes": [
+      { "nome": "Carne moída (acém)", "quantidade": 850, "unidade": "g", "tipo": "carnes" },
+      { "nome": "Azeite", "quantidade": 15, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Cebola", "quantidade": 150, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Alho", "quantidade": 15, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Extrato de tomate", "quantidade": 30, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Sal", "quantidade": 8, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Água", "quantidade": 120, "unidade": "g", "tipo": "outros" }
+    ],
+    "passos": [
+      {
+        "titulo": "Brunoise — O corte de mestre",
+        "descricao": "Brunoise é um corte francês clássico: cubos de 3mm perfeitos. Cebola e alho nesse tamanho cozinham rápido, liberam sabor máximo e desaparecem na textura final",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Cubos de 3 milímetros",
+            "texto": "Pique 150g de cebola e 15g de alho em cubos minúsculos. A uniformidade garante que tudo cozinhe ao mesmo tempo. Não precisa ser perfeito, mas tente."
+          }
+        ]
+      },
+      {
+        "titulo": "Rissolage — Criar a crosta na carne",
+        "descricao": "Rissolage é dourar em gordura quente. A carne moída tem que ganhar uma crosta tostada no fundo antes de ser mexida — isso cria profundidade de sabor. Sem essa crosta, fica só carne cinzenta cozida",
+        "metodo": "🍳",
+        "fogo": "alto",
+        "timer_min": 5,
+        "dicas": [
+          {
+            "icone": "🔥",
+            "titulo": "Panela quente, fogo alto, 15g de azeite",
+            "texto": "A panela precisa estar BEM quente antes de colocar a carne."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "ACHATE no fundo e NÃO mexa",
+            "texto": "Coloque os 850g de carne e achate no fundo como um hambúrguer gigante. Deixe ganhar uma crosta tostada por baixo — cerca de 5 minutos sem tocar."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Crosta marrom no fundo = pronto",
+            "texto": "Levante a borda: se estiver marrom-dourada embaixo, quebre com uma colher e mexa até não haver mais nenhum pedaço rosa."
+          }
+        ]
+      },
+      {
+        "titulo": "Tostar o extrato de tomate",
+        "descricao": "Tostar extrato de tomate intensifica o sabor em 10x. Cru, ele é ácido e raso. Tostado, fica doce, profundo e umami. Este truque é usado em restaurantes de alta gastronomia",
+        "metodo": "🍳",
+        "fogo": "medio",
+        "timer_min": 1,
+        "dicas": [
+          {
+            "icone": "🥣",
+            "titulo": "Abra um buraco no meio da carne",
+            "texto": "Empurre a carne para os lados, criando um espaço vazio no centro da panela. Coloque 30g de extrato de tomate direto no fundo quente."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "1 minuto tostando",
+            "texto": "Deixe o extrato escurecer por 1 minuto no metal quente. Ele vai ficar mais escuro e perfumado. Depois misture com a carne."
+          }
+        ]
+      },
+      {
+        "titulo": "Finalização — Cozimento suave",
+        "descricao": "Agora os aromáticos entram para dar frescor, e a água cria vapor que finaliza o cozimento de forma suave",
+        "metodo": "🥘",
+        "fogo": "baixo",
+        "timer_min": 10,
+        "dicas": [
+          {
+            "icone": "🧂",
+            "titulo": "Adicione cebola, alho, sal e água",
+            "texto": "Junte a cebola e alho picados (brunoise), 8g de sal e 120g de água. Misture tudo."
+          },
+          {
+            "icone": "🔥",
+            "titulo": "Fogo baixo, tampado, 10 minutos",
+            "texto": "Tampe e deixe em fogo baixo por 10 minutos até a água secar completamente. A carne deve ficar úmida mas sem caldo."
+          }
+        ]
+      }
+    ],
+    "armazenamento": {
+      "tipo": "freezer",
+      "validade_dias": 30,
+      "instrucoes": "Espere esfriar completamente. Distribua em porções antes de congelar para facilitar o descongelamento."
     }
   }
 ]
