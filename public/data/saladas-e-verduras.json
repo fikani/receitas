@@ -3,7 +3,7 @@
     "id": "brocolis-blanchi",
     "nome": "Brócolis Blanchi — O Banho de Super-Herói",
     "categoria": "saladas-e-verduras",
-    "tempo_preparo_min": 15,
+    "tempo_preparo_min": 20,
     "porcoes_base": 4,
     "ingredientes": [
       { "nome": "Brócolis", "quantidade": 700, "unidade": "g", "tipo": "vegetais" },
@@ -14,63 +14,87 @@
     ],
     "passos": [
       {
-        "titulo": "Preparar os floretes e o banho de gelo",
-        "descricao": "O banho de gelo precisa estar pronto ANTES de começar a cozinhar. Cada segundo de atraso entre sair da água fervente e entrar no gelo significa brócolis passado e mole",
+        "titulo": "Mise en Place — Montar o banho de gelo",
+        "descricao": "O banho de gelo precisa estar pronto ANTES do brócolis entrar na água fervente. Cada segundo de atraso entre sair da fervura e entrar no gelo significa cozimento a mais. Monte primeiro, corte depois",
         "dicas": [
           {
-            "icone": "🔪",
-            "titulo": "Separe em floretes iguais",
-            "texto": "Separe os 700g de brócolis em floretes de tamanho similar. Corte pela base do caule onde ele se divide."
-          },
-          {
             "icone": "❄️",
-            "titulo": "Monte o banho de gelo AGORA",
-            "texto": "Numa tigela grande: 1000g de água fria + 500g de gelo. Coloque ao lado do fogão, pronta para uso imediato."
+            "titulo": "Tigela grande: 1000g de água fria + 500g de gelo",
+            "texto": "Use a maior tigela que tiver. A água precisa estar GELADA — se não tiver gelo suficiente, use água da geladeira. Coloque ao lado do fogão, pronta para uso imediato."
           }
         ]
       },
       {
-        "titulo": "A Água do Mar — Blanchir",
-        "descricao": "Blanchir é uma técnica francesa de cozinhar brevemente em água muito salgada e fervente. A proporção de sal (30g para 2000g de água) reproduz a salinidade do mar — isso tempera o vegetal de dentro pra fora e mantém a cor verde viva",
+        "titulo": "Mise en Place — Separar os floretes",
+        "descricao": "Floretes do mesmo tamanho cozinham por igual. Se um ficar grande, ele fica cru no centro enquanto os pequenos amolecem demais. 3-4cm é o tamanho ideal",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Corte pela base do caule, NÃO arranque",
+            "texto": "Segure o brócolis (700g) de cabeça pra baixo. Com a faca, corte onde cada 'ramificação' do caule se divide. Se arrancar, o florete despedaça. Se algum florete ficou grande, corte ao meio pelo caule."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Todos devem ter tamanho parecido",
+            "texto": "Olhe os floretes lado a lado. Se algum é muito maior que os outros, corte-o. Uniformidade = cozimento igual."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Ferver a água salgada",
+        "descricao": "A quantidade de sal na água (30g para 2000g) reproduz a salinidade do mar. Esta proporção é usada na cozinha profissional francesa para blanquear vegetais — ela tempera o vegetal de dentro pra fora e ajuda a manter a cor verde vibrante",
+        "metodo": "🫕",
+        "fogo": "alto",
+        "dicas": [
+          {
+            "icone": "💧",
+            "titulo": "2000g de água + 30g de sal grosso",
+            "texto": "Pese na panela. Leve ao fogo alto. A água deve estar em fervura FORTE — bolhas grandes quebrando na superfície, não apenas bolhinhas no fundo."
+          }
+        ]
+      },
+      {
+        "titulo": "Blanchir — 2 minutos e 30 segundos exatos",
+        "descricao": "Blanchir é a técnica francesa de cozinhar brevemente em água fervente salgada. O tempo curto cozinha o brócolis até ficar 'al dente' (macio por fora, levemente crocante no centro) e fixa a cor verde vibrante",
         "metodo": "🫕",
         "fogo": "alto",
         "timer_min": 2,
         "dicas": [
           {
-            "icone": "💧",
-            "titulo": "2000g de água + 30g de sal grosso",
-            "texto": "Ferva a água com o sal. A água deve estar em fervura forte e rápida — bolhas grandes quebrando na superfície."
-          },
-          {
             "icone": "⏱️",
             "titulo": "EXATOS 2 minutos e 30 segundos",
-            "texto": "Jogue os floretes e comece o cronómetro imediatamente. Nem mais, nem menos. Este tempo cozinha até ficar al dente."
+            "texto": "Jogue todos os floretes de uma vez e comece o cronómetro IMEDIATAMENTE. Nem mais, nem menos. Este tempo cozinha até al dente."
           },
           {
             "icone": "⚠️",
             "titulo": "NÃO tampe a panela",
-            "texto": "A tampa prende ácidos que fazem o brócolis perder a cor verde vibrante. Panela aberta = verde vivo."
+            "texto": "A tampa prende ácidos voláteis que fazem o brócolis perder a cor verde vibrante e ficar verde-oliva triste. Panela aberta = verde vivo."
           }
         ]
       },
       {
         "titulo": "Choque Térmico — Congelar o tempo",
-        "descricao": "O choque térmico para o cozimento instantaneamente. Sem ele, o calor residual dentro do florete continua cozinhando e ele amolece. É a diferença entre brócolis crocante e brócolis de hospital",
+        "descricao": "O choque térmico para o cozimento instantaneamente. Mesmo fora da água fervente, o calor residual dentro do florete continua cozinhando por mais 2-3 minutos. O gelo congela esse processo. É a diferença entre brócolis crocante e brócolis de hospital",
         "dicas": [
           {
             "icone": "❄️",
-            "titulo": "Direto para o banho de gelo",
-            "texto": "Retire com escumadeira e mergulhe IMEDIATAMENTE na tigela de água com gelo. Cada segundo conta."
+            "titulo": "Direto para o banho de gelo — SEM hesitar",
+            "texto": "Retire com escumadeira (aquela colher cheia de furos) e mergulhe IMEDIATAMENTE no banho de gelo que montou no início. Cada segundo conta."
           },
           {
             "icone": "⏱️",
             "titulo": "30 segundos no gelo, não mais",
-            "texto": "Só o suficiente para parar o cozimento. Tempo demais no gelo encharca o brócolis."
+            "texto": "Só o suficiente para parar o cozimento. Tempo demais no gelo encharca o brócolis e dilui o tempero."
           },
           {
             "icone": "👁️",
             "titulo": "Verde VIVO e brilhante = perfeito",
-            "texto": "O brócolis deve estar verde intenso, brilhante e crocante ao morder. Se ficou verde escuro/oliva, passou do ponto."
+            "texto": "O brócolis deve estar verde intenso, brilhante como se tivesse acabado de ser colhido, e crocante ao morder. Se ficou verde escuro ou verde-oliva, passou do ponto."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Escorra MUITO bem",
+            "texto": "Tire do gelo e coloque num escorredor. Sacuda para tirar o máximo de água. Brócolis molhado estraga rápido e fica sem graça."
           }
         ]
       }
@@ -78,14 +102,14 @@
     "armazenamento": {
       "tipo": "geladeira",
       "validade_dias": 5,
-      "instrucoes": "Escorra MUITO bem antes de guardar — seque com papel toalha. Umidade é o inimigo: brócolis molhado estraga em 2 dias."
+      "instrucoes": "Escorra muito bem — seque com papel toalha se possível. Umidade é o inimigo: brócolis molhado estraga em 2 dias."
     }
   },
   {
     "id": "abobora-vagem-assadas",
     "nome": "Abóbora e Vagem Assadas",
     "categoria": "saladas-e-verduras",
-    "tempo_preparo_min": 35,
+    "tempo_preparo_min": 40,
     "porcoes_base": 4,
     "ingredientes": [
       { "nome": "Abóbora", "quantidade": 400, "unidade": "g", "tipo": "vegetais" },
@@ -96,19 +120,52 @@
     ],
     "passos": [
       {
-        "titulo": "O corte modular",
-        "descricao": "Abóbora e vagem têm tempos de cozimento diferentes, mas ao cortar em tamanhos estratégicos, eles ficam prontos juntos: abóbora em cubos menores (cozinha mais devagar) e vagem em pedaços maiores (cozinha mais rápido)",
+        "titulo": "Mise en Place — Pré-aquecer o forno",
+        "descricao": "Mesmo princípio da batata-doce: forno quente = caramelização. Forno frio = cozimento lento e mole. Se estiver fazendo junto com a batata-doce, o forno já está ligado — pode pular este passo",
+        "temperatura_c": 220,
         "dicas": [
           {
-            "icone": "🔪",
-            "titulo": "Abóbora: cubos de 2cm / Vagem: pedaços de 3cm",
-            "texto": "Descasque e corte os 400g de abóbora em cubos de 2cm. Corte os 300g de vagem em pedaços de 3cm. Estes tamanhos equilibram o tempo de cozimento."
+            "icone": "🌡️",
+            "titulo": "Ligue o forno a 220°C",
+            "texto": "Se ainda não está ligado, ligue agora. Precisa de 10-15 minutos para atingir a temperatura."
           }
         ]
       },
       {
-        "titulo": "O envolvimento — Gordura + tempero em cada pedaço",
-        "descricao": "Cada pedaço de vegetal precisa de uma fina camada de azeite para criar a superfície crocante. Sem gordura, o vegetal ressecar e murcha em vez de torrar",
+        "titulo": "Mise en Place — Descascar e cortar a abóbora",
+        "descricao": "Abóbora crua é dura e escorregadia — descascar e cortar exige cuidado. O tamanho dos cubos (2cm) é estratégico: a abóbora cozinha mais devagar que a vagem, então os cubos menores compensam",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Descasque com faca, não com descascador",
+            "texto": "A casca da abóbora (400g) é muito dura para descascador. Use uma faca grande: corte uma fatia do topo e da base para criar bases planas. Apoie e corte a casca de cima pra baixo, acompanhando a curva."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Cubos de 2cm",
+            "texto": "Retire as sementes com uma colher. Corte a polpa em fatias de 2cm, depois em tiras, depois em cubos. O tamanho não precisa ser perfeito."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Cuidado: abóbora é escorregadia",
+            "texto": "A polpa é úmida e a faca pode escorregar. Sempre apoie com a base plana na tábua. Se estiver instável, corte ao meio primeiro."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Cortar a vagem",
+        "descricao": "A vagem é cortada em pedaços maiores (3cm) que a abóbora (2cm) porque cozinha mais rápido. Os tamanhos diferentes compensam os tempos diferentes de cozimento — assim tudo fica pronto ao mesmo tempo",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Pedaços de 3cm",
+            "texto": "Lave os 300g de vagem. Corte as pontas (o cabinho duro). Depois corte em pedaços de 3cm. Pode alinhar várias e cortar juntas para ser mais rápido."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Envolver na gordura e tempero",
+        "descricao": "Cada pedaço de vegetal precisa de uma fina camada de azeite para criar a superfície crocante. Sem gordura, o calor do forno ressecar a superfície e o vegetal murcha em vez de torrar",
         "dicas": [
           {
             "icone": "🧂",
@@ -118,30 +175,25 @@
           {
             "icone": "🥣",
             "titulo": "Misture bem para envolver na gordura",
-            "texto": "Use as mãos ou uma colher grande. Cada pedaço precisa estar brilhante de azeite."
+            "texto": "Use as mãos ou uma colher grande. Cada pedaço precisa estar brilhante de azeite. Se algum está seco, ele vai queimar."
           }
         ]
       },
       {
         "titulo": "Torréfaction — Assar no calor intenso",
-        "descricao": "Mesma técnica da batata-doce. O forno alto cria caramelização na superfície enquanto o interior fica macio. Pode assar ao mesmo tempo que a batata-doce, mas em tabuleiro SEPARADO",
+        "descricao": "Mesma técnica da batata-doce crocante. O forno a 220°C cria caramelização na superfície (Maillard) enquanto o interior fica macio. Pode assar ao mesmo tempo que a batata-doce, mas OBRIGATORIAMENTE num tabuleiro separado — misturar vegetais diferentes no mesmo tabuleiro bagunça o cozimento",
         "temperatura_c": 220,
         "timer_min": 23,
         "dicas": [
           {
-            "icone": "🌡️",
-            "titulo": "Forno a 220°C (já pré-aquecido)",
-            "texto": "Se estiver fazendo junto com a batata-doce, use a mesma temperatura. Apenas coloque em tabuleiros separados em prateleiras diferentes."
-          },
-          {
             "icone": "⚠️",
             "titulo": "Camada única, sem sobrepor",
-            "texto": "Espalhe num tabuleiro sem empilhar. Cada pedaço precisa de contato com o ar quente."
+            "texto": "Espalhe num tabuleiro sem empilhar. Cada pedaço precisa de contato direto com o ar quente. Se amontoar, cozinha no vapor em vez de torrar."
           },
           {
             "icone": "⏱️",
             "titulo": "20-25 minutos até dourar",
-            "texto": "A abóbora deve estar macia e com bordas caramelizadas. A vagem deve estar levemente enrugada e com pontas tostadas."
+            "texto": "Verifique aos 20 minutos. A abóbora deve estar macia e com bordas caramelizadas. A vagem deve estar levemente enrugada e com pontas tostadas."
           }
         ]
       }
@@ -156,7 +208,7 @@
     "id": "creme-espinafre-ricota",
     "nome": "Creme de Espinafre e Ricota",
     "categoria": "saladas-e-verduras",
-    "tempo_preparo_min": 15,
+    "tempo_preparo_min": 20,
     "porcoes_base": 4,
     "ingredientes": [
       { "nome": "Espinafre cru", "quantidade": 1200, "unidade": "g", "tipo": "vegetais" },
@@ -169,8 +221,51 @@
     ],
     "passos": [
       {
+        "titulo": "Mise en Place — Preparar o alho",
+        "descricao": "Nesta receita o alho vai esmagado, não picado. Alho esmagado libera mais alicina (o composto de sabor) porque mais células se rompem. Ele perfuma o azeite e depois sai — não fica no prato",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Esmague com a lateral da faca",
+            "texto": "Coloque os dentes de alho (5g) na tábua. Deite a lâmina da faca por cima e pressione com a palma da mão até ouvir um estalo. A casca solta fácil. NÃO pique — deixe os pedaços grandes."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Lavar o espinafre",
+        "descricao": "1200g de espinafre cru parece uma montanha — mas é 90% água. Vai reduzir para cerca de 200g quando murchar. A lavagem é essencial porque espinafre vem com terra e areia escondida nas folhas",
+        "dicas": [
+          {
+            "icone": "💧",
+            "titulo": "Lave em água corrente, folha a folha se possível",
+            "texto": "Ou coloque tudo numa tigela grande com água, mexa e deixe a areia decantar. Troque a água 2-3 vezes até não ver mais areia no fundo."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Não precisa secar",
+            "texto": "O espinafre vai murchar em segundos no fogo — a água da lavagem evapora junto. Não perca tempo secando."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Temperar a ricota",
+        "descricao": "A ricota é o 'creme' que une tudo. Temperá-la separadamente garante distribuição uniforme do sal e especiarias — se temperar depois de misturar com o espinafre, fica com pontos de sal e pontos sem",
+        "dicas": [
+          {
+            "icone": "🥣",
+            "titulo": "Amasse a ricota com um garfo",
+            "texto": "Coloque os 250g de ricota numa tigela e amasse com um garfo até ficar cremosa e sem pedaços grandes."
+          },
+          {
+            "icone": "🧂",
+            "titulo": "Adicione sal, pimenta e noz-moscada",
+            "texto": "5g de sal, 1g de pimenta e 2g de noz-moscada. Misture bem. A noz-moscada é o par clássico francês do espinafre — realça o sabor sem chamar atenção."
+          }
+        ]
+      },
+      {
         "titulo": "Réduction — Murchar o espinafre",
-        "descricao": "1200g de espinafre cru parece uma montanha, mas é 90% água. A técnica de réduction evapora essa água rapidamente, concentrando sabor e volume. Vai reduzir para cerca de 200g",
+        "descricao": "Réduction é a técnica de evaporar água para concentrar sabor e reduzir volume. 1200g de espinafre viram cerca de 200g em 1-2 minutos de calor — a água evapora e o que fica é puro sabor concentrado",
         "metodo": "🍳",
         "fogo": "medio",
         "timer_min": 2,
@@ -178,54 +273,49 @@
           {
             "icone": "🔥",
             "titulo": "Azeite + alho esmagado primeiro",
-            "texto": "Numa frigideira larga, coloque 15g de azeite e 5g de alho esmagado (não picado — esmagado libera mais aroma). Fogo médio."
+            "texto": "Numa frigideira larga, coloque 15g de azeite e o alho esmagado que preparou. Fogo médio por 30 segundos até perfumar."
           },
           {
             "icone": "🥣",
             "titulo": "Adicione o espinafre em porções",
-            "texto": "Coloque punhados de espinafre e vá adicionando à medida que murcha. 1-2 minutos é suficiente para murchar tudo."
+            "texto": "Não cabe tudo de uma vez. Coloque punhados e vá adicionando à medida que murcha e diminui de volume. 1-2 minutos é suficiente."
           },
           {
             "icone": "⚠️",
             "titulo": "NÃO cozinhe demais",
-            "texto": "Assim que murchar, retire imediatamente. Espinafre cozido demais perde cor, sabor e nutrientes."
+            "texto": "Assim que murchar completamente (todo escuro e mole), retire imediatamente. Espinafre cozido demais perde cor, sabor e nutrientes."
           }
         ]
       },
       {
         "titulo": "Extração de água — Espremer é obrigatório",
-        "descricao": "Espinafre murcho ainda tem muita água presa. Sem espremer, o creme fica aguado e sem corpo. É a diferença entre um creme profissional e um espinafre molhado",
+        "descricao": "Mesmo murcho, o espinafre ainda guarda muita água presa dentro das folhas. Sem espremer, o creme final fica aguado, sem corpo e dilui o sabor da ricota. Este passo é o que separa um creme profissional de um espinafre molhado",
         "dicas": [
           {
             "icone": "💧",
             "titulo": "Coloque numa peneira e ESPREMA com força",
-            "texto": "Retire todo o espinafre para uma peneira. Aperte com as costas de uma colher ou com as mãos (cuidado, está quente). A água verde que sai é sabor perdido — mas sem espremer, o creme fica líquido."
+            "texto": "Retire todo o espinafre para uma peneira. Aperte com as costas de uma colher grande ou com as mãos (cuidado, está quente — espere 1 minuto). Vai sair muita água verde. Esprema até não pingar mais."
           },
           {
             "icone": "🔪",
             "titulo": "Pique grosseiramente",
-            "texto": "Depois de espremido, pique com a faca em pedaços grandes. Não precisa ser fino — textura rústica é melhor."
+            "texto": "Depois de bem espremido, pique com a faca em pedaços grandes. Não precisa ser fino — textura rústica é proposital."
           }
         ]
       },
       {
         "titulo": "Amalgamação — Unir espinafre e ricota",
-        "descricao": "A ricota amassada funciona como um creme que une tudo. A noz-moscada é o par clássico francês do espinafre — realça o sabor sem chamar atenção para si mesma",
+        "descricao": "Amalgamação é simplesmente misturar dois ingredientes até formarem um só. O espinafre espremido e picado encontra a ricota temperada e juntos criam um creme rico, cremoso e cheio de sabor",
         "dicas": [
           {
             "icone": "🥣",
-            "titulo": "Amasse a ricota primeiro",
-            "texto": "Amasse os 250g de ricota com um garfo até ficar cremosa e sem pedaços grandes."
-          },
-          {
-            "icone": "🧂",
-            "titulo": "Tempere a ricota",
-            "texto": "Adicione 5g de sal, 1g de pimenta e 2g de noz-moscada à ricota. Misture bem."
+            "titulo": "Misture o espinafre na ricota temperada",
+            "texto": "Adicione o espinafre espremido e picado à ricota que temperou no início. Misture bem com uma colher ou garfo."
           },
           {
             "icone": "👁️",
-            "titulo": "Junte o espinafre e misture",
-            "texto": "Adicione o espinafre espremido e picado à ricota temperada. Misture bem. A textura deve ser cremosa mas com pedaços visíveis de espinafre."
+            "titulo": "Cremoso com pedaços visíveis = perfeito",
+            "texto": "A textura deve ser cremosa (da ricota) com pedaços visíveis de espinafre. Se ficou líquido, o espinafre não foi espremido o suficiente."
           }
         ]
       }

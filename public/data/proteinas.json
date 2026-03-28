@@ -3,7 +3,7 @@
     "id": "frango-braise",
     "nome": "Frango Braisé ao Molho de Tomate",
     "categoria": "proteinas",
-    "tempo_preparo_min": 50,
+    "tempo_preparo_min": 60,
     "porcoes_base": 4,
     "ingredientes": [
       { "nome": "Frango (coxas e sobrecoxas)", "quantidade": 1100, "unidade": "g", "tipo": "carnes" },
@@ -17,6 +17,27 @@
       { "nome": "Água", "quantidade": 120, "unidade": "g", "tipo": "outros" }
     ],
     "passos": [
+      {
+        "titulo": "Mise en Place — Picar a cebola e o alho",
+        "descricao": "Antes de ligar o fogo, todos os ingredientes precisam estar prontos. Na cozinha profissional isso se chama Mise en Place (tudo no lugar). Começamos pela cebola e alho porque são usados durante o cozimento e não pode haver pressa na hora",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Cebola: corte ao meio, depois em cubos pequenos",
+            "texto": "Corte a cebola (150g) ao meio do topo à raiz. Apoie a metade com o lado cortado pra baixo. Faça cortes verticais paralelos (sem chegar na raiz), depois cortes horizontais, e por fim fatie de cima pra baixo. Os cubos se formam sozinhos. Mire em cubos de 4-5mm."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Alho: esmague e pique fino",
+            "texto": "Coloque os dentes de alho (20g) sob a lâmina da faca e pressione com a palma da mão até ouvir um estalo. A casca solta fácil. Depois pique em pedaços bem pequenos."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Olhos ardendo? Truque: cebola gelada",
+            "texto": "Se a cebola faz seus olhos arder, coloque-a no congelador por 10 minutos antes de cortar. O frio reduz a liberação do gás que causa a irritação."
+          }
+        ]
+      },
       {
         "titulo": "Mise en Place — Preparar o frango",
         "descricao": "Carne molhada cozinha no próprio vapor e fica cinzenta em vez de dourar. Tirar do frio e secar são passos obrigatórios para a Reação de Maillard funcionar",
@@ -34,7 +55,18 @@
           {
             "icone": "🧂",
             "titulo": "Tempere dos dois lados",
-            "texto": "10g de sal, 2g de pimenta-do-reino e 3g de orégãos. Esfregue com as mãos para aderir."
+            "texto": "10g de sal, 2g de pimenta-do-reino e 3g de orégãos. Esfregue com as mãos para aderir à carne."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Pesar os líquidos",
+        "descricao": "Deixe o molho de tomate e a água separados e pesados antes de começar. Quando a panela estiver quente com a carne, não haverá tempo para procurar e medir ingredientes",
+        "dicas": [
+          {
+            "icone": "🧂",
+            "titulo": "400g de molho de tomate + 120g de água",
+            "texto": "Pese cada um separadamente. Podem ficar no mesmo recipiente — vão entrar juntos na panela."
           }
         ]
       },
@@ -58,7 +90,7 @@
           {
             "icone": "👁️",
             "titulo": "Como saber que está pronto pra virar",
-            "texto": "Quando soltar facilmente da panela e apresentar uma crosta marrom-dourada profunda (não clara, não queimada). Se grudou, ainda não está pronto — espere mais."
+            "texto": "Quando soltar facilmente da panela e apresentar uma crosta marrom-dourada profunda. Se grudou, ainda não está pronto — espere mais."
           }
         ]
       },
@@ -78,7 +110,7 @@
       },
       {
         "titulo": "Mirepoix — A base secreta de sabor",
-        "descricao": "Na culinária francesa, o mirepoix é a base aromática que constrói camadas de sabor. Usar a mesma panela aproveita toda a gordura e os pedacinhos de frango grudados (fond)",
+        "descricao": "Mirepoix é o nome francês para a base aromática de cebola e alho (ou cenoura e salsão) que constrói camadas de sabor. Usar a mesma panela aproveita toda a gordura e os pedacinhos de frango grudados no fundo (chamados de 'fond')",
         "metodo": "🥘",
         "fogo": "baixo",
         "timer_min": 5,
@@ -89,9 +121,9 @@
             "texto": "O fundo da panela está muito quente do frango. Se jogar a cebola com o fogo alto, ela queima em segundos."
           },
           {
-            "icone": "🔪",
-            "titulo": "Cubos minúsculos de cebola e alho",
-            "texto": "150g de cebola e 20g de alho picados em cubos de 3-4mm. Quanto menor, mais rápido libera sabor e mais uniforme fica o molho."
+            "icone": "🥣",
+            "titulo": "Adicione a cebola e o alho já picados",
+            "texto": "Lembra que picamos tudo no começo? Agora é só jogar os 150g de cebola e 20g de alho que estão prontos."
           },
           {
             "icone": "👁️",
@@ -102,15 +134,15 @@
       },
       {
         "titulo": "Deglaçagem e Braisage — Cozimento lento",
-        "descricao": "Deglaçar é o ato de adicionar líquido à panela quente para soltar todo o 'ouro' (fond) grudado no fundo — resíduos da Maillard cheios de sabor. O braisage (cozimento lento em líquido) transforma cortes duros em carne que desfia com um garfo",
+        "descricao": "Deglaçar significa adicionar líquido à panela quente para soltar todo o 'ouro' grudado no fundo — resíduos da Maillard cheios de sabor. O braisage (cozimento lento em líquido com tampa) transforma cortes duros em carne que desfia com um garfo",
         "metodo": "🥘",
         "fogo": "baixo",
         "timer_min": 20,
         "dicas": [
           {
             "icone": "💧",
-            "titulo": "Molho de tomate + água",
-            "texto": "Despeje 400g de molho de tomate e 120g de água (pese a água!). O líquido vai ferver e soltar todo o fond do fundo da panela."
+            "titulo": "Despeje o molho de tomate + água",
+            "texto": "Despeje os 400g de molho de tomate e 120g de água que separou no mise en place. O líquido vai ferver e soltar todo o fond do fundo."
           },
           {
             "icone": "🥣",
@@ -140,7 +172,7 @@
     "id": "iscas-ao-shoyu",
     "nome": "Iscas ao Shoyu Caramelizadas",
     "categoria": "proteinas",
-    "tempo_preparo_min": 25,
+    "tempo_preparo_min": 35,
     "porcoes_base": 4,
     "ingredientes": [
       { "nome": "Iscas de carne (acém)", "quantidade": 1100, "unidade": "g", "tipo": "carnes" },
@@ -151,42 +183,85 @@
     ],
     "passos": [
       {
-        "titulo": "Cortar e temperar as iscas",
-        "descricao": "O corte fino garante que a carne sele rápido por fora e fique macia por dentro. Sal NÃO vai agora — ele extrai os sucos da carne e impede a selagem",
+        "titulo": "Mise en Place — Fatiar a cebola em meias-luas",
+        "descricao": "A cebola nesta receita vai fatiada em meias-luas (não em cubos). Este corte mantém pedaços visíveis que caramelizam junto com a carne e criam textura",
         "dicas": [
           {
             "icone": "🔪",
-            "titulo": "Tiras finas, contra a fibra",
-            "texto": "Corte as iscas (1100g) em tiras finas. Cortar contra a fibra da carne a torna mais macia de mastigar."
+            "titulo": "Como fazer meias-luas",
+            "texto": "Corte a cebola (150g) ao meio do topo à raiz. Apoie a metade com o lado cortado pra baixo. Fatie em fatias de 3-4mm acompanhando a curva natural da cebola, do topo até a raiz. Descarte a raiz."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Fatias finas e uniformes",
+            "texto": "Quanto mais finas, mais rápido amolecem na frigideira. Tente manter todas com a mesma espessura para cozinharem igual."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Cortar a carne em tiras",
+        "descricao": "O corte da carne determina a textura final. Tiras finas selam rápido por fora e ficam macias por dentro. Tiras grossas ficam cruas no centro ou passam por fora",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Tiras finas CONTRA a fibra",
+            "texto": "Observe a carne (1100g): ela tem linhas paralelas visíveis — são as fibras musculares. Corte perpendicular a essas linhas, em tiras de 5-7mm de espessura. Cortar contra a fibra 'encurta' as fibras e a carne fica mais macia."
           },
           {
             "icone": "⚠️",
-            "titulo": "SÓ pimenta, NÃO coloque sal agora",
-            "texto": "Tempere apenas com 3g de pimenta. O sal extrai líquido da carne — ela vai cozinhar em vez de selar. O shoyu no final faz o papel do sal."
+            "titulo": "Truque: carne semi-congelada corta melhor",
+            "texto": "Se estiver difícil cortar fino, coloque a carne no congelador por 20 minutos. Semi-congelada, ela fica firme e mais fácil de fatiar com precisão."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Temperar a carne (SEM sal)",
+        "descricao": "O sal extrai água da carne por osmose. Carne molhada não sela — ela cozinha no próprio suco e fica cinzenta. Por isso, nesta receita o sal é substituído pelo shoyu no final",
+        "dicas": [
+          {
+            "icone": "🧂",
+            "titulo": "SÓ pimenta: 3g sobre as tiras",
+            "texto": "Espalhe 3g de pimenta-do-reino sobre as tiras de carne. Misture com as mãos para distribuir."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "NÃO coloque sal agora",
+            "texto": "O shoyu (45g) que vai no final contém sal suficiente E adiciona umami. É ele que dá sabor — o sal aqui só atrapalharia a selagem."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Pesar e separar o shoyu",
+        "descricao": "O shoyu entra com o fogo DESLIGADO. Ter ele pesado e ao alcance da mão evita queimar porque foi procurar na hora",
+        "dicas": [
+          {
+            "icone": "🧂",
+            "titulo": "45g de shoyu num recipiente separado",
+            "texto": "Pese 45g de shoyu e deixe num copo ou tigela ao lado do fogão. Você vai precisar dele rápido no final."
           }
         ]
       },
       {
         "titulo": "A Frigideira Cantora — Sauté à la Minute",
-        "descricao": "Sauté à la Minute é a técnica francesa de selar carne rapidamente em fogo altíssimo. A frigideira precisa estar tão quente que faz barulho intenso quando a carne toca. Se não 'cantar', não está quente o suficiente",
+        "descricao": "Sauté à la Minute é a técnica francesa de selar carne em fogo altíssimo por tempo curtíssimo. A frigideira precisa estar tão quente que faz barulho intenso quando a carne toca — como se estivesse 'cantando'. Se não cantar, não está quente",
         "metodo": "🍳",
         "fogo": "alto",
         "dicas": [
           {
             "icone": "🔥",
             "titulo": "Fogo ALTO até estar extremamente quente",
-            "texto": "Leve a frigideira ao fogo alto sem nada dentro. Espere até que esteja realmente muito quente — isso leva 2-3 minutos. Depois adicione 15g de azeite."
+            "texto": "Leve a frigideira ao fogo alto sem nada dentro. Espere 2-3 minutos até estar realmente muito quente. Depois adicione 15g de azeite."
           },
           {
             "icone": "👁️",
             "titulo": "Teste: o azeite ondula imediatamente",
-            "texto": "Se o azeite começar a ondular e quase fumegar em segundos, a frigideira está pronta."
+            "texto": "Se o azeite começar a ondular e quase fumegar em segundos, a frigideira está pronta para receber a carne."
           }
         ]
       },
       {
         "titulo": "Selagem em lotes — NÃO encha a panela",
-        "descricao": "Se colocar carne demais de uma vez, a temperatura cai e a carne cozinha no próprio suco em vez de selar. Em porções de 200-300g, cada tira toca o metal quente diretamente",
+        "descricao": "Se colocar carne demais de uma vez, a temperatura cai e a carne cozinha no próprio suco em vez de selar. Em porções de 200-300g, cada tira toca o metal quente diretamente e cria crosta",
         "metodo": "🍳",
         "fogo": "alto",
         "timer_min": 3,
@@ -199,25 +274,25 @@
           {
             "icone": "⏱️",
             "titulo": "2 min sem mexer + 1-2 min salteando",
-            "texto": "Deixe 2 minutos sem tocar (criando crosta), depois salteie rapidamente por 1-2 minutos. Retire e repita com o próximo lote."
+            "texto": "Deixe 2 minutos sem tocar (criando crosta), depois salteie rapidamente por 1-2 minutos. Retire para um prato e repita com o próximo lote."
           }
         ]
       },
       {
         "titulo": "Caramelização com Shoyu — O glacê brilhante",
-        "descricao": "O shoyu contém açúcares e aminoácidos que, em contato com o calor residual, criam uma reação de Maillard líquida — um glacê escuro, brilhante e umami que substitui 100% do sal",
+        "descricao": "O shoyu contém açúcares e aminoácidos que, em contato com o calor residual, criam uma reação de Maillard líquida — um glacê escuro, brilhante e com sabor umami intenso. Ele substitui 100% do sal nesta receita",
         "metodo": "🍳",
         "timer_min": 2,
         "dicas": [
           {
             "icone": "🥣",
-            "titulo": "Toda a carne de volta + cebola",
-            "texto": "Volte toda a carne selada para a frigideira. Adicione 150g de cebola fatiada em meias-luas e refogue por 2 minutos."
+            "titulo": "Toda a carne de volta + cebola fatiada",
+            "texto": "Volte toda a carne selada para a frigideira. Adicione as meias-luas de cebola que cortou no mise en place e refogue por 2 minutos."
           },
           {
             "icone": "🔥",
             "titulo": "DESLIGUE o fogo antes do shoyu",
-            "texto": "Desligue o fogo, adicione 45g de shoyu e misture. O calor residual evapora a água do shoyu e cria o glacê. Se o fogo estiver ligado, o shoyu queima e fica amargo."
+            "texto": "Desligue o fogo, despeje os 45g de shoyu que separou e misture. O calor residual evapora a água do shoyu e cria o glacê. Se o fogo estiver ligado, o shoyu queima e fica amargo."
           },
           {
             "icone": "👁️",
@@ -230,14 +305,14 @@
     "armazenamento": {
       "tipo": "freezer",
       "validade_dias": 30,
-      "instrucoes": "Espere esfriar. O glacê de shoyu preserva bem a umidade durante o congelamento. Reaquecça em frigideira para recuperar a textura."
+      "instrucoes": "Espere esfriar. O glacê de shoyu preserva bem a umidade durante o congelamento. Reaqueça em frigideira para recuperar a textura."
     }
   },
   {
     "id": "carne-moida",
     "nome": "Carne Moída em Pequenos Rubis",
     "categoria": "proteinas",
-    "tempo_preparo_min": 25,
+    "tempo_preparo_min": 30,
     "porcoes_base": 4,
     "ingredientes": [
       { "nome": "Carne moída (acém)", "quantidade": 850, "unidade": "g", "tipo": "carnes" },
@@ -250,19 +325,45 @@
     ],
     "passos": [
       {
-        "titulo": "Brunoise — O corte de mestre",
-        "descricao": "Brunoise é um corte francês clássico: cubos de 3mm perfeitos. Cebola e alho nesse tamanho cozinham rápido, liberam sabor máximo e desaparecem na textura final",
+        "titulo": "Mise en Place — Brunoise de cebola e alho",
+        "descricao": "Brunoise é o nome francês para o corte em cubos minúsculos de 3 milímetros. Parece intimidador mas tem um truque: corte a cebola ao meio, faça cortes em grade sem separar, e depois fatie. Os cubos se formam sozinhos. Este tamanho faz a cebola e o alho praticamente desaparecerem no prato, liberando sabor máximo sem ficar em pedaços visíveis",
         "dicas": [
           {
             "icone": "🔪",
-            "titulo": "Cubos de 3 milímetros",
-            "texto": "Pique 150g de cebola e 15g de alho em cubos minúsculos. A uniformidade garante que tudo cozinhe ao mesmo tempo. Não precisa ser perfeito, mas tente."
+            "titulo": "Cebola em brunoise: passo a passo",
+            "texto": "1) Corte a cebola (150g) ao meio do topo à raiz. 2) NÃO tire a raiz — ela segura as camadas. 3) Faça 2-3 cortes horizontais paralelos à tábua. 4) Faça cortes verticais paralelos de 3mm. 5) Fatie de cima pra baixo em fatias de 3mm. Os cubos caem prontos."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Alho em brunoise",
+            "texto": "Esmague os dentes de alho (15g) com a lateral da faca para soltar a casca. Pique em fatias finas, depois gire 90° e pique de novo. Os pedaços devem ser tão pequenos que quase viram pasta."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Não precisa ser perfeito",
+            "texto": "Cubos perfeitamente iguais é o objetivo profissional. Para nós, 'bem pequeno e mais ou menos uniforme' já funciona. O importante é que cozinhem ao mesmo tempo."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Pesar extrato de tomate e água",
+        "descricao": "Estes dois ingredientes entram em momentos diferentes e rápidos durante o cozimento. Tendo tudo pesado e à mão, você não precisa largar a colher de pau para procurar na despensa",
+        "dicas": [
+          {
+            "icone": "🧂",
+            "titulo": "30g de extrato de tomate num potinho",
+            "texto": "Pese e deixe separado. Ele vai direto no fundo quente da panela — precisa estar ao alcance da mão."
+          },
+          {
+            "icone": "💧",
+            "titulo": "120g de água num copo",
+            "texto": "Pese e deixe ao lado. Entra depois do extrato junto com a cebola e o alho."
           }
         ]
       },
       {
         "titulo": "Rissolage — Criar a crosta na carne",
-        "descricao": "Rissolage é dourar em gordura quente. A carne moída tem que ganhar uma crosta tostada no fundo antes de ser mexida — isso cria profundidade de sabor. Sem essa crosta, fica só carne cinzenta cozida",
+        "descricao": "Rissolage é a técnica francesa de dourar em gordura quente para criar uma crosta saborosa. A carne moída tem que ganhar uma crosta tostada no fundo antes de ser mexida — isso cria profundidade de sabor que carne cinzenta simplesmente cozida não tem",
         "metodo": "🍳",
         "fogo": "alto",
         "timer_min": 5,
@@ -270,7 +371,7 @@
           {
             "icone": "🔥",
             "titulo": "Panela quente, fogo alto, 15g de azeite",
-            "texto": "A panela precisa estar BEM quente antes de colocar a carne."
+            "texto": "A panela precisa estar BEM quente antes de colocar a carne. O azeite deve ondular assim que entrar."
           },
           {
             "icone": "⚠️",
@@ -280,13 +381,13 @@
           {
             "icone": "👁️",
             "titulo": "Crosta marrom no fundo = pronto",
-            "texto": "Levante a borda: se estiver marrom-dourada embaixo, quebre com uma colher e mexa até não haver mais nenhum pedaço rosa."
+            "texto": "Levante a borda com uma espátula: se estiver marrom-dourada embaixo, quebre com uma colher e mexa até não haver mais nenhum pedaço rosa."
           }
         ]
       },
       {
         "titulo": "Tostar o extrato de tomate",
-        "descricao": "Tostar extrato de tomate intensifica o sabor em 10x. Cru, ele é ácido e raso. Tostado, fica doce, profundo e umami. Este truque é usado em restaurantes de alta gastronomia",
+        "descricao": "Tostar o extrato de tomate diretamente no metal quente intensifica o sabor em 10x. Cru, ele é ácido e raso. Tostado, ele sofre a Reação de Maillard e fica doce, profundo e com sabor umami. Este truque é usado em restaurantes de alta gastronomia",
         "metodo": "🍳",
         "fogo": "medio",
         "timer_min": 1,
@@ -294,31 +395,31 @@
           {
             "icone": "🥣",
             "titulo": "Abra um buraco no meio da carne",
-            "texto": "Empurre a carne para os lados, criando um espaço vazio no centro da panela. Coloque 30g de extrato de tomate direto no fundo quente."
+            "texto": "Empurre a carne para os lados com a colher, criando um espaço vazio no centro da panela. Coloque os 30g de extrato que separou direto no fundo quente."
           },
           {
             "icone": "👁️",
-            "titulo": "1 minuto tostando",
-            "texto": "Deixe o extrato escurecer por 1 minuto no metal quente. Ele vai ficar mais escuro e perfumado. Depois misture com a carne."
+            "titulo": "1 minuto tostando sem mexer",
+            "texto": "Deixe o extrato escurecer por 1 minuto no metal quente. Ele vai ficar mais escuro e perfumado. Depois misture com a carne toda."
           }
         ]
       },
       {
-        "titulo": "Finalização — Cozimento suave",
-        "descricao": "Agora os aromáticos entram para dar frescor, e a água cria vapor que finaliza o cozimento de forma suave",
+        "titulo": "Finalização — Cozimento suave com aromáticos",
+        "descricao": "Agora os aromáticos (a cebola e o alho que cortamos em brunoise no início) entram para dar frescor, e a água cria vapor que finaliza o cozimento de forma suave e uniforme",
         "metodo": "🥘",
         "fogo": "baixo",
         "timer_min": 10,
         "dicas": [
           {
             "icone": "🧂",
-            "titulo": "Adicione cebola, alho, sal e água",
-            "texto": "Junte a cebola e alho picados (brunoise), 8g de sal e 120g de água. Misture tudo."
+            "titulo": "Junte o brunoise, sal e água",
+            "texto": "Adicione a cebola e o alho que picou no mise en place, 8g de sal e os 120g de água que separou. Misture tudo."
           },
           {
             "icone": "🔥",
             "titulo": "Fogo baixo, tampado, 10 minutos",
-            "texto": "Tampe e deixe em fogo baixo por 10 minutos até a água secar completamente. A carne deve ficar úmida mas sem caldo."
+            "texto": "Tampe e deixe em fogo baixo por 10 minutos até a água secar completamente. A carne deve ficar úmida mas sem caldo no fundo."
           }
         ]
       }

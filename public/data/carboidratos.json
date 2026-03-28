@@ -3,7 +3,7 @@
     "id": "pure-mandioquinha",
     "nome": "Purê de Mandioquinha de Seda",
     "categoria": "carboidratos",
-    "tempo_preparo_min": 35,
+    "tempo_preparo_min": 40,
     "porcoes_base": 4,
     "ingredientes": [
       { "nome": "Mandioquinha", "quantidade": 900, "unidade": "g", "tipo": "vegetais" },
@@ -15,32 +15,59 @@
     ],
     "passos": [
       {
-        "titulo": "Preparar e cozinhar a mandioquinha",
-        "descricao": "Rodelas iguais cozinham ao mesmo tempo. A água generosamente salgada tempera de dentro pra fora, como fazem na cozinha profissional",
+        "titulo": "Mise en Place — Descascar e cortar a mandioquinha",
+        "descricao": "A mandioquinha (também chamada de batata-baroa) tem uma casca fina que sai fácil com um descascador. O corte em rodelas iguais é crucial: rodelas finas cozinham antes das grossas, e você acaba com umas viradas em pasta e outras duras",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Descasque com um descascador (não com faca)",
+            "texto": "Segure a mandioquinha (900g) e passe o descascador do centro para as pontas. A faca tira casca demais e desperdiça. Se não tiver descascador, use uma faca pequena com cuidado."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Corte em rodelas de 1-2cm",
+            "texto": "Apoie a mandioquinha deitada na tábua e corte rodelas de 1-2cm de espessura. Se alguma parte for mais grossa que o resto, corte ao meio. O objetivo: tudo do mesmo tamanho."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Preparar a manteiga gelada",
+        "descricao": "A emulsão francesa exige manteiga BEM gelada. Manteiga em temperatura ambiente derrete rápido demais e vira gordura solta em vez de emulsionar. Cortá-la em cubos agora garante incorporação uniforme depois",
+        "dicas": [
+          {
+            "icone": "❄️",
+            "titulo": "40g de manteiga direto da geladeira",
+            "texto": "Pese 40g de manteiga e corte em cubinhos de 1cm. Devolva para a geladeira até o momento de usar. Ela precisa estar GELADA quando entrar no purê quente."
+          },
+          {
+            "icone": "🧂",
+            "titulo": "Separe também o sal fino e noz-moscada",
+            "texto": "5g de sal fino e 2g de noz-moscada. Entram junto com a manteiga — tenha tudo pronto ao alcance da mão."
+          }
+        ]
+      },
+      {
+        "titulo": "Cozinhar em água salgada",
+        "descricao": "Na cozinha profissional, a água de cozimento é generosamente salgada. O sal penetra no alimento durante o cozimento, temperando de dentro pra fora. Se salgar só depois, o tempero fica só na superfície",
         "metodo": "🫕",
         "fogo": "alto",
         "timer_min": 20,
         "dicas": [
           {
-            "icone": "🔪",
-            "titulo": "Descasque e corte em rodelas iguais",
-            "texto": "Descasque os 900g de mandioquinha e corte em rodelas de 1-2cm. Uniformidade é a chave."
-          },
-          {
             "icone": "💧",
-            "titulo": "Pese a água e o sal",
+            "titulo": "Pese a água e o sal na panela",
             "texto": "Coloque a panela na balança: 1500g de água e 15g de sal grosso. A água deve cobrir totalmente as rodelas."
           },
           {
             "icone": "👁️",
             "titulo": "Teste do garfo: amassa fácil = pronto",
-            "texto": "Espete um garfo numa rodela. Se entra sem resistência e amassa facilmente, está no ponto."
+            "texto": "Espete um garfo numa rodela. Se entra sem resistência e amassa facilmente, está no ponto. Se resistir, precisa de mais tempo."
           }
         ]
       },
       {
         "titulo": "Fricção quente — Espremer imediatamente",
-        "descricao": "A mandioquinha DEVE ser espremida enquanto está fumegando. Fria, o amido endurece e o purê fica granuloso e pesado em vez de sedoso",
+        "descricao": "A mandioquinha DEVE ser espremida enquanto está fumegando. Fria, o amido endurece e o purê fica granuloso e pesado em vez de sedoso. Cada minuto que espera é textura perdida",
         "dicas": [
           {
             "icone": "⚠️",
@@ -50,28 +77,28 @@
           {
             "icone": "🥣",
             "titulo": "Passe pelo espremedor IMEDIATAMENTE",
-            "texto": "Enquanto fumega, passe pelo espremedor de batatas. NUNCA use liquidificador — ele ativa o amido e o purê vira cola."
+            "texto": "Enquanto fumega, passe pelo espremedor de batatas. NUNCA use liquidificador — ele ativa o amido em excesso e o purê vira cola elástica impossível de comer."
           }
         ]
       },
       {
         "titulo": "Emulsão Francesa — O segredo da textura de seda",
-        "descricao": "A técnica de emulsão francesa incorpora manteiga gelada ao purê quente. O contraste de temperatura cria uma emulsão estável: a gordura se distribui em microgotículas que dão a textura aveludada e brilhante",
+        "descricao": "A técnica de emulsão francesa incorpora manteiga gelada ao purê quente. O choque de temperatura cria uma emulsão estável: a gordura da manteiga se distribui em microgotículas que dão a textura aveludada, brilhante e escorregadia que define um purê de restaurante",
         "dicas": [
           {
             "icone": "❄️",
-            "titulo": "Manteiga BEM gelada, em cubos",
-            "texto": "40g de manteiga direto da geladeira, cortada em cubinhos. A manteiga gelada emulsiona melhor — derretida demais vira gordura solta."
+            "titulo": "Manteiga gelada em cubos — agora!",
+            "texto": "Pegue os cubinhos de manteiga da geladeira. Eles vão direto para o purê quente. O contraste gelado/quente é o que faz a emulsão funcionar."
           },
           {
             "icone": "🥣",
             "titulo": "Mexa vigorosamente FORA do fogo",
-            "texto": "Com o purê ainda quente na panela (fora do fogo), adicione a manteiga, 5g de sal fino e 2g de noz-moscada. Mexa vigorosamente."
+            "texto": "Com o purê ainda quente na panela (FORA do fogo), adicione a manteiga, 5g de sal fino e 2g de noz-moscada. Mexa vigorosamente com um fouet (batedor de arame) ou garfo grande."
           },
           {
             "icone": "👁️",
             "titulo": "Brilhante e escorregadio = perfeito",
-            "texto": "O purê deve ficar liso, brilhante e escorregar da colher como seda. Se ficou opaco e seco, faltou vigor na mistura."
+            "texto": "O purê deve ficar liso, brilhante e escorregar da colher como seda. Se ficou opaco e seco, faltou vigor na mistura ou a manteiga não estava gelada o suficiente."
           }
         ]
       }
@@ -86,7 +113,7 @@
     "id": "arroz-lentilha",
     "nome": "Arroz Integral e Lentilha",
     "categoria": "carboidratos",
-    "tempo_preparo_min": 35,
+    "tempo_preparo_min": 40,
     "porcoes_base": 4,
     "ingredientes": [
       { "nome": "Arroz integral", "quantidade": 250, "unidade": "g", "tipo": "graos" },
@@ -99,38 +126,70 @@
     ],
     "passos": [
       {
-        "titulo": "Lavar os grãos",
-        "descricao": "Lavar remove o excesso de amido solto que faz os grãos grudarem. Grãos integrais têm mais amido superficial que os polidos",
+        "titulo": "Mise en Place — Lavar os grãos",
+        "descricao": "Lavar remove o amido solto da superfície dos grãos — é esse amido que faz arroz ficar grudento e pegajoso. Grãos integrais têm mais amido superficial que os polidos, então a lavagem é ainda mais importante",
         "dicas": [
           {
             "icone": "💧",
-            "titulo": "Lave numa peneira sob água corrente",
-            "texto": "Coloque os 250g de arroz e 150g de lentilha numa peneira. Lave até a água sair clara. Escorra bem — peso total de grãos crus = 400g."
+            "titulo": "Numa peneira sob água corrente",
+            "texto": "Coloque os 250g de arroz e 150g de lentilha numa peneira. Lave com água fria corrente, mexendo com a mão, até a água que escorre sair transparente (não esbranquiçada)."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Escorra BEM",
+            "texto": "Sacuda a peneira para tirar o máximo de água. Água sobrando nos grãos bagunça a proporção exata que vamos usar. Peso total de grãos crus = 400g."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Picar cebola e alho",
+        "descricao": "Cebola e alho são a base aromática de praticamente todo prato. Picados finos, eles se dissolvem no arroz — você sente o sabor mas não encontra pedaços",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Cebola em cubos pequenos",
+            "texto": "Corte 75g de cebola ao meio e fatie em cubos de 3-4mm (não precisa ser brunoise perfeito, mas bem pequeno)."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Alho picado fino",
+            "texto": "Esmague 10g de alho com a lâmina da faca e pique bem fino. Pode usar espremedor se tiver."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Ferver a água",
+        "descricao": "O arroz precisa receber água FERVENTE (não fria). Água fria faz os grãos soltarem amido por choque térmico e o resultado fica empapado. Ferva enquanto prepara o refogado",
+        "dicas": [
+          {
+            "icone": "💧",
+            "titulo": "Coloque 1000g de água pra ferver agora",
+            "texto": "Numa chaleira ou panela separada. Quando chegar na etapa de adicionar água, ela já precisa estar fervendo forte."
           }
         ]
       },
       {
         "titulo": "Refogar os aromáticos e os grãos",
-        "descricao": "Refogar os grãos antes de adicionar água cria uma camada de gordura em cada grão que impede que absorvam água demais e fiquem empapados",
+        "descricao": "Refogar os grãos no azeite com cebola e alho cria uma camada microscópica de gordura em cada grão. Essa gordura funciona como uma barreira que impede o grão de absorver água demais e ficar empapado",
         "metodo": "🥘",
         "fogo": "baixo",
         "timer_min": 2,
         "dicas": [
           {
-            "icone": "🔪",
-            "titulo": "Cebola e alho bem finos",
-            "texto": "75g de cebola e 10g de alho picados muito finos. Fogo baixo com 15g de azeite. Refogue sem deixar dourar."
+            "icone": "🔥",
+            "titulo": "Fogo baixo + azeite + aromáticos",
+            "texto": "15g de azeite na panela de fundo grosso. Adicione a cebola e o alho que picou. Refogue em fogo baixo sem deixar dourar — queremos perfume, não cor."
           },
           {
             "icone": "🥣",
             "titulo": "Adicione os grãos e refogue 2 minutos",
-            "texto": "Junte os grãos lavados e escorridos. Mexa por 2 minutos para envolver cada grão no azeite."
+            "texto": "Junte os 400g de grãos lavados e escorridos. Mexa por 2 minutos para envolver cada grão no azeite. Você vai ouvir um leve chiado."
           }
         ]
       },
       {
         "titulo": "Técnica de Absorção — A proporção exata",
-        "descricao": "Para grãos integrais mistos, a proporção é 2,5g de água para cada 1g de grão cru. Com 400g de grãos, são exatamente 1000g de água. Essa matemática garante absorção perfeita sem sobra",
+        "descricao": "Para grãos integrais mistos, a proporção é 2,5g de água para cada 1g de grão cru. Com 400g de grãos, são exatamente 1000g de água. Essa matemática garante que toda a água seja absorvida sem sobra — o resultado são grãos soltos e perfeitamente cozidos",
         "metodo": "🥘",
         "fogo": "baixo",
         "timer_min": 5,
@@ -138,30 +197,30 @@
           {
             "icone": "💧",
             "titulo": "Pese a água: exatos 1000g, FERVENTE",
-            "texto": "Coloque a panela na balança, zere (tare). Adicione exatos 1000g de água já fervendo e 6g de sal. Água fria faz os grãos soltarem amido."
+            "texto": "Coloque a panela na balança, zere (tare). Adicione exatos 1000g da água que está fervendo e 6g de sal."
           },
           {
             "icone": "🔥",
             "titulo": "Tampa SEMI-ABERTA por 5 minutos",
-            "texto": "Fogo no mínimo, tampa semi-aberta. Isso permite que parte do vapor escape e o excesso de água evapore de forma controlada."
+            "texto": "Fogo no mínimo, tampa semi-aberta (um dedo de espaço). Isso permite que parte do vapor escape e o excesso de água evapore de forma controlada."
           }
         ]
       },
       {
         "titulo": "Abafamento — O vapor faz a mágica",
-        "descricao": "Quando a água visível desaparece, o cozimento termina pelo vapor preso. Os grãos absorvem a última umidade e ficam soltos e macios",
+        "descricao": "Quando a água visível desaparece da superfície, o cozimento termina pelo vapor preso dentro da panela. Os grãos absorvem a última umidade e ficam soltos, inchados e macios",
         "fogo": "baixo",
         "timer_min": 10,
         "dicas": [
           {
             "icone": "👁️",
             "titulo": "Quando a água sumir da superfície, DESLIGUE",
-            "texto": "Olhe sem mexer: quando não houver mais água líquida visível, desligue o fogo imediatamente."
+            "texto": "Olhe sem mexer (incline a panela suavemente): quando não houver mais água líquida visível, desligue o fogo."
           },
           {
             "icone": "⏱️",
             "titulo": "Tampe completamente por 10 minutos",
-            "texto": "Desligue, tampe e NÃO abra por 10 minutos. O vapor preso termina o cozimento. Cada vez que abre, perde vapor e os grãos ficam duros."
+            "texto": "Desligue, tampe bem e NÃO abra por 10 minutos. O vapor preso termina o cozimento. Cada vez que abre a tampa, perde vapor e os grãos ficam duros no centro."
           }
         ]
       }
@@ -176,7 +235,7 @@
     "id": "batata-doce-crocante",
     "nome": "Batata-Doce Crocante",
     "categoria": "carboidratos",
-    "tempo_preparo_min": 40,
+    "tempo_preparo_min": 45,
     "porcoes_base": 4,
     "ingredientes": [
       { "nome": "Batata-doce", "quantidade": 750, "unidade": "g", "tipo": "vegetais" },
@@ -186,19 +245,36 @@
     ],
     "passos": [
       {
-        "titulo": "O corte uniforme — Cubos perfeitos",
-        "descricao": "Cubos do mesmo tamanho assam ao mesmo tempo. 2cm é o tamanho ideal: crocante por fora, macio por dentro",
+        "titulo": "Mise en Place — Pré-aquecer o forno",
+        "descricao": "O forno precisa estar na temperatura certa ANTES da batata entrar. Colocar em forno frio faz a batata cozinhar lentamente no próprio vapor — o resultado é mole e sem crosta, não crocante",
+        "temperatura_c": 220,
         "dicas": [
           {
-            "icone": "🔪",
-            "titulo": "Lave e corte em cubos de 2cm",
-            "texto": "Lave e corte os 750g de batata-doce em cubos os mais perfeitos possíveis de 2cm."
+            "icone": "🌡️",
+            "titulo": "Ligue o forno a 220°C AGORA",
+            "texto": "Antes de cortar qualquer coisa, ligue o forno. Ele precisa de 10-15 minutos para atingir 220°C. Quando terminar de preparar a batata, o forno já estará pronto."
           }
         ]
       },
       {
-        "titulo": "O envolvimento — Cada cubo precisa de gordura",
-        "descricao": "O azeite conduz o calor do forno até a superfície do cubo, criando a crosta crocante. Sem azeite suficiente em cada cubo, ele assa em vez de torrar",
+        "titulo": "Mise en Place — Cortar em cubos uniformes",
+        "descricao": "Cubos do mesmo tamanho assam ao mesmo tempo. Um cubo de 3cm fica cru no centro enquanto um de 1cm já queimou. O tamanho de 2cm é o equilíbrio: crocante por fora, macio e cremoso por dentro",
+        "dicas": [
+          {
+            "icone": "🔪",
+            "titulo": "Lave, corte em cubos de 2cm",
+            "texto": "Lave os 750g de batata-doce. Corte ao meio no comprido, depois cada metade em tiras de 2cm, e por fim em cubos de 2cm. Não precisa descascar — a casca fica crocante e é nutritiva."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Atenção com a faca: batata-doce é dura",
+            "texto": "A batata-doce crua é bem dura. Use uma faca grande e estável. Apoie a base plana na tábua para não escorregar. Se estiver muito difícil, corte ao meio primeiro para criar uma base plana."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Envolver cada cubo em gordura e tempero",
+        "descricao": "O azeite é o condutor de calor: ele preenche os microvales da superfície do cubo e faz o calor do forno chegar uniformemente, criando a crosta crocante. Sem gordura, a superfície ressecar e murcha em vez de torrar",
         "dicas": [
           {
             "icone": "🧂",
@@ -208,35 +284,30 @@
           {
             "icone": "🥣",
             "titulo": "Misture COM AS MÃOS",
-            "texto": "As mãos são a melhor ferramenta para garantir que cada cubo esteja envolvido uniformemente em gordura e tempero."
+            "texto": "As mãos são a melhor ferramenta para garantir que cada cubo esteja envolvido uniformemente em azeite e tempero. Uma colher não dá o mesmo resultado porque não sente onde falta."
           }
         ]
       },
       {
         "titulo": "Torréfaction — O choque de calor",
-        "descricao": "Torréfaction é assar em alta temperatura para criar uma superfície crocante por reação de Maillard, enquanto o interior cozinha suavemente pelo calor indireto",
+        "descricao": "Torréfaction é a técnica francesa de assar em alta temperatura para criar uma superfície crocante pela Reação de Maillard, enquanto o interior cozinha suavemente pelo calor indireto. É o mesmo princípio da crosta do frango — mas no forno",
         "temperatura_c": 220,
         "timer_min": 28,
         "dicas": [
           {
-            "icone": "🌡️",
-            "titulo": "Forno a 220°C, PRÉ-AQUECIDO",
-            "texto": "O forno DEVE estar já na temperatura antes da batata entrar. Colocar em forno frio = batata cozida e mole, não crocante."
-          },
-          {
             "icone": "⚠️",
             "titulo": "NÃO sobreponha os cubos",
-            "texto": "Espalhe num tabuleiro em camada única. Cubos amontoados cozinham no vapor uns dos outros em vez de torrar."
+            "texto": "Espalhe num tabuleiro em camada única com espaço entre eles. Cubos amontoados cozinham no vapor uns dos outros em vez de torrar. Se não cabe tudo, use dois tabuleiros."
           },
           {
             "icone": "⏱️",
             "titulo": "Vire na metade do tempo",
-            "texto": "Após 15 minutos, vire cada cubo. Total: 25-30 minutos até ficarem dourados e crocantes por fora."
+            "texto": "Após 15 minutos, vire cada cubo com uma espátula para dourar o outro lado. Total: 25-30 minutos."
           },
           {
             "icone": "👁️",
             "titulo": "Bordas caramelizadas = pronto",
-            "texto": "Os cantos e bordas devem estar marrom-dourados e levemente caramelizados. Se estiverem claros, precisa de mais tempo."
+            "texto": "Os cantos e bordas devem estar marrom-dourados e levemente caramelizados. Se estiverem claros, precisa de mais tempo. Se pretos, passou — abaixe para 200°C."
           }
         ]
       }
