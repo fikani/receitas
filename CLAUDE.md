@@ -2,7 +2,15 @@
 
 ## Filosofia das Receitas
 
-Este é um app de meal prep para iniciantes que ensina técnicas de nível Cordon Bleu de forma acessível. O público não sabe cozinhar — cada receita deve ser autocontida e não assumir conhecimento prévio.
+Este é um app de meal prep escrito **SEMPRE para um junior** — alguém que nunca cozinhou na vida. Ensina técnicas de nível Cordon Bleu mas de forma que qualquer pessoa consiga seguir.
+
+### Regra de ouro: NUNCA assuma conhecimento prévio
+
+- O usuário não sabe o que é "selar", "deglaçar", "brunoise", "braisage", "mirepoix", "fond", "al dente", "réduction", "sauté" ou qualquer outro termo
+- **Todo termo técnico DEVE ser explicado na primeira vez que aparece** — no campo `descricao` do passo ou no `texto` da dica
+- Explique o QUE é, POR QUE é feito assim, e COMO saber que deu certo
+- Use linguagem simples e direta. "Crie uma casca dourada que prende o suco dentro" em vez de "sele a proteína"
+- Cada receita é autocontida — não referencie conhecimento de outras receitas
 
 ## Regra: Mise en Place obrigatório
 
