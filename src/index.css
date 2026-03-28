@@ -601,6 +601,12 @@ button {
   font-size: 0.95em;
 }
 
+.cooking-step-recipe-name {
+  font-size: 1em;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
 /* CookingHub */
 .cooking-recipe-item {
   display: flex;

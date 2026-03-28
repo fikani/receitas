@@ -1,9 +1,12 @@
-import { Component, Show, onMount, onCleanup } from "solid-js";
+import { Component, Show, createMemo, onMount, onCleanup } from "solid-js";
 import { useNavigate, useParams } from "@solidjs/router";
 import { plano, proximoPasso, passoAnterior, concluirReceita } from "../store/plan";
 import { receitaPorId } from "../store/recipes";
 import StepView from "../components/StepView";
 import ProgressBar from "../components/ProgressBar";
+import MiseEnPlaceList from "../components/MiseEnPlaceList";
+import { buildMiseEnPlaceSummary } from "../lib/mise-en-place";
+import type { Receita } from "../types";
 
 const CookingStep: Component = () => {
   const params = useParams();
@@ -16,6 +19,13 @@ const CookingStep: Component = () => {
   const passo = () => receita()?.passos[passoAtual()];
   const multiplicador = () => plano.ativo?.multiplicadores[params.id] ?? 1;
   const isUltimo = () => passoAtual() >= totalPassos() - 1;
+  const isPrimeiro = () => passoAtual() === 0;
+
+  const miseEnPlace = createMemo(() => {
+    const r = receita();
+    if (!r || !plano.ativo) return [];
+    return buildMiseEnPlaceSummary([r], plano.ativo.multiplicadores);
+  });
 
   const handleProximo = () => {
     if (isUltimo()) {
@@ -48,7 +58,16 @@ const CookingStep: Component = () => {
   return (
     <div class="page">
       <Show when={receita() && passo()} fallback={<p class="empty">Receita não encontrada</p>}>
+        <h2 class="cooking-step-recipe-name">{receita()!.nome}</h2>
         <ProgressBar current={passoAtual()} total={totalPassos()} />
+
+        <Show when={isPrimeiro()}>
+          <MiseEnPlaceList
+            items={miseEnPlace()}
+            title="🔪 Mise en Place desta receita"
+          />
+        </Show>
+
         <StepView passo={passo()!} multiplicador={multiplicador()} />
 
         <div class="cooking-nav">
