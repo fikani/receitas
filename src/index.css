@@ -556,6 +556,51 @@ button {
   margin-top: 16px;
 }
 
+/* Mise en Place summary */
+.mise-section {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.mise-title {
+  font-size: 1em;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+.mise-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.mise-item {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.mise-item:last-child {
+  border-bottom: none;
+}
+
+.mise-qty {
+  font-weight: bold;
+  color: var(--accent);
+  min-width: 60px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.mise-desc {
+  color: var(--text);
+  font-size: 0.95em;
+}
+
 /* CookingHub */
 .cooking-recipe-item {
   display: flex;
