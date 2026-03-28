@@ -1,46 +1,67 @@
-import { Component, createSignal, For, Show, createMemo } from "solid-js";
+import { Component, For, Show, createMemo } from "solid-js";
 import { A } from "@solidjs/router";
-import type { Categoria } from "../types";
-import { receitas, buscarReceitas } from "../store/recipes";
+import { receitas } from "../store/recipes";
 import { plano } from "../store/plan";
-import CategoryFilter from "../components/CategoryFilter";
-import SearchBar from "../components/SearchBar";
-import RecipeCard from "../components/RecipeCard";
 import ResumeBanner from "../components/ResumeBanner";
 
+const CATEGORIAS = [
+  { key: "proteinas" as const, emoji: "🥩", label: "Proteínas" },
+  { key: "carboidratos" as const, emoji: "🍚", label: "Carboidratos" },
+  { key: "saladas-e-verduras" as const, emoji: "🥗", label: "Saladas e Verduras" },
+];
+
 const Home: Component = () => {
-  const [busca, setBusca] = createSignal("");
-  const [categoria, setCategoria] = createSignal<Categoria | "todas">("todas");
-
-  const listaFiltrada = createMemo(() => {
-    let lista = busca() ? buscarReceitas(busca()) : (receitas() ?? []);
-    if (categoria() !== "todas") {
-      lista = lista.filter((r) => r.categoria === categoria());
-    }
-    return lista;
-  });
-
   const temPlano = () =>
     plano.ativo && plano.ativo.etapa !== "concluido";
 
+  const contagemPorCategoria = createMemo(() => {
+    const todas = receitas() ?? [];
+    return CATEGORIAS.map((cat) => ({
+      ...cat,
+      count: todas.filter((r) => r.categoria === cat.key).length,
+      receitas: todas.filter((r) => r.categoria === cat.key),
+    }));
+  });
+
+  const totalReceitas = createMemo(() =>
+    (receitas() ?? []).length,
+  );
+
   return (
     <div class="page">
-      <h1 style={{ "margin-bottom": "16px" }}>🍽️ Receitas</h1>
+      <h1 style={{ "margin-bottom": "4px" }}>🍽️ Meal Prep Planner</h1>
+      <p style={{ color: "var(--text-muted)", "margin-bottom": "20px" }}>
+        Planeje, compre, cozinhe e armazene
+      </p>
 
       <Show when={temPlano()}>
         <ResumeBanner etapa={plano.ativo!.etapa} />
       </Show>
 
-      <SearchBar value={busca()} onInput={setBusca} />
-      <CategoryFilter active={categoria()} onChange={setCategoria} />
-
-      <div class="recipe-grid" style={{ "margin-top": "16px" }}>
-        <For each={listaFiltrada()} fallback={<p class="empty">Nenhuma receita encontrada</p>}>
-          {(receita) => <RecipeCard receita={receita} />}
+      <div class="home-categories">
+        <For each={contagemPorCategoria()}>
+          {(cat) => (
+            <div class="home-cat-card">
+              <span class="home-cat-emoji">{cat.emoji}</span>
+              <div class="home-cat-info">
+                <h3>{cat.label}</h3>
+                <p>{cat.count} {cat.count === 1 ? "receita" : "receitas"}</p>
+              </div>
+              <div class="home-cat-recipes">
+                <For each={cat.receitas}>
+                  {(r) => <span class="home-cat-recipe-name">{r.nome}</span>}
+                </For>
+              </div>
+            </div>
+          )}
         </For>
       </div>
 
-      <A href="/plan" class="fab">+</A>
+      <Show when={totalReceitas() > 0}>
+        <A href="/plan" class="btn-primary btn-full home-cta">
+          Iniciar Meal Prep ({totalReceitas()} receitas disponíveis)
+        </A>
+      </Show>
     </div>
   );
 };
