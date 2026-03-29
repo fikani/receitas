@@ -1,6 +1,7 @@
 import { Component, createSignal, For, Show, createMemo } from "solid-js";
 import { receitas } from "../store/recipes";
 import RecipeCard from "../components/RecipeCard";
+import SearchBar from "../components/SearchBar";
 import ActionButton from "../components/ActionButton";
 import type { Receita } from "../types";
 
@@ -13,6 +14,7 @@ const CATEGORIAS = [
 const Defrost: Component = () => {
   const [selecionadas, setSelecionadas] = createSignal<string[]>([]);
   const [mostrarInstrucoes, setMostrarInstrucoes] = createSignal(false);
+  const [busca, setBusca] = createSignal("");
 
   const toggleReceita = (id: string) => {
     setSelecionadas((prev) =>
@@ -24,8 +26,15 @@ const Defrost: Component = () => {
     (receitas() ?? []).filter((r) => selecionadas().includes(r.id)),
   );
 
+  const receitasFiltradas = createMemo(() => {
+    const todas = receitas() ?? [];
+    const termo = busca().toLowerCase().trim();
+    if (!termo) return todas;
+    return todas.filter((r) => r.nome.toLowerCase().includes(termo));
+  });
+
   const receitasPorCategoria = (cat: string) =>
-    (receitas() ?? []).filter((r) => r.categoria === cat);
+    receitasFiltradas().filter((r) => r.categoria === cat);
 
   return (
     <div class="page">
@@ -35,6 +44,8 @@ const Defrost: Component = () => {
         <p style={{ color: "var(--text-muted)", "margin-bottom": "20px" }}>
           Escolha o que vai comer — o app mostra como descongelar e reaquecer cada item
         </p>
+
+        <SearchBar value={busca()} onInput={setBusca} />
 
         <For each={CATEGORIAS}>
           {(cat) => (
