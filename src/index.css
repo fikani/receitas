@@ -736,6 +736,9 @@ button {
   font-size: 1.1em;
   background: var(--bg-card);
   color: var(--text);
+  border-radius: var(--radius);
+  text-decoration: none;
+  text-align: center;
 }
 
 .cooking-nav-btn.primary {
