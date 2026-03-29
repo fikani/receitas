@@ -27,10 +27,10 @@ const Defrost: Component = () => {
   const receitasPorCategoria = (cat: string) =>
     (receitas() ?? []).filter((r) => r.categoria === cat);
 
-  // Selection screen
-  if (!mostrarInstrucoes()) {
-    return (
-      <div class="page">
+  return (
+    <div class="page">
+      {/* Selection screen */}
+      <Show when={!mostrarInstrucoes()}>
         <h1 style={{ "margin-bottom": "4px" }}>❄️ Descongelar Refeição</h1>
         <p style={{ color: "var(--text-muted)", "margin-bottom": "20px" }}>
           Escolha o que vai comer — o app mostra como descongelar e reaquecer cada item
@@ -70,25 +70,23 @@ const Defrost: Component = () => {
         <ActionButton variant="ghost" href="/">
           ← Voltar ao início
         </ActionButton>
-      </div>
-    );
-  }
+      </Show>
 
-  // Instructions screen
-  return (
-    <div class="page">
-      <h1 style={{ "margin-bottom": "4px" }}>❄️ Descongelar</h1>
-      <p style={{ color: "var(--text-muted)", "margin-bottom": "20px" }}>
-        Siga os passos para cada receita
-      </p>
+      {/* Instructions screen */}
+      <Show when={mostrarInstrucoes()}>
+        <h1 style={{ "margin-bottom": "4px" }}>❄️ Descongelar</h1>
+        <p style={{ color: "var(--text-muted)", "margin-bottom": "20px" }}>
+          Siga os passos para cada receita
+        </p>
 
-      <For each={receitasSelecionadas()}>
-        {(receita) => <DefrostCard receita={receita} />}
-      </For>
+        <For each={receitasSelecionadas()}>
+          {(receita) => <DefrostCard receita={receita} />}
+        </For>
 
-      <ActionButton variant="ghost" onClick={() => setMostrarInstrucoes(false)}>
-        ← Voltar à seleção
-      </ActionButton>
+        <ActionButton variant="ghost" onClick={() => setMostrarInstrucoes(false)}>
+          ← Voltar à seleção
+        </ActionButton>
+      </Show>
     </div>
   );
 };
