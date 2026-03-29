@@ -458,37 +458,57 @@ button {
   margin-bottom: 80px;
 }
 
-.btn-primary {
+/* ActionButton — unified button/link component */
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--min-touch);
+  padding: 14px 20px;
+  border: none;
+  border-radius: var(--radius);
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  touch-action: manipulation;
+}
+
+.action-btn--primary {
   background: var(--accent);
   color: white;
   font-weight: bold;
-  padding: 16px;
 }
 
-.btn-full {
+.action-btn--secondary {
+  background: var(--bg-card);
+  color: var(--text);
+}
+
+.action-btn--ghost {
+  background: none;
+  color: var(--text-muted);
+  font-size: 0.85em;
+  text-decoration: underline;
+}
+
+.action-btn--full {
   width: 100%;
   position: sticky;
   bottom: 16px;
   margin-top: 24px;
 }
 
-.btn-cancel {
-  width: 100%;
-  background: none;
-  color: var(--text-muted);
-  font-size: 0.85em;
-  margin-top: 16px;
-  margin-bottom: 24px;
-  padding: 12px;
-  text-decoration: underline;
+.action-btn--disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
-.plan-cancel-btn {
-  text-decoration: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* ActionButton inside nav bars: fill available space */
+.cooking-nav .action-btn,
+.plan-nav .action-btn {
+  flex: 1;
 }
 
 /* ShoppingItem */
@@ -662,12 +682,8 @@ button {
   color: var(--text-muted);
 }
 
-.cooking-step-exit {
-  background: none;
-  color: var(--text-muted);
-  font-size: 0.85em;
+.cooking-step-header .action-btn {
   min-height: 36px;
-  min-width: auto;
   padding: 6px 12px;
 }
 
@@ -730,27 +746,6 @@ button {
   margin: 0 auto;
 }
 
-.cooking-nav-btn {
-  flex: 1;
-  padding: 16px;
-  font-size: 1.1em;
-  background: var(--bg-card);
-  color: var(--text);
-  border-radius: var(--radius);
-  text-decoration: none;
-  text-align: center;
-}
-
-.cooking-nav-btn.primary {
-  background: var(--accent);
-  color: white;
-  font-weight: bold;
-}
-
-.cooking-nav-btn:disabled {
-  opacity: 0.3;
-  cursor: not-allowed;
-}
 
 /* PotCalculator */
 .pot-card {

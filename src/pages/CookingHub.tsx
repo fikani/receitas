@@ -5,6 +5,7 @@ import { receitaPorId } from "../store/recipes";
 import type { Receita } from "../types";
 import { buildMiseEnPlaceSummary } from "../lib/mise-en-place";
 import MiseEnPlaceList from "../components/MiseEnPlaceList";
+import ActionButton from "../components/ActionButton";
 
 const CookingHub: Component = () => {
   const navigate = useNavigate();
@@ -78,17 +79,14 @@ const CookingHub: Component = () => {
       </For>
 
       <Show when={todasConcluidas()}>
-        <button class="btn-primary btn-full" onClick={() => navigate("/storage")}>
+        <ActionButton variant="primary" full onClick={() => navigate("/storage")}>
           Embalar tudo →
-        </button>
+        </ActionButton>
       </Show>
 
-      <button
-        class="btn-cancel"
-        onClick={() => { abandonarPlano(); navigate("/"); }}
-      >
+      <ActionButton variant="ghost" onClick={() => { abandonarPlano(); navigate("/"); }}>
         Cancelar preparo e voltar ao início
-      </button>
+      </ActionButton>
     </div>
   );
 };

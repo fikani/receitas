@@ -1,10 +1,11 @@
 import { Component, createSignal, For, Show, createMemo } from "solid-js";
-import { useNavigate, A } from "@solidjs/router";
+import { useNavigate } from "@solidjs/router";
 import type { Categoria } from "../types";
 import { receitas } from "../store/recipes";
 import { criarPlano } from "../store/plan";
 import RecipeCard from "../components/RecipeCard";
 import NumericInput from "../components/NumericInput";
+import ActionButton from "../components/ActionButton";
 
 const STEPS: { key: Categoria; emoji: string; label: string }[] = [
   { key: "proteinas", emoji: "🥩", label: "Proteínas" },
@@ -14,7 +15,7 @@ const STEPS: { key: Categoria; emoji: string; label: string }[] = [
 
 const Plan: Component = () => {
   const navigate = useNavigate();
-  const [etapa, setEtapa] = createSignal(0); // 0,1,2 = categories, 3 = config
+  const [etapa, setEtapa] = createSignal(0);
   const [selecionadas, setSelecionadas] = createSignal<string[]>([]);
   const [pessoas, setPessoas] = createSignal(2);
   const [dias, setDias] = createSignal(7);
@@ -32,15 +33,6 @@ const Plan: Component = () => {
     if (isConfig()) return [];
     const cat = currentStep()?.key;
     return (receitas() ?? []).filter((r) => r.categoria === cat);
-  });
-
-  const selecionadasDaEtapa = createMemo(() => {
-    if (isConfig()) return [];
-    const cat = currentStep()?.key;
-    const ids = (receitas() ?? [])
-      .filter((r) => r.categoria === cat)
-      .map((r) => r.id);
-    return selecionadas().filter((id) => ids.includes(id));
   });
 
   const selecionadasPorCategoria = (cat: Categoria) => {
@@ -113,24 +105,22 @@ const Plan: Component = () => {
         </div>
 
         <div class="plan-nav">
-          <Show when={etapa() === 0}>
-            <A href="/" class="cooking-nav-btn plan-cancel-btn">
-              ← Início
-            </A>
+          <Show
+            when={etapa() > 0}
+            fallback={
+              <ActionButton href="/">← Início</ActionButton>
+            }
+          >
+            <ActionButton onClick={voltar}>← Voltar</ActionButton>
           </Show>
-          <Show when={etapa() > 0}>
-            <button class="cooking-nav-btn" onClick={voltar}>
-              ← Voltar
-            </button>
-          </Show>
-          <button class="cooking-nav-btn primary" onClick={avancar}>
+          <ActionButton variant="primary" onClick={avancar}>
             {etapa() < 2
               ? `Próximo: ${STEPS[etapa() + 1].emoji} ${STEPS[etapa() + 1].label} →`
               : selecionadas().length > 0
                 ? "Montar plano →"
                 : "Pular →"
             }
-          </button>
+          </ActionButton>
         </div>
       </Show>
 
@@ -178,13 +168,11 @@ const Plan: Component = () => {
         </div>
 
         <div class="plan-nav">
-          <button class="cooking-nav-btn" onClick={voltar}>
-            ← Voltar
-          </button>
+          <ActionButton onClick={voltar}>← Voltar</ActionButton>
           <Show when={selecionadas().length > 0}>
-            <button class="cooking-nav-btn primary" onClick={handleCriar}>
+            <ActionButton variant="primary" onClick={handleCriar}>
               Ir pra lista de compras →
-            </button>
+            </ActionButton>
           </Show>
         </div>
       </Show>

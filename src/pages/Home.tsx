@@ -1,8 +1,8 @@
 import { Component, For, Show, createMemo } from "solid-js";
-import { A } from "@solidjs/router";
 import { receitas } from "../store/recipes";
 import { plano } from "../store/plan";
 import ResumeBanner from "../components/ResumeBanner";
+import ActionButton from "../components/ActionButton";
 
 const CATEGORIAS = [
   { key: "proteinas" as const, emoji: "🥩", label: "Proteínas" },
@@ -58,9 +58,9 @@ const Home: Component = () => {
       </div>
 
       <Show when={totalReceitas() > 0}>
-        <A href="/plan" class="btn-primary btn-full home-cta">
+        <ActionButton variant="primary" full href="/plan">
           Iniciar Meal Prep ({totalReceitas()} receitas disponíveis)
-        </A>
+        </ActionButton>
       </Show>
     </div>
   );

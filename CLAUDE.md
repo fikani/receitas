@@ -45,6 +45,31 @@ Toda receita DEVE começar com passos de **Mise en Place** (preparação dos ing
 
 Sem "colheres", "xícaras" ou "pitadas". Tudo pesado na balança.
 
+## Regra: Reutilizar componentes — NUNCA criar botões/links ad-hoc
+
+Use SEMPRE o componente `ActionButton` para qualquer botão ou link de ação. NUNCA crie `<button>` ou `<A>` com classes CSS soltas nas pages.
+
+```tsx
+import ActionButton from "../components/ActionButton";
+
+// Botão principal (laranja)
+<ActionButton variant="primary" onClick={...}>Texto</ActionButton>
+
+// Botão secundário (cinza)
+<ActionButton onClick={...}>Texto</ActionButton>
+
+// Link discreto (ghost — texto sublinhado)
+<ActionButton variant="ghost" href="/">Cancelar</ActionButton>
+
+// Botão largo e sticky no fundo
+<ActionButton variant="primary" full onClick={...}>Avançar →</ActionButton>
+
+// Link que parece botão
+<ActionButton variant="primary" href="/plan">Iniciar</ActionButton>
+```
+
+**Por quê:** `<button>` e `<A>` (link) têm bases CSS diferentes no browser. Sem o componente, cada página reinventa estilos inline e os botões ficam inconsistentes (ex: link sem border-radius). O `ActionButton` renderiza `<A>` quando recebe `href` e `<button>` quando recebe `onClick`, com a mesma aparência garantida.
+
 ## Regra: Ícones como linguagem visual
 
 Cada passo usa ícones que com o tempo o usuário reconhece sem ler. Ver spec para lista completa.

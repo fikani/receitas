@@ -4,6 +4,7 @@ import { plano, toggleCompraItem, avancarParaPreparo } from "../store/plan";
 import { receitaPorId } from "../store/recipes";
 import { consolidarIngredientes, type ItemCompras } from "../lib/calc";
 import ShoppingItem from "../components/ShoppingItem";
+import ActionButton from "../components/ActionButton";
 
 const TIPO_LABEL: Record<string, string> = {
   carnes: "🥩 Carnes",
@@ -73,9 +74,9 @@ const Shopping: Component = () => {
       </For>
 
       <Show when={todosChecked()}>
-        <button class="btn-primary btn-full" onClick={handleAvancar}>
+        <ActionButton variant="primary" full onClick={handleAvancar}>
           Começar preparo →
-        </button>
+        </ActionButton>
       </Show>
     </div>
   );

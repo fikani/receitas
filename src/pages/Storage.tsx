@@ -4,6 +4,7 @@ import { plano, toggleArmazenamento, setPoteSize, concluirPlano } from "../store
 import { receitaPorId } from "../store/recipes";
 import { calcularPotes } from "../lib/calc";
 import PotCalculator from "../components/PotCalculator";
+import ActionButton from "../components/ActionButton";
 
 const Storage: Component = () => {
   const navigate = useNavigate();
@@ -74,9 +75,9 @@ const Storage: Component = () => {
       </For>
 
       <Show when={todosProntos()}>
-        <button class="btn-primary btn-full" onClick={handleConcluir}>
+        <ActionButton variant="primary" full onClick={handleConcluir}>
           Plano concluído! 🎉
-        </button>
+        </ActionButton>
       </Show>
     </div>
   );

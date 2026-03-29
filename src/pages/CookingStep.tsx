@@ -5,6 +5,7 @@ import { receitaPorId } from "../store/recipes";
 import StepView from "../components/StepView";
 import ProgressBar from "../components/ProgressBar";
 import MiseEnPlaceList from "../components/MiseEnPlaceList";
+import ActionButton from "../components/ActionButton";
 import { buildMiseEnPlaceSummary } from "../lib/mise-en-place";
 import type { Receita } from "../types";
 
@@ -14,11 +15,10 @@ const CookingStep: Component = () => {
   let wakeLock: WakeLockSentinel | null = null;
 
   const receita = () => receitaPorId(params.id);
-  // passoAtual 0 = mise en place page, 1+ = actual recipe steps (offset by 1)
   const passoAtual = () => plano.ativo?.cozinhando?.passoAtual ?? 0;
-  const totalPassos = () => (receita()?.passos.length ?? 0) + 1; // +1 for mise en place page
+  const totalPassos = () => (receita()?.passos.length ?? 0) + 1;
   const isMiseEnPlace = () => passoAtual() === 0;
-  const passoReceita = () => receita()?.passos[passoAtual() - 1]; // offset by 1
+  const passoReceita = () => receita()?.passos[passoAtual() - 1];
   const multiplicador = () => plano.ativo?.multiplicadores[params.id] ?? 1;
   const isUltimo = () => passoAtual() >= totalPassos() - 1;
 
@@ -40,7 +40,6 @@ const CookingStep: Component = () => {
 
   const handleVoltar = () => {
     if (isMiseEnPlace()) {
-      // On mise en place page, go back to cooking hub
       sairDaReceita();
       releaseWakeLock();
       navigate("/cooking");
@@ -60,9 +59,7 @@ const CookingStep: Component = () => {
       if ("wakeLock" in navigator) {
         wakeLock = await navigator.wakeLock.request("screen");
       }
-    } catch {
-      // Wake Lock not available
-    }
+    } catch {}
   }
 
   function releaseWakeLock() {
@@ -78,14 +75,13 @@ const CookingStep: Component = () => {
       <Show when={receita()} fallback={<p class="empty">Receita não encontrada</p>}>
         <div class="cooking-step-header">
           <h2 class="cooking-step-recipe-name">{receita()!.nome}</h2>
-          <button class="cooking-step-exit" onClick={handleSair}>
+          <ActionButton variant="ghost" onClick={handleSair}>
             Sair ✕
-          </button>
+          </ActionButton>
         </div>
 
         <ProgressBar current={passoAtual()} total={totalPassos()} />
 
-        {/* Page 0: Mise en Place */}
         <Show when={isMiseEnPlace()}>
           <div class="step-view">
             <MiseEnPlaceList
@@ -103,18 +99,17 @@ const CookingStep: Component = () => {
           </div>
         </Show>
 
-        {/* Pages 1+: Recipe steps */}
         <Show when={!isMiseEnPlace() && passoReceita()}>
           <StepView passo={passoReceita()!} multiplicador={multiplicador()} />
         </Show>
 
         <div class="cooking-nav">
-          <button class="cooking-nav-btn" onClick={handleVoltar}>
+          <ActionButton onClick={handleVoltar}>
             {isMiseEnPlace() ? "← Receitas" : "← Voltar"}
-          </button>
-          <button class="cooking-nav-btn primary" onClick={handleProximo}>
+          </ActionButton>
+          <ActionButton variant="primary" onClick={handleProximo}>
             {isUltimo() ? "Concluir ✅" : isMiseEnPlace() ? "Começar →" : "Próximo →"}
-          </button>
+          </ActionButton>
         </div>
       </Show>
     </div>
