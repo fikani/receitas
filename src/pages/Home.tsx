@@ -58,9 +58,14 @@ const Home: Component = () => {
       </div>
 
       <Show when={totalReceitas() > 0}>
-        <ActionButton variant="primary" full href="/plan">
-          Iniciar Meal Prep ({totalReceitas()} receitas disponíveis)
-        </ActionButton>
+        <div class="home-actions">
+          <ActionButton variant="primary" full href="/plan">
+            🍳 Iniciar Meal Prep
+          </ActionButton>
+          <ActionButton full href="/defrost">
+            ❄️ Descongelar Refeição
+          </ActionButton>
+        </div>
       </Show>
     </div>
   );

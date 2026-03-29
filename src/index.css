@@ -347,13 +347,11 @@ button {
   border-radius: 20px;
 }
 
-.home-cta {
-  text-decoration: none;
-  text-align: center;
-  display: block;
+.home-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   margin-bottom: 24px;
-  border-radius: var(--radius);
-  font-size: 1.1em;
 }
 
 .empty {
@@ -862,4 +860,59 @@ button {
 .storage-validade {
   color: var(--accent);
   font-weight: bold;
+}
+
+/* Defrost */
+.defrost-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.defrost-card-title {
+  font-size: 1.1em;
+  margin-bottom: 12px;
+  color: var(--accent);
+}
+
+.defrost-step {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  background: var(--bg-surface);
+  border-radius: var(--radius);
+  margin-bottom: 8px;
+}
+
+.defrost-step-icon {
+  font-size: 1.6em;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.defrost-step-label {
+  font-weight: bold;
+  font-size: 0.85em;
+  margin-bottom: 4px;
+}
+
+.defrost-step-text {
+  color: var(--text-muted);
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.defrost-warning {
+  border-left: 3px solid var(--danger);
+}
+
+.defrost-validity {
+  text-align: center;
+  color: var(--accent);
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-top: 8px;
 }

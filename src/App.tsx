@@ -6,6 +6,7 @@ import CookingHub from "./pages/CookingHub";
 import CookingStep from "./pages/CookingStep";
 import Storage from "./pages/Storage";
 import PlanComplete from "./pages/PlanComplete";
+import Defrost from "./pages/Defrost";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/cooking/:id" component={CookingStep} />
       <Route path="/storage" component={Storage} />
       <Route path="/done" component={PlanComplete} />
+      <Route path="/defrost" component={Defrost} />
     </Router>
   );
 }
