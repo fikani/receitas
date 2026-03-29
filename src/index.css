@@ -564,10 +564,38 @@ button {
   margin-bottom: 16px;
 }
 
+.mise-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 12px;
+  min-height: auto;
+  min-width: auto;
+}
+
+.mise-header.collapsible {
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.mise-header.collapsible:has(+ .mise-list) {
+  margin-bottom: 12px;
+}
+
 .mise-title {
   font-size: 1em;
-  margin-bottom: 12px;
   color: var(--accent);
+  text-align: left;
+}
+
+.mise-toggle {
+  color: var(--text-muted);
+  font-size: 0.8em;
+  white-space: nowrap;
 }
 
 .mise-list {

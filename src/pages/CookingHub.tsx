@@ -40,6 +40,7 @@ const CookingHub: Component = () => {
       <MiseEnPlaceList
         items={miseEnPlace()}
         title="🔪 Mise en Place — Todas as receitas"
+        collapsible
       />
 
       <h2 style={{ margin: "20px 0 12px", "font-size": "1.1em" }}>Receitas do plano</h2>
