@@ -112,6 +112,12 @@ const Plan: Component = () => {
           </For>
         </div>
 
+        <Show when={etapa() === 0}>
+          <A href="/" class="btn-cancel">
+            Cancelar e voltar ao início
+          </A>
+        </Show>
+
         <div class="plan-nav">
           <Show when={etapa() > 0}>
             <button class="cooking-nav-btn" onClick={voltar}>
@@ -183,10 +189,6 @@ const Plan: Component = () => {
           </Show>
         </div>
       </Show>
-
-      <A href="/" class="btn-cancel">
-        Cancelar e voltar ao início
-      </A>
     </div>
   );
 };
