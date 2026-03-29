@@ -103,6 +103,11 @@
       "tipo": "geladeira",
       "validade_dias": 5,
       "instrucoes": "Escorra muito bem — seque com papel toalha se possível. Umidade é o inimigo: brócolis molhado estraga em 2 dias."
+    },
+    "descongelamento": {
+      "metodo_ideal": "Este brócolis é guardado na GELADEIRA (não no freezer). Pode comer frio direto do pote — já está cozido e temperado.",
+      "reaquecimento": "Se preferir quente: micro-ondas por 1 minuto ou frigideira com um fio de azeite por 2 minutos. NÃO cozinhe demais — ele já está al dente (cozido mas crocante). Reaquecer demais o torna mole e sem cor.",
+      "aviso": "Consuma em até 5 dias. Se mudou de cor (verde escuro/amarelado) ou tem cheiro estranho, descarte."
     }
   },
   {
@@ -202,6 +207,11 @@
       "tipo": "geladeira",
       "validade_dias": 5,
       "instrucoes": "Espere esfriar. Pode reaquecer no forno a 180°C por 8 minutos ou comer em temperatura ambiente."
+    },
+    "descongelamento": {
+      "metodo_ideal": "Guardado na GELADEIRA. Pode comer em temperatura ambiente — legumes assados ficam gostosos frios.",
+      "reaquecimento": "Forno a 180°C por 8 minutos para recuperar as bordas caramelizadas. Micro-ondas funciona mas amolece. Frigideira em fogo alto por 3 minutos também funciona bem.",
+      "aviso": "Consuma em até 5 dias. Não recongele após tirar da geladeira."
     }
   },
   {
@@ -324,6 +334,11 @@
       "tipo": "geladeira",
       "validade_dias": 4,
       "instrucoes": "Guarde em pote fechado. A ricota é perecível — consuma em até 4 dias. Pode comer frio ou aquecer levemente."
+    },
+    "descongelamento": {
+      "metodo_ideal": "Guardado na GELADEIRA. Pode comer frio — o creme tem sabor completo em qualquer temperatura.",
+      "reaquecimento": "Se preferir quente: micro-ondas por 1-2 minutos com tampa, mexendo na metade. Ou panela em fogo baixo mexendo até aquecer. NÃO deixe ferver — a ricota separa e fica granulosa.",
+      "aviso": "Ricota é muito perecível. Consuma em até 4 dias. Se estiver ácido ou com líquido separado, descarte."
     }
   }
 ]

@@ -107,6 +107,12 @@
       "tipo": "freezer",
       "validade_dias": 60,
       "instrucoes": "Espere esfriar, distribua em porções. Para reaquecer, adicione um fio de manteiga para recuperar a textura sedosa."
+    },
+    "descongelamento": {
+      "metodo_ideal": "Transfira do freezer para a geladeira na noite anterior (6-8 horas). O purê descongela mais rápido que carnes por não ter fibras musculares.",
+      "metodo_rapido": "Micro-ondas em potência média (50%) por 2 minutos, mexa, repita até descongelar. Ou pote em banho de água fria por 40-60 minutos.",
+      "reaquecimento": "Numa panela em fogo baixo, adicione 15g de manteiga e um pouco de água ou leite (30-50g). Mexa constantemente com um fouet ou garfo. O segredo é re-emulsionar: mexa vigorosamente para recuperar a textura de seda. Sem esse passo, o purê fica granuloso.",
+      "aviso": "Purê reaquecido no micro-ondas sem mexer fica com pontos quentes e pontos frios. Sempre mexa na metade do tempo."
     }
   },
   {
@@ -229,6 +235,12 @@
       "tipo": "freezer",
       "validade_dias": 90,
       "instrucoes": "Espalhe numa superfície para esfriar rápido. Grãos quentes em pote fechado criam condensação que os deixa empapados."
+    },
+    "descongelamento": {
+      "metodo_ideal": "Transfira do freezer para a geladeira na noite anterior (6-8 horas).",
+      "metodo_rapido": "Arroz pode ir DIRETO do freezer pro micro-ondas: adicione 30g de água por porção, cubra com tampa ou filme, e aqueça por 3 minutos em potência alta. A água vira vapor e reidrata os grãos.",
+      "reaquecimento": "Micro-ondas com água é o melhor método — os grãos ficam soltos como recém-feitos. Alternativa: frigideira com tampa em fogo baixo, borrifando água. NUNCA reaqueça sem adicionar umidade — o arroz fica uma pedra.",
+      "aviso": "Arroz cozido é um dos alimentos com MAIOR risco de intoxicação alimentar (bactéria Bacillus cereus). Após descongelar, consuma imediatamente. NUNCA deixe arroz descongelado em temperatura ambiente por mais de 1 hora."
     }
   },
   {
@@ -316,6 +328,12 @@
       "tipo": "freezer",
       "validade_dias": 60,
       "instrucoes": "Espere esfriar completamente. Para reaquecer, use forno a 200°C por 10 minutos para recuperar a crocância — micro-ondas a deixa mole."
+    },
+    "descongelamento": {
+      "metodo_ideal": "Transfira do freezer para a geladeira na noite anterior (6-8 horas).",
+      "metodo_rapido": "Pode ir direto do freezer pro forno a 200°C. Espalhe os cubos num tabuleiro sem sobrepor. 10-15 minutos.",
+      "reaquecimento": "FORNO a 200°C por 10-15 minutos é o ÚNICO método que recupera a crocância. Espalhe numa camada só no tabuleiro. Micro-ondas amolece os cubos e destrói a textura crocante — só use em emergência.",
+      "aviso": "Se aquecer no micro-ondas, os cubos ficam moles. Não é perigoso, mas perde a crocância que é o objetivo da receita."
     }
   }
 ]

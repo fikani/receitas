@@ -27,6 +27,13 @@ export interface Armazenamento {
   instrucoes: string;
 }
 
+export interface Descongelamento {
+  metodo_ideal: string;
+  metodo_rapido?: string;
+  reaquecimento: string;
+  aviso?: string;
+}
+
 export interface Receita {
   id: string;
   nome: string;
@@ -36,6 +43,7 @@ export interface Receita {
   ingredientes: Ingrediente[];
   passos: Passo[];
   armazenamento: Armazenamento;
+  descongelamento?: Descongelamento;
 }
 
 export type Categoria = Receita["categoria"];

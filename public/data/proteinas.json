@@ -166,6 +166,12 @@
       "tipo": "freezer",
       "validade_dias": 30,
       "instrucoes": "Espere esfriar completamente. Guarde o frango com o molho — ele mantém a carne húmida durante o reaquecimento."
+    },
+    "descongelamento": {
+      "metodo_ideal": "Transfira o pote fechado do freezer para a geladeira na noite anterior (8-12 horas). O molho protege o frango — ele descongela lentamente sem ressecar.",
+      "metodo_rapido": "Coloque o pote fechado numa tigela com água fria da torneira. Troque a água a cada 30 minutos. Leva 1-2 horas dependendo do tamanho do pote.",
+      "reaquecimento": "Despeje numa panela com tampa em fogo baixo, mexendo de vez em quando. O molho de tomate impede que o frango resseque. Aqueça até borbulhar por pelo menos 2 minutos. Se o molho estiver muito grosso, adicione 30g de água.",
+      "aviso": "NUNCA descongele frango em temperatura ambiente — a superfície atinge a zona de perigo (4-60°C) rapidamente enquanto o centro ainda está congelado. NUNCA recongele frango que já foi descongelado."
     }
   },
   {
@@ -306,6 +312,12 @@
       "tipo": "freezer",
       "validade_dias": 30,
       "instrucoes": "Espere esfriar. O glacê de shoyu preserva bem a umidade durante o congelamento. Reaqueça em frigideira para recuperar a textura."
+    },
+    "descongelamento": {
+      "metodo_ideal": "Transfira do freezer para a geladeira na noite anterior (8-12 horas). As tiras finas descongelam mais rápido que peças inteiras.",
+      "metodo_rapido": "Pote fechado em tigela com água fria, troque a cada 30 minutos. Tiras finas descongelam em cerca de 1 hora.",
+      "reaquecimento": "Frigideira BEM quente com um fio de azeite (10g). Espalhe as iscas em camada fina e deixe 2 minutos sem mexer para recuperar a crosta. Depois mexa por mais 1 minuto. O glacê de shoyu vai reativar com o calor. NÃO use micro-ondas — ele deixa a carne borrachuda e destrói a textura da selagem.",
+      "aviso": "NUNCA descongele carne em temperatura ambiente. Se descongelou na geladeira, consuma em 24 horas."
     }
   },
   {
@@ -428,6 +440,12 @@
       "tipo": "freezer",
       "validade_dias": 30,
       "instrucoes": "Espere esfriar completamente. Distribua em porções antes de congelar para facilitar o descongelamento."
+    },
+    "descongelamento": {
+      "metodo_ideal": "Transfira do freezer para a geladeira na noite anterior (8-12 horas). Carne moída descongela mais rápido que peças inteiras por causa da maior área de superfície.",
+      "metodo_rapido": "Pote fechado em tigela com água fria, trocando a água a cada 30 minutos. Carne moída descongela em cerca de 1 hora.",
+      "reaquecimento": "Frigideira em fogo médio com um fio de azeite. Quebre os pedaços que grudaram durante o congelamento. Mexa até aquecer por igual (3-4 minutos). Pode adicionar 30g de água e tampar por 1 minuto se estiver seca.",
+      "aviso": "Carne moída tem mais superfície exposta, o que significa mais risco de contaminação. Descongele SEMPRE na geladeira ou em água fria, NUNCA no balcão."
     }
   }
 ]

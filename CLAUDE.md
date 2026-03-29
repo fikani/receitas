@@ -41,6 +41,35 @@ Toda receita DEVE começar com passos de **Mise en Place** (preparação dos ing
 }
 ```
 
+## Regra: Descongelamento obrigatório em cada receita
+
+Toda receita que vai para o freezer DEVE ter um campo `descongelamento` com instruções de nível profissional sobre como descongelar corretamente. Cada alimento tem uma técnica específica — descongelar errado destrói a textura e pode ser perigoso (zona de perigo bacteriológico entre 4°C e 60°C).
+
+### Como aplicar:
+
+1. **Pesquise a técnica correta** para cada tipo de alimento ao criar a receita. Não generalize — carne moída descongela diferente de frango com molho, que descongela diferente de arroz
+2. **Explique como um junior**: o que fazer, por que, e quanto tempo leva
+3. **Sempre ofereça o método ideal** (geladeira, lento e seguro) e um **método rápido** quando possível
+4. **Inclua dicas de reaquecimento** — como aquecer sem ressecar ou empapar
+
+### Estrutura no JSON:
+
+```json
+"descongelamento": {
+  "metodo_ideal": "Transferir do freezer para a geladeira na noite anterior. Leva 8-12 horas.",
+  "metodo_rapido": "Banho-maria frio: pote fechado em tigela com água da torneira, trocar a água a cada 30 min. Leva 1-2 horas.",
+  "reaquecimento": "Frigideira em fogo médio com um fio de azeite, ou micro-ondas com tampa por 2-3 minutos.",
+  "aviso": "NUNCA descongele em temperatura ambiente — a superfície entra na zona de perigo (4-60°C) enquanto o centro ainda está congelado."
+}
+```
+
+### O que pesquisar ao criar cada receita:
+
+- Tempo ideal de descongelamento na geladeira para aquele alimento
+- Se o alimento pode ir direto do freezer pro reaquecimento (ex: arroz pode)
+- Melhor método de reaquecimento para preservar textura (frigideira? forno? micro-ondas?)
+- Riscos específicos (ex: frango NUNCA deve ser recongelado após descongelar)
+
 ## Regra: Todas as quantidades em gramas/kg
 
 Sem "colheres", "xícaras" ou "pitadas". Tudo pesado na balança.
@@ -128,3 +157,9 @@ Para cada passo, cruza o texto das `dicas` com os `ingredientes` da receita para
 - `armazenamento.validade_dias` — exibido em destaque
 - `armazenamento.instrucoes` — texto de instrução
 - Cálculo de potes usa `ingredientes` total para estimar peso por porção
+
+### Tela Descongelamento
+- `descongelamento.metodo_ideal` — método lento e seguro (geladeira)
+- `descongelamento.metodo_rapido` — método alternativo mais rápido (quando houver)
+- `descongelamento.reaquecimento` — como aquecer preservando textura
+- `descongelamento.aviso` — alertas de segurança alimentar
