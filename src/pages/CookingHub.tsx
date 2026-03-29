@@ -1,6 +1,6 @@
 import { Component, For, Show, createMemo } from "solid-js";
 import { useNavigate } from "@solidjs/router";
-import { plano, iniciarCozinha, reiniciarReceita } from "../store/plan";
+import { plano, iniciarCozinha, reiniciarReceita, abandonarPlano } from "../store/plan";
 import { receitaPorId } from "../store/recipes";
 import type { Receita } from "../types";
 import { buildMiseEnPlaceSummary } from "../lib/mise-en-place";
@@ -82,6 +82,13 @@ const CookingHub: Component = () => {
           Embalar tudo →
         </button>
       </Show>
+
+      <button
+        class="btn-cancel"
+        onClick={() => { abandonarPlano(); navigate("/"); }}
+      >
+        Cancelar preparo e voltar ao início
+      </button>
     </div>
   );
 };

@@ -470,6 +470,17 @@ button {
   margin-top: 24px;
 }
 
+.btn-cancel {
+  width: 100%;
+  background: none;
+  color: var(--text-muted);
+  font-size: 0.85em;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  padding: 12px;
+  text-decoration: underline;
+}
+
 /* ShoppingItem */
 .shopping-item {
   display: flex;
