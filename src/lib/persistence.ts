@@ -12,7 +12,12 @@ export function salvarPlano(plano: PlanoAtivo): void {
 export function carregarPlano(): PlanoAtivo | null {
   const raw = localStorage.getItem(KEYS.plano);
   if (!raw) return null;
-  return JSON.parse(raw) as PlanoAtivo;
+  try {
+    return JSON.parse(raw) as PlanoAtivo;
+  } catch {
+    localStorage.removeItem(KEYS.plano);
+    return null;
+  }
 }
 
 export function limparPlano(): void {

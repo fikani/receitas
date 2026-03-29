@@ -35,7 +35,7 @@ const Home: Component = () => {
       </p>
 
       <Show when={temPlano()}>
-        <ResumeBanner etapa={plano.ativo!.etapa} />
+        <ResumeBanner etapa={plano.ativo!.etapa} cozinhandoId={plano.ativo!.cozinhando?.receitaId} />
       </Show>
 
       <div class="home-categories">
