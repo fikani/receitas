@@ -1,6 +1,6 @@
 import { Component, For, Show, createMemo } from "solid-js";
 import { useNavigate } from "@solidjs/router";
-import { plano, iniciarCozinha } from "../store/plan";
+import { plano, iniciarCozinha, reiniciarReceita } from "../store/plan";
 import { receitaPorId } from "../store/recipes";
 import type { Receita } from "../types";
 import { buildMiseEnPlaceSummary } from "../lib/mise-en-place";
@@ -12,6 +12,11 @@ const CookingHub: Component = () => {
   const handleIniciar = (receitaId: string) => {
     iniciarCozinha(receitaId);
     navigate(`/cooking/${receitaId}`);
+  };
+
+  const handleReiniciar = (e: Event, receitaId: string) => {
+    e.stopPropagation();
+    reiniciarReceita(receitaId);
   };
 
   const todasConcluidas = () =>
@@ -47,15 +52,25 @@ const CookingHub: Component = () => {
           return (
             <div
               class={`cooking-recipe-item ${concluida() ? "done" : ""}`}
-              onClick={() => !concluida() && handleIniciar(id)}
+              onClick={() => handleIniciar(id)}
             >
               <div class="cooking-recipe-info">
                 <h3>{receita()?.nome ?? id}</h3>
                 <p>⏱️ {receita()?.tempo_preparo_min}min · {receita()?.passos.length} passos</p>
               </div>
-              <span class="cooking-recipe-status">
-                {concluida() ? "✅" : "→"}
-              </span>
+              <div class="cooking-recipe-actions">
+                <Show when={concluida()}>
+                  <button
+                    class="cooking-restart-btn"
+                    onClick={(e) => handleReiniciar(e, id)}
+                  >
+                    🔄 Refazer
+                  </button>
+                </Show>
+                <span class="cooking-recipe-status">
+                  {concluida() ? "✅" : "→"}
+                </span>
+              </div>
             </div>
           );
         }}

@@ -93,6 +93,25 @@ export function concluirReceita(receitaId: string) {
   persistir();
 }
 
+export function sairDaReceita() {
+  if (!plano.ativo) return;
+  setPlano("ativo", "cozinhando", undefined);
+  persistir();
+}
+
+export function reiniciarReceita(receitaId: string) {
+  if (!plano.ativo) return;
+  setPlano("ativo", {
+    receitasConcluidas: plano.ativo.receitasConcluidas.filter((id) => id !== receitaId),
+    cozinhando: undefined,
+  });
+  // If we were in storage, go back to preparo
+  if (plano.ativo.etapa === "armazenamento") {
+    setPlano("ativo", "etapa", "preparo");
+  }
+  persistir();
+}
+
 export function setPoteSize(receitaId: string, sizeMl: number) {
   if (!plano.ativo) return;
   setPlano("ativo", "poteSizes", receitaId, sizeMl);

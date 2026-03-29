@@ -1,6 +1,6 @@
 import { Component, Show, createMemo, onMount, onCleanup } from "solid-js";
 import { useNavigate, useParams } from "@solidjs/router";
-import { plano, proximoPasso, passoAnterior, concluirReceita } from "../store/plan";
+import { plano, proximoPasso, passoAnterior, concluirReceita, sairDaReceita } from "../store/plan";
 import { receitaPorId } from "../store/recipes";
 import StepView from "../components/StepView";
 import ProgressBar from "../components/ProgressBar";
@@ -14,12 +14,13 @@ const CookingStep: Component = () => {
   let wakeLock: WakeLockSentinel | null = null;
 
   const receita = () => receitaPorId(params.id);
+  // passoAtual 0 = mise en place page, 1+ = actual recipe steps (offset by 1)
   const passoAtual = () => plano.ativo?.cozinhando?.passoAtual ?? 0;
-  const totalPassos = () => receita()?.passos.length ?? 0;
-  const passo = () => receita()?.passos[passoAtual()];
+  const totalPassos = () => (receita()?.passos.length ?? 0) + 1; // +1 for mise en place page
+  const isMiseEnPlace = () => passoAtual() === 0;
+  const passoReceita = () => receita()?.passos[passoAtual() - 1]; // offset by 1
   const multiplicador = () => plano.ativo?.multiplicadores[params.id] ?? 1;
   const isUltimo = () => passoAtual() >= totalPassos() - 1;
-  const isPrimeiro = () => passoAtual() === 0;
 
   const miseEnPlace = createMemo(() => {
     const r = receita();
@@ -35,6 +36,23 @@ const CookingStep: Component = () => {
     } else {
       proximoPasso();
     }
+  };
+
+  const handleVoltar = () => {
+    if (isMiseEnPlace()) {
+      // On mise en place page, go back to cooking hub
+      sairDaReceita();
+      releaseWakeLock();
+      navigate("/cooking");
+    } else {
+      passoAnterior();
+    }
+  };
+
+  const handleSair = () => {
+    sairDaReceita();
+    releaseWakeLock();
+    navigate("/cooking");
   };
 
   async function requestWakeLock() {
@@ -57,29 +75,45 @@ const CookingStep: Component = () => {
 
   return (
     <div class="page">
-      <Show when={receita() && passo()} fallback={<p class="empty">Receita não encontrada</p>}>
-        <h2 class="cooking-step-recipe-name">{receita()!.nome}</h2>
+      <Show when={receita()} fallback={<p class="empty">Receita não encontrada</p>}>
+        <div class="cooking-step-header">
+          <h2 class="cooking-step-recipe-name">{receita()!.nome}</h2>
+          <button class="cooking-step-exit" onClick={handleSair}>
+            Sair ✕
+          </button>
+        </div>
+
         <ProgressBar current={passoAtual()} total={totalPassos()} />
 
-        <Show when={isPrimeiro()}>
-          <MiseEnPlaceList
-            items={miseEnPlace()}
-            title="🔪 Mise en Place desta receita"
-          />
+        {/* Page 0: Mise en Place */}
+        <Show when={isMiseEnPlace()}>
+          <div class="step-view">
+            <MiseEnPlaceList
+              items={miseEnPlace()}
+              title="🔪 Mise en Place — Prepare tudo antes de cozinhar"
+            />
+            <Show when={miseEnPlace().length === 0}>
+              <div class="mise-section">
+                <h2 class="mise-title">🔪 Pronto pra começar</h2>
+                <p style={{ color: "var(--text-muted)" }}>
+                  Esta receita não tem preparação prévia. Vamos direto ao fogo!
+                </p>
+              </div>
+            </Show>
+          </div>
         </Show>
 
-        <StepView passo={passo()!} multiplicador={multiplicador()} />
+        {/* Pages 1+: Recipe steps */}
+        <Show when={!isMiseEnPlace() && passoReceita()}>
+          <StepView passo={passoReceita()!} multiplicador={multiplicador()} />
+        </Show>
 
         <div class="cooking-nav">
-          <button
-            class="cooking-nav-btn"
-            onClick={passoAnterior}
-            disabled={passoAtual() === 0}
-          >
-            ← Voltar
+          <button class="cooking-nav-btn" onClick={handleVoltar}>
+            {isMiseEnPlace() ? "← Receitas" : "← Voltar"}
           </button>
           <button class="cooking-nav-btn primary" onClick={handleProximo}>
-            {isUltimo() ? "Concluir ✅" : "Próximo →"}
+            {isUltimo() ? "Concluir ✅" : isMiseEnPlace() ? "Começar →" : "Próximo →"}
           </button>
         </div>
       </Show>
