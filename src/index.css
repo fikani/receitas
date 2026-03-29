@@ -1,14 +1,31 @@
 :root {
-  --bg: #1a1a2e;
-  --bg-card: #252545;
-  --text: #eee;
-  --text-muted: #aaa;
-  --accent: #ff6b35;
-  --accent-hover: #ff8c5a;
-  --success: #4caf50;
-  --danger: #f44336;
+  --bg: #FAF7F2;
+  --bg-card: #FFFFFF;
+  --bg-surface: #F0EBE3;
+  --text: #2D1B0E;
+  --text-muted: #9C8B7A;
+  --accent: #E8835A;
+  --accent-hover: #D4724B;
+  --success: #4CAF50;
+  --danger: #D94E3B;
+  --border: #EDE5DA;
   --radius: 12px;
   --min-touch: 48px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1C1917;
+    --bg-card: #292524;
+    --bg-surface: #352F2B;
+    --text: #E8E4DF;
+    --text-muted: #A8A29E;
+    --accent: #E8835A;
+    --accent-hover: #F09A75;
+    --success: #66BB6A;
+    --danger: #EF5350;
+    --border: #3D3632;
+  }
 }
 
 * {
@@ -50,6 +67,7 @@ button {
   padding: 12px 16px;
   border-radius: var(--radius);
   margin-bottom: 12px;
+  border: 1px solid var(--border);
 }
 
 .numeric-label {
@@ -153,7 +171,7 @@ button {
   display: flex;
   gap: 15px;
   align-items: flex-start;
-  background: var(--bg-card);
+  background: var(--bg-surface);
   border-radius: var(--radius);
   padding: 15px;
   margin-bottom: 10px;
@@ -217,7 +235,7 @@ button {
   border-radius: var(--radius);
   padding: 16px;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 2px solid var(--border);
   transition: border-color 0.2s;
 }
 
@@ -291,6 +309,7 @@ button {
   flex-wrap: wrap;
   gap: 12px;
   align-items: flex-start;
+  border: 1px solid var(--border);
 }
 
 .home-cat-emoji {
@@ -411,6 +430,7 @@ button {
   border-radius: var(--radius);
   padding: 16px;
   margin-bottom: 12px;
+  border: 1px solid var(--border);
 }
 
 .plan-review-group {
@@ -433,7 +453,7 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 8px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid var(--border);
 }
 
 .plan-review-item:last-child {
@@ -456,6 +476,7 @@ button {
   color: var(--accent);
   font-weight: bold;
   margin-bottom: 80px;
+  border: 1px solid var(--border);
 }
 
 /* ActionButton — unified button/link component */
@@ -481,7 +502,7 @@ button {
 }
 
 .action-btn--secondary {
-  background: var(--bg-card);
+  background: var(--bg-surface);
   color: var(--text);
 }
 
@@ -522,6 +543,7 @@ button {
   margin-bottom: 8px;
   cursor: pointer;
   min-height: var(--min-touch);
+  border: 1px solid var(--border);
 }
 
 .shopping-item.checked {
@@ -603,6 +625,7 @@ button {
   border-radius: var(--radius);
   padding: 16px;
   margin-bottom: 16px;
+  border: 1px solid var(--border);
 }
 
 .mise-header {
@@ -650,7 +673,7 @@ button {
   align-items: baseline;
   gap: 10px;
   padding: 6px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid var(--border);
 }
 
 .mise-item:last-child {
@@ -697,6 +720,7 @@ button {
   border-radius: var(--radius);
   margin-bottom: 12px;
   cursor: pointer;
+  border: 1px solid var(--border);
 }
 
 .cooking-recipe-item.done {
@@ -741,7 +765,7 @@ button {
   gap: 12px;
   padding: 16px;
   background: var(--bg);
-  border-top: 1px solid var(--bg-card);
+  border-top: 1px solid var(--border);
   max-width: 600px;
   margin: 0 auto;
 }
@@ -753,6 +777,7 @@ button {
   border-radius: var(--radius);
   padding: 16px;
   margin-bottom: 12px;
+  border: 1px solid var(--border);
 }
 
 .pot-card.checked {
@@ -827,7 +852,7 @@ button {
   flex-direction: column;
   gap: 4px;
   padding: 12px 16px;
-  background: rgba(255, 255, 255, 0.03);
+  background: var(--bg-surface);
   border-radius: var(--radius);
   margin: -4px 0 16px;
   font-size: 0.9em;
