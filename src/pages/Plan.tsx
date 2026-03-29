@@ -1,5 +1,5 @@
 import { Component, createSignal, For, Show, createMemo } from "solid-js";
-import { useNavigate } from "@solidjs/router";
+import { useNavigate, A } from "@solidjs/router";
 import type { Categoria } from "../types";
 import { receitas } from "../store/recipes";
 import { criarPlano } from "../store/plan";
@@ -183,6 +183,10 @@ const Plan: Component = () => {
           </Show>
         </div>
       </Show>
+
+      <A href="/" class="btn-cancel">
+        Cancelar e voltar ao início
+      </A>
     </div>
   );
 };
