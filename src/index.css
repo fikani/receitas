@@ -333,6 +333,8 @@ button {
   text-align: center;
   display: block;
   margin-bottom: 24px;
+  border-radius: var(--radius);
+  font-size: 1.1em;
 }
 
 .empty {
