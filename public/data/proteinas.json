@@ -22,6 +22,11 @@
         "descricao": "Antes de ligar o fogo, todos os ingredientes precisam estar prontos. Na cozinha profissional isso se chama Mise en Place (tudo no lugar). Começamos pela cebola e alho porque são usados durante o cozimento e não pode haver pressa na hora",
         "dicas": [
           {
+            "icone": "⚠️",
+            "titulo": "Vegetais PRIMEIRO, carne DEPOIS",
+            "texto": "Sempre prepare vegetais antes de tocar carne crua. Se cortar a cebola na mesma tábua que tocou frango cru, bactérias como Salmonella passam para a cebola. Como a cebola vai pro refogado, ela cozinha e mata as bactérias — mas crie o hábito certo desde já."
+          },
+          {
             "icone": "🔪",
             "titulo": "Cebola: corte ao meio, depois em cubos pequenos",
             "texto": "Corte a cebola (150g) ao meio do topo à raiz. Apoie a metade com o lado cortado pra baixo. Faça cortes verticais paralelos (sem chegar na raiz), depois cortes horizontais, e por fim fatie de cima pra baixo. Os cubos se formam sozinhos. Mire em cubos de 4-5mm."
@@ -56,6 +61,16 @@
             "icone": "🧂",
             "titulo": "Tempere dos dois lados",
             "texto": "10g de sal, 2g de pimenta-do-reino e 3g de orégãos. Esfregue com as mãos para aderir à carne."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "NÃO lave o frango na pia",
+            "texto": "Lavar frango cru espirra microgotículas com Salmonella e Campylobacter por até 50cm ao redor da pia — contaminando esponja, bancada e outros alimentos. O cozimento a alta temperatura mata todas as bactérias. Secar com papel toalha é suficiente."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Lave as mãos AGORA com sabão",
+            "texto": "Você acabou de tocar frango cru. Lave as mãos com água e sabão por 20 segundos antes de tocar qualquer outro ingrediente, utensílio ou superfície. Lave também a tábua e a faca se usou para o frango."
           }
         ]
       },
@@ -193,6 +208,11 @@
         "descricao": "A cebola nesta receita vai fatiada em meias-luas (não em cubos). Este corte mantém pedaços visíveis que caramelizam junto com a carne e criam textura",
         "dicas": [
           {
+            "icone": "⚠️",
+            "titulo": "Prepare a cebola ANTES da carne",
+            "texto": "A cebola entra crua na frigideira no final. Se a tábua ou faca tocou carne crua antes, bactérias podem passar para a cebola. Sempre: vegetais primeiro, carne depois."
+          },
+          {
             "icone": "🔪",
             "titulo": "Como fazer meias-luas",
             "texto": "Corte a cebola (150g) ao meio do topo à raiz. Apoie a metade com o lado cortado pra baixo. Fatie em fatias de 3-4mm acompanhando a curva natural da cebola, do topo até a raiz. Descarte a raiz."
@@ -217,6 +237,11 @@
             "icone": "⚠️",
             "titulo": "Truque: carne semi-congelada corta melhor",
             "texto": "Se estiver difícil cortar fino, coloque a carne no congelador por 20 minutos. Semi-congelada, ela fica firme e mais fácil de fatiar com precisão."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Lave as mãos e a tábua com sabão",
+            "texto": "Você tocou carne crua. Lave as mãos com água e sabão por 20 segundos. Se usou tábua e faca, lave com água quente e sabão antes de usar para qualquer outra coisa."
           }
         ]
       },
@@ -341,6 +366,11 @@
         "descricao": "Brunoise é o nome francês para o corte em cubos minúsculos de 3 milímetros. Parece intimidador mas tem um truque: corte a cebola ao meio, faça cortes em grade sem separar, e depois fatie. Os cubos se formam sozinhos. Este tamanho faz a cebola e o alho praticamente desaparecerem no prato, liberando sabor máximo sem ficar em pedaços visíveis",
         "dicas": [
           {
+            "icone": "⚠️",
+            "titulo": "Corte os vegetais ANTES de tocar a carne",
+            "texto": "A cebola e o alho são adicionados crus à carne durante o cozimento. Se a tábua já tocou carne crua, bactérias como E. coli podem contaminar os vegetais. Ordem segura: vegetais primeiro, carne depois."
+          },
+          {
             "icone": "🔪",
             "titulo": "Cebola em brunoise: passo a passo",
             "texto": "1) Corte a cebola (150g) ao meio do topo à raiz. 2) NÃO tire a raiz — ela segura as camadas. 3) Faça 2-3 cortes horizontais paralelos à tábua. 4) Faça cortes verticais paralelos de 3mm. 5) Fatie de cima pra baixo em fatias de 3mm. Os cubos caem prontos."
@@ -370,6 +400,11 @@
             "icone": "💧",
             "titulo": "120g de água num copo",
             "texto": "Pese e deixe ao lado. Entra depois do extrato junto com a cebola e o alho."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Mãos limpas antes de pegar nos potes",
+            "texto": "Se já tocou na carne moída crua, lave as mãos antes de abrir o pote de extrato de tomate. Bactérias da carne crua no pote contaminam todo o conteúdo restante."
           }
         ]
       },

@@ -37,6 +37,11 @@
             "icone": "👁️",
             "titulo": "Todos devem ter tamanho parecido",
             "texto": "Olhe os floretes lado a lado. Se algum é muito maior que os outros, corte-o. Uniformidade = cozimento igual."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Tábua e faca LIMPAS — sem contato com carne crua",
+            "texto": "O brócolis vai para água fervente (que mata bactérias), mas se for comido frio depois, qualquer contaminação residual é um risco. Use tábua e faca limpas, ou lave com água quente e sabão se já cortou carne."
           }
         ]
       },
@@ -154,6 +159,11 @@
             "icone": "⚠️",
             "titulo": "Cuidado: abóbora é escorregadia",
             "texto": "A polpa é úmida e a faca pode escorregar. Sempre apoie com a base plana na tábua. Se estiver instável, corte ao meio primeiro."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Use tábua limpa — sem contato prévio com carne crua",
+            "texto": "Vegetais que vão ao forno atingem temperatura alta o suficiente para matar bactérias, mas mantenha o hábito: tábua e faca limpas para vegetais, sempre."
           }
         ]
       },
@@ -254,6 +264,11 @@
             "icone": "⚠️",
             "titulo": "Não precisa secar",
             "texto": "O espinafre vai murchar em segundos no fogo — a água da lavagem evapora junto. Não perca tempo secando."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Pia limpa antes de lavar o espinafre",
+            "texto": "Se lavou ou manipulou carne crua na pia antes, limpe a pia com sabão primeiro. Bactérias da carne crua ficam na superfície da pia e contaminam os vegetais que você lava em seguida."
           }
         ]
       },
@@ -270,6 +285,11 @@
             "icone": "🧂",
             "titulo": "Adicione sal, pimenta e noz-moscada",
             "texto": "5g de sal, 1g de pimenta e 2g de noz-moscada. Misture bem. A noz-moscada é o par clássico francês do espinafre — realça o sabor sem chamar atenção."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Mãos lavadas para manipular a ricota",
+            "texto": "Ricota é um laticínio fresco — muito sensível a contaminação. Mãos que tocaram carne crua, casca de ovo ou qualquer alimento cru podem transferir bactérias. Lave com sabão antes."
           }
         ]
       },
