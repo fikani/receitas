@@ -70,6 +70,31 @@ Toda receita que vai para o freezer DEVE ter um campo `descongelamento` com inst
 - Melhor método de reaquecimento para preservar textura (frigideira? forno? micro-ondas?)
 - Riscos específicos (ex: frango NUNCA deve ser recongelado após descongelar)
 
+## Regra: Contaminação cruzada — alertas obrigatórios
+
+Toda receita que manipula carne crua DEVE ter alertas de contaminação cruzada nos passos de mise en place. Um junior não sabe que a mesma tábua que cortou frango cru pode causar uma intoxicação grave se depois cortar salada nela.
+
+### O que incluir:
+
+1. **Separação de utensílios** — usar tábuas e facas diferentes para carne crua e vegetais (ou lavar com água quente e sabão entre usos)
+2. **Ordem de preparação** — SEMPRE preparar vegetais ANTES de carnes cruas. Se a receita tem os dois, os passos de mise en place de vegetais vêm primeiro
+3. **Lavagem de mãos** — lembrar de lavar as mãos com sabão depois de tocar carne crua, antes de tocar qualquer outro ingrediente
+4. **Superfícies** — limpar bancada e tábua com água quente e sabão depois de manipular carne crua
+5. **Armazenamento na geladeira** — carne crua sempre na prateleira de BAIXO (se vazar, não contamina outros alimentos)
+
+### Como aplicar nas dicas:
+
+Use o ícone `⚠️` com título claro. Exemplos:
+- "Lave a tábua e a faca com água quente e sabão ANTES de cortar os vegetais"
+- "Mãos lavadas! Você acabou de tocar carne crua — lave com sabão antes de continuar"
+- "Use uma tábua separada para a carne. Se só tiver uma, prepare os vegetais PRIMEIRO"
+
+### O que pesquisar ao criar cada receita:
+
+- Quais ingredientes são crus e apresentam risco (frango é o pior, seguido de porco e carne bovina)
+- Se a receita mistura carne crua e vegetais no mise en place, a ordem está correta?
+- Onde colocar alertas de lavagem de mãos entre preparações
+
 ## Regra: Todas as quantidades em gramas/kg
 
 Sem "colheres", "xícaras" ou "pitadas". Tudo pesado na balança.
