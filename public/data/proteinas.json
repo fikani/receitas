@@ -482,5 +482,245 @@
       "reaquecimento": "Frigideira em fogo médio com um fio de azeite. Quebre os pedaços que grudaram durante o congelamento. Mexa até aquecer por igual (3-4 minutos). Pode adicionar 30g de água e tampar por 1 minuto se estiver seca.",
       "aviso": "Carne moída tem mais superfície exposta, o que significa mais risco de contaminação. Descongele SEMPRE na geladeira ou em água fria, NUNCA no balcão."
     }
+  },
+  {
+    "id": "bisteca-suina-pressao-forno",
+    "nome": "Bisteca Suína na Pressão com Crosta no Forno",
+    "categoria": "proteinas",
+    "tempo_preparo_min": 55,
+    "porcoes_base": 4,
+    "ingredientes": [
+      { "nome": "Bisteca suína com osso", "quantidade": 1200, "unidade": "g", "tipo": "carnes" },
+      { "nome": "Azeite", "quantidade": 30, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Sal", "quantidade": 12, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Pimenta do reino", "quantidade": 3, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Alho", "quantidade": 25, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Cebola", "quantidade": 200, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Tomate", "quantidade": 250, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Pimentão verde", "quantidade": 120, "unidade": "g", "tipo": "vegetais" },
+      { "nome": "Louro", "quantidade": 2, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Colorau", "quantidade": 5, "unidade": "g", "tipo": "temperos" },
+      { "nome": "Água", "quantidade": 150, "unidade": "g", "tipo": "outros" }
+    ],
+    "passos": [
+      {
+        "titulo": "Mise en Place — Cortar os vegetais",
+        "descricao": "Antes de tocar na carne, todos os vegetais precisam estar prontos. Na cozinha profissional isso se chama Mise en Place (tudo no lugar). Cortamos tudo primeiro para não haver correria quando a panela estiver quente",
+        "dicas": [
+          {
+            "icone": "⚠️",
+            "titulo": "Vegetais PRIMEIRO, carne DEPOIS",
+            "texto": "Sempre prepare vegetais antes de tocar carne crua. Se cortar o tomate na mesma tábua que tocou porco cru, bactérias podem passar para o tomate. Ordem segura: vegetais primeiro, carne depois."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Cebola em rodelas grossas",
+            "texto": "Corte a cebola (200g) ao meio do topo à raiz, depois fatie em meias-luas de 5mm. Pedaços maiores aguentam a pressão sem virar papa e dão corpo ao molho."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Tomate em cubos médios",
+            "texto": "Corte os tomates (250g) ao meio, retire as sementes com uma colher (elas deixam o molho aguado e ácido demais). Corte em cubos de 2cm. Os cubos vão derreter na pressão e formar o molho naturalmente."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Pimentão em tiras",
+            "texto": "Corte o pimentão verde (120g) ao meio, retire as sementes e as nervuras brancas (elas são amargas). Fatie em tiras de 1cm de largura."
+          },
+          {
+            "icone": "🔪",
+            "titulo": "Alho amassado",
+            "texto": "Descasque os dentes de alho (25g) e amasse cada um com o lado da faca pressionando com a palma da mão. Amassar libera mais sabor que picar — a célula do alho se rompe e libera alicina, que é o composto responsável pelo aroma forte."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Preparar as bistecas",
+        "descricao": "A bisteca suína é uma fatia fina do lombo com o ossinho em formato de T. Carne molhada não sela — ela cozinha no próprio vapor e fica cinzenta. Secar e temperar antes é obrigatório para a Reação de Maillard funcionar",
+        "dicas": [
+          {
+            "icone": "❄️",
+            "titulo": "Tire do frigorífico 15 minutos antes",
+            "texto": "Carne gelada baixa a temperatura da panela. Tire as bistecas (1200g) da geladeira e deixe em temperatura ambiente por 15 minutos."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Seque COMPLETAMENTE com papel toalha",
+            "texto": "Passe papel toalha em cada bisteca, dos dois lados. Água na superfície = vapor = carne cinzenta em vez de dourada."
+          },
+          {
+            "icone": "🧂",
+            "titulo": "Tempere dos dois lados",
+            "texto": "12g de sal, 3g de pimenta-do-reino e 5g de colorau. O colorau é o pó da semente de urucum — ele dá aquela cor vermelho-dourada característica e um sabor levemente terroso. Esfregue o tempero com as mãos em cada bisteca, dos dois lados."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Lave as mãos AGORA com sabão",
+            "texto": "Você acabou de tocar carne de porco crua. Lave as mãos com água e sabão por 20 segundos antes de tocar qualquer outro ingrediente, utensílio ou superfície."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Limpe a tábua e a faca",
+            "texto": "Se usou tábua e faca para manipular a carne crua, lave com água quente e sabão. Bactérias da carne crua (como Salmonella) podem sobreviver horas na superfície."
+          }
+        ]
+      },
+      {
+        "titulo": "Mise en Place — Pesar a água e separar o louro",
+        "descricao": "Na pressão tudo acontece rápido. Ter os líquidos pesados e o louro à mão evita abrir armários com as mãos sujas de carne ou perder o ponto da selagem",
+        "dicas": [
+          {
+            "icone": "💧",
+            "titulo": "150g de água num copo",
+            "texto": "Pese e deixe ao lado do fogão. A água vai criar o vapor que cozinha na pressão — sem ela a panela pode queimar o fundo."
+          },
+          {
+            "icone": "🌿",
+            "titulo": "2g de louro (2-3 folhas) separadas",
+            "texto": "Louro é aquela folha seca verde-escura que dá aroma amadeirado ao cozido. Ela perfuma durante o cozimento e é retirada antes de servir (é dura demais para comer)."
+          }
+        ]
+      },
+      {
+        "titulo": "Reação de Maillard — Selar as bistecas na pressão aberta",
+        "descricao": "A Reação de Maillard acontece acima de 140°C: aminoácidos e açúcares da carne reagem formando centenas de moléculas de sabor e uma crosta marrom-dourada. Usamos a própria panela de pressão ABERTA como uma frigideira — assim o fond (resíduos saborosos) fica no fundo e vai pro molho depois",
+        "metodo": "🍳",
+        "fogo": "alto",
+        "timer_min": 6,
+        "dicas": [
+          {
+            "icone": "🔥",
+            "titulo": "Panela de pressão ABERTA, fogo alto, 15g de azeite",
+            "texto": "Coloque a panela de pressão sem tampa no fogo alto. Adicione 15g de azeite e espere até quase fumegar — ondas na superfície do óleo = temperatura certa."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "Sele em lotes de 2-3 bistecas",
+            "texto": "Não encha a panela! Se colocar todas de uma vez, a temperatura cai e a carne cozinha no vapor em vez de selar. Coloque 2-3 bistecas por vez, com espaço entre elas."
+          },
+          {
+            "icone": "⏱️",
+            "titulo": "3 minutos de cada lado, SEM MEXER",
+            "texto": "Deixe 3 minutos sem tocar até formar uma crosta marrom-dourada. Vire com uma pinça ou espátula e repita do outro lado. Se grudou, ainda não está pronto — espere mais."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Retire e repita com o próximo lote",
+            "texto": "Quando cada bisteca estiver dourada dos dois lados, retire para um prato. Repita até selar todas. O fundo da panela vai ficar com resíduos escuros grudados — isso é o fond, puro sabor que vai pro molho."
+          }
+        ]
+      },
+      {
+        "titulo": "Refogado aromático — A base do molho",
+        "descricao": "Os vegetais que cortamos no mise en place agora entram na mesma panela que selou a carne. A gordura e o fond (resíduos grudados) que ficaram no fundo viram a base do molho. Isso se chama deglaçagem — o líquido dos vegetais solta todo o 'ouro' do fundo",
+        "metodo": "🥘",
+        "fogo": "medio",
+        "timer_min": 5,
+        "dicas": [
+          {
+            "icone": "🔥",
+            "titulo": "Abaixe o fogo ANTES dos vegetais",
+            "texto": "O fundo está muito quente da selagem. Se jogar a cebola com fogo alto, ela queima em segundos. Abaixe para médio e adicione 15g de azeite."
+          },
+          {
+            "icone": "🥣",
+            "titulo": "Cebola primeiro, depois alho, tomate e pimentão",
+            "texto": "Coloque a cebola (200g) e refogue por 2 minutos até começar a ficar translúcida. Adicione o alho amassado (25g) e mexa por 30 segundos até perfumar. Junte o tomate (250g) e o pimentão (120g) e mexa por mais 2 minutos."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Raspe o fundo com colher de pau",
+            "texto": "Enquanto os vegetais soltam líquido, raspe o fundo da panela para soltar os resíduos escuros da selagem. Eles vão se dissolver no líquido e dar cor e sabor profundo ao molho."
+          }
+        ]
+      },
+      {
+        "titulo": "Cozimento na Pressão — Amaciar sem desintegrar",
+        "descricao": "A panela de pressão cozinha a 120°C (20°C acima da fervura normal) porque o vapor não consegue escapar e aumenta a pressão interna. Isso acelera a quebra do colágeno da carne — o que levaria 2 horas no braisage clássico acontece em 15 minutos. A bisteca fininha não precisa de mais que isso",
+        "metodo": "♨️",
+        "fogo": "baixo",
+        "timer_min": 15,
+        "dicas": [
+          {
+            "icone": "🥣",
+            "titulo": "Volte todas as bistecas + água + louro",
+            "texto": "Coloque as bistecas seladas de volta na panela, por cima dos vegetais. Adicione os 150g de água e as folhas de louro. A carne deve ficar parcialmente coberta pelo líquido."
+          },
+          {
+            "icone": "🔥",
+            "titulo": "Tampe, fogo alto até pegar pressão, depois BAIXO",
+            "texto": "Feche a panela de pressão e leve ao fogo alto. Quando a válvula começar a chiar (soltar vapor com barulho contínuo), ABAIXE para o fogo mínimo. Conte 15 minutos a partir do chiado."
+          },
+          {
+            "icone": "⚠️",
+            "titulo": "15 minutos, NÃO mais",
+            "texto": "A bisteca é fina — se passar de 15 minutos na pressão, ela resseca e desfia demais. Marque o timer assim que a válvula começar a chiar."
+          },
+          {
+            "icone": "⏱️",
+            "titulo": "Desligue e espere a pressão sair SOZINHA",
+            "texto": "Após os 15 minutos, desligue o fogo e NÃO force a válvula. Deixe a pressão sair naturalmente (5-10 minutos). Forçar faz o líquido ferver violentamente e a carne perde suco."
+          }
+        ]
+      },
+      {
+        "titulo": "Pré-aquecer o forno — 220°C",
+        "descricao": "O forno precisa estar BEM quente para criar a crosta. 220°C é a temperatura ideal para a gratinagem — quente o bastante para dourar rápido sem ressecar a carne por dentro. Ligue o forno enquanto espera a pressão sair",
+        "temperatura_c": 220,
+        "dicas": [
+          {
+            "icone": "🔥",
+            "titulo": "Ligue o forno a 220°C AGORA",
+            "texto": "Enquanto a pressão sai naturalmente da panela, aproveite para ligar o forno. Ele precisa de 10-15 minutos para atingir 220°C. Se tiver função 'grill' ou 'gratinar' (calor só de cima), use — é ideal para dourar a superfície."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Prepare a assadeira",
+            "texto": "Forre uma assadeira com papel alumínio (facilita a limpeza). Não precisa untar — as bistecas já estão com gordura suficiente da selagem."
+          }
+        ]
+      },
+      {
+        "titulo": "Gratinagem — A crosta dourada final",
+        "descricao": "Gratinagem (ou gratiner em francês) é a técnica de expor o alimento a calor intenso por cima para criar uma crosta crocante e dourada. A carne já está macia e cozida da pressão — agora o forno só precisa criar textura na superfície. É o toque que transforma um cozido simples em algo especial",
+        "metodo": "🔥",
+        "fogo": "alto",
+        "temperatura_c": 220,
+        "timer_min": 12,
+        "dicas": [
+          {
+            "icone": "🥣",
+            "titulo": "Transfira as bistecas para a assadeira",
+            "texto": "Com uma pinça ou garfo, retire as bistecas da panela e coloque na assadeira forrada, lado a lado sem sobrepor. Retire e descarte as folhas de louro do molho."
+          },
+          {
+            "icone": "🥣",
+            "titulo": "Cubra com o molho de vegetais",
+            "texto": "Despeje o molho com os vegetais da panela por cima das bistecas. O molho vai caramelizar no forno e criar uma camada brilhante e saborosa."
+          },
+          {
+            "icone": "⏱️",
+            "titulo": "10-12 minutos no forno, grade do meio",
+            "texto": "Coloque a assadeira na grade do meio do forno. Asse por 10-12 minutos até as bordas da carne ficarem douradas e o molho borbulhar. Se tiver grill, ligue nos últimos 3 minutos para intensificar a crosta."
+          },
+          {
+            "icone": "👁️",
+            "titulo": "Dourado e borbulhante = perfeito",
+            "texto": "As bistecas devem ter bordas douradas com crosta visível e o molho deve estar borbulhando ativamente. Se ainda estiver pálido, deixe mais 2-3 minutos. Se começar a queimar nas bordas, retire imediatamente."
+          }
+        ]
+      }
+    ],
+    "armazenamento": {
+      "tipo": "freezer",
+      "validade_dias": 30,
+      "instrucoes": "Espere esfriar completamente. Guarde cada bisteca com uma porção generosa de molho por cima — o molho protege a carne de ressecar durante o congelamento. Separe em potes individuais para facilitar o descongelamento."
+    },
+    "descongelamento": {
+      "metodo_ideal": "Transfira o pote fechado do freezer para a geladeira na noite anterior (8-12 horas). O molho de vegetais protege a carne e ela descongela lentamente sem ressecar.",
+      "metodo_rapido": "Coloque o pote fechado numa tigela com água fria da torneira. Troque a água a cada 30 minutos. Leva 1-2 horas dependendo do tamanho do pote.",
+      "reaquecimento": "Forno a 180°C por 10-12 minutos com o molho por cima (recupera a crosta). Alternativa: frigideira em fogo médio com tampa por 5 minutos, adicionando 30g de água se estiver seca. Evite micro-ondas — ele amolece a crosta que o forno criou.",
+      "aviso": "NUNCA descongele carne de porco em temperatura ambiente — a superfície entra na zona de perigo (4-60°C) rapidamente enquanto o centro ainda está congelado. Se descongelou na geladeira, consuma em 24 horas. NUNCA recongele após descongelar."
+    }
   }
 ]
