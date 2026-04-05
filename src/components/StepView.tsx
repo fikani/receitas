@@ -38,10 +38,12 @@ const StepView: Component<Props> = (props) => {
         {(dica) => <TipCard dica={dica} />}
       </For>
 
-      <Show when={props.passo.timer_min}>
-        <div class="step-timer-row">
-          <TimerButton minutes={props.passo.timer_min!} />
-        </div>
+      <Show when={props.passo.timer_min} keyed>
+        {(minutes) => (
+          <div class="step-timer-row">
+            <TimerButton minutes={minutes} />
+          </div>
+        )}
       </Show>
     </div>
   );

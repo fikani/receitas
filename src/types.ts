@@ -58,8 +58,8 @@ export interface PlanoAtivo {
   comprasChecked: string[];
   receitasConcluidas: string[];
   cozinhando?: {
-    receitaId: string;
-    passoAtual: number;
+    receitas: Array<{ receitaId: string; passoAtual: number; concluida: boolean }>;
+    abaAtiva: number;
   };
   armazenamentoChecked: string[];
   poteSizes: Record<string, number>;

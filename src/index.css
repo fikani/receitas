@@ -916,3 +916,104 @@ button {
   font-size: 0.9em;
   margin-top: 8px;
 }
+
+/* CookingTabBar */
+.cooking-tab-bar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin: -16px -16px 16px;
+  padding: 0 8px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cooking-tab-back {
+  min-width: 44px;
+  min-height: 44px;
+  background: none;
+  color: var(--text-muted);
+  font-size: 1.3em;
+  flex-shrink: 0;
+  border-radius: 0;
+}
+
+.cooking-tabs {
+  display: flex;
+  flex: 1;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.cooking-tab {
+  flex: 1;
+  min-height: 44px;
+  padding: 10px 12px;
+  background: none;
+  color: var(--text-muted);
+  font-size: 0.85em;
+  border-radius: 0;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+}
+
+.cooking-tab.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+  font-weight: bold;
+}
+
+.cooking-tab.done {
+  opacity: 0.6;
+}
+
+.cooking-tab.done.active {
+  opacity: 1;
+}
+
+.cooking-tab-name {
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cooking-tab-check {
+  font-size: 0.8em;
+}
+
+/* Checkbox in CookingHub */
+.cooking-recipe-checkbox {
+  font-size: 1.8em;
+  min-width: 48px;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cooking-recipe-checkbox.checked {
+  color: var(--accent);
+}
+
+.cooking-recipe-item.selected {
+  border-color: var(--accent);
+}
+
+/* Done banner in CookingStep */
+.cooking-done-banner {
+  background: var(--bg-surface);
+  color: var(--success);
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  margin-bottom: 12px;
+  font-size: 0.9em;
+  font-weight: bold;
+}

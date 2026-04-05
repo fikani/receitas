@@ -61,34 +61,59 @@ export function avancarParaPreparo() {
   persistir();
 }
 
-export function iniciarCozinha(receitaId: string) {
+export function iniciarCozinha(receitaIds: string[]) {
   if (!plano.ativo) return;
-  setPlano("ativo", "cozinhando", { receitaId, passoAtual: 0 });
+  setPlano("ativo", "cozinhando", {
+    receitas: receitaIds.map((id) => ({ receitaId: id, passoAtual: 0, concluida: false })),
+    abaAtiva: 0,
+  });
   persistir();
 }
 
 export function proximoPasso() {
   if (!plano.ativo?.cozinhando) return;
-  setPlano("ativo", "cozinhando", "passoAtual", (p) => p + 1);
+  const idx = plano.ativo.cozinhando.abaAtiva;
+  setPlano("ativo", "cozinhando", "receitas", idx, "passoAtual", (p) => p + 1);
   persistir();
 }
 
 export function passoAnterior() {
   if (!plano.ativo?.cozinhando) return;
-  setPlano("ativo", "cozinhando", "passoAtual", (p) => Math.max(0, p - 1));
+  const idx = plano.ativo.cozinhando.abaAtiva;
+  setPlano("ativo", "cozinhando", "receitas", idx, "passoAtual", (p) => Math.max(0, p - 1));
+  persistir();
+}
+
+export function mudarAba(index: number) {
+  if (!plano.ativo?.cozinhando) return;
+  setPlano("ativo", "cozinhando", "abaAtiva", index);
   persistir();
 }
 
 export function concluirReceita(receitaId: string) {
-  if (!plano.ativo) return;
-  const concluidas = [...plano.ativo.receitasConcluidas, receitaId];
-  setPlano("ativo", {
-    receitasConcluidas: concluidas,
-    cozinhando: undefined,
-  });
+  if (!plano.ativo?.cozinhando) return;
 
-  if (concluidas.length === plano.ativo.receitas.length) {
-    setPlano("ativo", "etapa", "armazenamento");
+  // Mark as concluida in cozinhando
+  const receitaIdx = plano.ativo.cozinhando.receitas.findIndex((r) => r.receitaId === receitaId);
+  if (receitaIdx >= 0) {
+    setPlano("ativo", "cozinhando", "receitas", receitaIdx, "concluida", true);
+  }
+
+  // Add to global receitasConcluidas
+  const concluidas = [...plano.ativo.receitasConcluidas, receitaId];
+  setPlano("ativo", "receitasConcluidas", concluidas);
+
+  // Find next non-concluded tab
+  const remaining = plano.ativo.cozinhando.receitas.filter((r) => !r.concluida);
+  if (remaining.length > 0) {
+    const nextIdx = plano.ativo.cozinhando.receitas.findIndex((r) => !r.concluida);
+    setPlano("ativo", "cozinhando", "abaAtiva", nextIdx);
+  } else {
+    // All in group done
+    setPlano("ativo", "cozinhando", undefined);
+    if (concluidas.length === plano.ativo.receitas.length) {
+      setPlano("ativo", "etapa", "armazenamento");
+    }
   }
   persistir();
 }
